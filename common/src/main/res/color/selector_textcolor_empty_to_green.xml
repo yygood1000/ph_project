@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 空心按钮的字体颜色 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/white" android:state_pressed="true"/>
+    <item android:color="@color/text_color_16CA4E" android:state_pressed="false"/>
+</selector>

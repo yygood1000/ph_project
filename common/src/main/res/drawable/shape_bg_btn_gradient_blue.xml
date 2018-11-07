@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 绿色渐变 -->
+<shape android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="0"
+        android:endColor="@color/blue_button_end_color_unclick"
+        android:startColor="@color/blue_button_start_color_unclick"/>
+    <corners android:radius="4dp"/>
+</shape>

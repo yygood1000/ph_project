@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    style="@style/Layout_Match_Wrap"
+    android:padding="@dimen/spacing_11"
+    android:id="@+id/ll_order_id">
+    <!-- 订单id,订单刷新时间 -->
+    <TextView
+        android:id="@+id/tv_order_id"
+        style="@style/tv_size_13_color_66_style"
+        android:text="订单号：CJ1610311138033"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_order_time"
+        style="@style/tv_size_13_color_66_style"
+        android:text="2016-10-12  12:10"
+        android:layout_weight="1"
+        android:gravity="end"/>
+
+</LinearLayout>

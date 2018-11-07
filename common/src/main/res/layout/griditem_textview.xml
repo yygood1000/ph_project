@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 只有一个textView-->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/spacing_5"
+    android:paddingBottom="@dimen/spacing_5"
+    android:textSize="@dimen/text_size14"
+    android:layout_marginRight="12dp"
+    android:layout_marginBottom="16dp"
+    android:gravity="center"/>

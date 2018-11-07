@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="progress_color" format="color"/>
+    <attr name="progress_height" format="dimension"/>
+    <attr name="error_text_color" format="color"/>
+    <attr name="error_text_size" format="dimension"/>
+    <attr name="error_text" format="string"/>
+    <attr name="error_btn_text" format="string"/>
+    <attr name="error_btn_text_size" format="dimension"/>
+    <attr name="error_btn_text_color" format="color"/>
+
+    <declare-styleable name="myWebView">
+        <attr name="progress_color"/>
+        <attr name="progress_height"/>
+        <attr name="error_text_size"/>
+        <attr name="error_text"/>
+        <attr name="error_btn_text"/>
+        <attr name="error_btn_text_size"/>
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar">
+        <!--尺寸值-->
+        <attr name="starImageSize" format="dimension"/>
+        <!--星星间距-->
+        <attr name="starPadding" format="dimension"/>
+        <!--星星总数-->
+        <attr name="starCount" format="integer"/>
+        <!--空白的星星资源文件值-->
+        <attr name="starEmpty" format="reference"/>
+        <!--满星资源文件值-->
+        <attr name="starFill" format="reference"/>
+        <!--半星资源文件值-->
+        <attr name="starHalf" format="reference"/>
+        <!--是否可点击boolean值-->
+        <attr name="clickable" format="boolean"/>
+        <!--当前进度float值-->
+        <attr name="starStep" format="float"/>
+        <!--每次进度方式的值，整星还是半星-->
+        <attr name="stepSize">
+            <enum name="Half" value="0"/>
+            <enum name="Full" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+    <!-- viewPagerTitle 的属性 -->
+    <declare-styleable name="ViewPagerTitle">
+        <attr name="background_content_color" format="color"/>
+        <attr name="defaultTextViewColor" format="color"/>
+        <attr name="selectedTextViewColor" format="color"/>
+        <attr name="defaultTextViewSize" format="dimension"/>
+        <attr name="selectedTextViewSize" format="dimension"/>
+        <attr name="item_margins" format="dimension"/>
+        <attr name="line_start_color" format="color"/>
+        <attr name="line_end_color" format="color"/>
+        <attr name="line_height" format="dimension"/>
+        <attr name="line_width" format="dimension"/>
+        <attr name="text_padding" format="dimension"/>
+    </declare-styleable>
+    <item name="fl_container" type="id"/>
+
+    <!-- 可以指定旋转角度的textview -->
+    <declare-styleable name="RotateTextView">
+        <attr name="degree" format="dimension"/>
+    </declare-styleable>
+
+    <!--带圆角WebView-->
+    <declare-styleable name="CornersWebView">
+        <attr name="top_left" format="dimension"/>
+        <attr name="top_right" format="dimension"/>
+        <attr name="bottom_left" format="dimension"/>
+        <attr name="bottom_right" format="dimension"/>
+    </declare-styleable>
+
+    <!--统计字数的EditText-->
+    <declare-styleable name="AnFQNumEditText">
+        <attr name="maxLength" format="integer"/>
+        <attr name="type" format="string"/>
+        <attr name="hint" format="string"/>
+        <attr name="lines" format="integer"/>
+        <attr name="contentTextColor" format="color"/>
+        <attr name="contentTextColorHint" format="color"/>
+        <attr name="contentTextSize" format="dimension"/>
+        <attr name="numberTextColor" format="color"/>
+        <attr name="numberTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <!--圆角ImageView-->
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="roundWidth" format="dimension"/>
+        <attr name="roundHeight" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 侧滑菜单 -->
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+</resources>

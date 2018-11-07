@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_item_contect_head"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@color/bg_root"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/text_padding2"
+        android:textColor="@color/text_color0"
+        android:textSize="@dimen/text_size4" />
+
+    <TextView
+        android:id="@+id/tv_item_contect_body"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/text_padding2"
+        android:text="曹格"
+        android:textColor="@color/text_color4"
+        android:textSize="@dimen/text_size4" />
+
+    <View
+        android:id="@+id/v_item_contect"
+        style="@style/view_line"
+        android:layout_marginLeft="@dimen/text_padding2" />
+
+</LinearLayout>

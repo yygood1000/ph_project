@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--听单目的地弹窗布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_parents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent_70">
+
+    <RelativeLayout
+        android:id="@+id/rl_depart_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_depart_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/common_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_marginLeft="@dimen/spacing_12"
+                android:background="@drawable/shape_concentric_circles_green"/>
+
+            <TextView
+                style="@style/tv_size_14_color_22_style"
+                android:layout_marginLeft="@dimen/spacing_21"
+                android:text="@string/depart_address"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_depart"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ll_depart_title"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_depart"
+                style="@style/tv_size_14_color_22_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="46dp"
+                android:text="杭州"/>
+
+            <ImageView
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_6"
+                android:layout_toRightOf="@+id/tv_depart"
+                android:background="@drawable/arrows_down_gray"/>
+
+            <Button
+                android:id="@+id/btn_locate"
+                style="@style/BtnNotProjectionStyle"
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/spacing_12"
+                android:background="@drawable/shape_btn_empty_blue_stroke"
+                android:gravity="center"
+                android:text="@string/lacate"
+                android:textColor="@color/text_color_6E90FF"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_depart_root"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/spacing_16">
+
+        <LinearLayout
+            android:id="@+id/ll_destination_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/common_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_marginLeft="@dimen/spacing_12"
+                android:background="@drawable/shape_concentric_circles_yellow"/>
+
+            <TextView
+                style="@style/tv_size_14_color_22_style"
+                android:layout_marginLeft="@dimen/spacing_21"
+                android:text="@string/destination_address"
+                />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:layout_below="@+id/ll_destination_title"
+            tools:listitem="@layout/listitem_destination">
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/BtnNotProjectionStyle"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/recyclerview"
+            android:layout_marginLeft="@dimen/spacing_12"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:layout_marginTop="@dimen/spacing_25"
+            android:background="@drawable/selector_btn_corner_blue"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size17"/>
+    </RelativeLayout>
+
+</RelativeLayout>

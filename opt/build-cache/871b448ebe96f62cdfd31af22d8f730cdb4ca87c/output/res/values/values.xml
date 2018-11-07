@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="plate_letter">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+    <string-array name="plate_region">
+        <item>京</item>
+        <item>津</item>
+        <item>沪</item>
+        <item>渝</item>
+        <item>冀</item>
+        <item>豫</item>
+        <item>云</item>
+        <item>辽</item>
+        <item>黑</item>
+        <item>湘</item>
+        <item>皖</item>
+        <item>鲁</item>
+        <item>新</item>
+        <item>苏</item>
+        <item>浙</item>
+        <item>赣</item>
+        <item>鄂</item>
+        <item>桂</item>
+        <item>甘</item>
+        <item>晋</item>
+        <item>蒙</item>
+        <item>陕</item>
+        <item>吉</item>
+        <item>闽</item>
+        <item>贵</item>
+        <item>粤</item>
+        <item>川</item>
+        <item>青</item>
+        <item>藏</item>
+        <item>琼</item>
+        <item>宁</item>
+    </string-array>
+    <string-array name="special_area">
+        <item>北京</item>
+        <item>上海</item>
+        <item>天津</item>
+        <item>重庆</item>
+        <item>香港</item>
+        <item>澳门</item>
+    </string-array>
+    <attr format="reference" name="baseTextColor"/>
+    <attr format="reference" name="btnDenomination"/>
+    <attr format="reference" name="btnGradient"/>
+    <attr format="reference" name="rytBottomGuarantee"/>
+    <attr format="reference" name="rytIconMoney"/>
+    <attr format="reference" name="rytListTxtBg"/>
+    <attr format="reference" name="rytTitleBg"/>
+    <attr format="reference" name="rytTitleImgBg"/>
+    <attr format="reference" name="rytTitleTxt2Bg"/>
+    <attr format="reference" name="rytTitleTxtBg"/>
+    <color name="auto_dialog_confirm_font_color_normal">#1C1C1C</color>
+    <color name="auto_dialog_content_font_color">#1C1C1C</color>
+    <color name="auto_dialog_divider">#dadadc</color>
+    <color name="auto_dialog_pressed_driver">#6E90FF</color>
+    <color name="auto_dialog_pressed_shipper">#16CA4E</color>
+    <color name="auto_dialog_pressed_wallet">#999999</color>
+    <color name="auto_dialog_root_bg">#eeffffff</color>
+    <color name="bg_line_gray">#EEEEEE</color>
+    <color name="bg_root">#F3F7F9</color>
+    <color name="bg_transparent">#00000000</color>
+    <color name="bg_transparent29">#29000000</color>
+    <color name="bg_wallet_gray">#f8f8f8</color>
+    <color name="color_38bdf8">#38bdf8</color>
+    <color name="color_42">#424242</color>
+    <color name="color_F3F5F9">#F3F5F9</color>
+    <color name="color_bd">#BDBDBD</color>
+    <color name="color_blue">#4d94f1</color>
+    <color name="color_blue1">#4287ef</color>
+    <color name="color_blue2">#10a6e2</color>
+    <color name="color_blue_6E90FF">#6E90FF</color>
+    <color name="color_gray">#c8c7cc</color>
+    <color name="color_gray_dddddd">#dddddd</color>
+    <color name="color_green">#1fbc8e</color>
+    <color name="color_green1">#339933</color>
+    <color name="color_green2">#1fbc8e</color>
+    <color name="color_green_16CA4E">#16CA4E</color>
+    <color name="color_orange">#ff6600</color>
+    <color name="color_orange1">#ffa100</color>
+    <color name="color_orange2">#f39826</color>
+    <color name="color_orange3">#fcb149</color>
+    <color name="color_orange4">#FDAB38</color>
+    <color name="color_orange5">#FFB000</color>
+    <color name="color_orange_ff7c1c">#ff7c1c</color>
+    <color name="color_red0">#ff4c4c</color>
+    <color name="color_red1">#f69999</color>
+    <color name="color_red2">#f15a4a</color>
+    <color name="color_red3">#FE0000</color>
+    <color name="end_blue_color">#729DFF</color>
+    <color name="end_green_color">#71DC62</color>
+    <color name="options_sliding_bg_left_city_font_normal">#ee000001</color>
+    <color name="password_display_border">#979797</color>
+    <color name="password_display_divider">#dfdfdf</color>
+    <color name="password_hint">#515050</color>
+    <color name="password_panel_bg_normal">@android:color/white</color>
+    <color name="password_panel_bg_pressed">#5b9bfd</color>
+    <color name="password_panel_border_normal">@color/password_display_border</color>
+    <color name="password_panel_border_pressed">@color/password_panel_bg_pressed</color>
+    <color name="password_panel_item_font_disable">#c7c8c9</color>
+    <color name="password_panel_item_font_normal">#070707</color>
+    <color name="password_panel_item_font_pressed">@android:color/white</color>
+    <color name="red">#FF0000</color>
+    <color name="refresh_color1">#31adff</color>
+    <color name="refresh_color2">#90ff16</color>
+    <color name="refresh_color3">#ffa257</color>
+    <color name="refresh_color5">#f73aee</color>
+    <color name="ryt_btn_sel">#FFF2F2F2</color>
+    <color name="ryt_theme_color">#12C3AF</color>
+    <color name="ryt_theme_color2">#FF7000</color>
+    <color name="ryt_theme_color2_b">#FF3F3F</color>
+    <color name="ryt_theme_color_b">#4D94F1</color>
+    <color name="start_blue_color">#646FFF</color>
+    <color name="start_green_color">#00C649</color>
+    <color name="text_color0">#222222</color>
+    <color name="text_color1">#999999</color>
+    <color name="text_color2">#cccccc</color>
+    <color name="text_color3">#666666</color>
+    <color name="text_color4">#333333</color>
+    <color name="text_color5">#d8d5d0</color>
+    <color name="text_color_666666">#666666</color>
+    <color name="text_color_969696">#969696</color>
+    <color name="transparent">#4C000000</color>
+    <color name="transparentZero">#00000000</color>
+    <color name="wallet_btn_white">#d9d9d9</color>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="RoundAngleImageView"><attr format="dimension" name="roundWidth"/><attr format="dimension" name="roundHeight"/></declare-styleable>
+    <declare-styleable name="RoundImageView"><attr format="dimension" name="border_thickness"/><attr format="color" name="border_inside_color"/><attr format="color" name="border_outside_color"/></declare-styleable>
+    <declare-styleable name="SwipeListView"><attr format="boolean" name="swipeOpenOnLongPress"/><attr format="integer" name="swipeAnimationTime"/><attr format="dimension" name="swipeOffsetLeft"/><attr format="dimension" name="swipeOffsetRight"/><attr format="boolean" name="swipeCloseAllItemsWhenMoveList"/><attr format="reference" name="swipeFrontView"/><attr format="reference" name="swipeBackView"/><attr format="enum" name="swipeMode">
+            <enum name="none" value="0"/>
+            <enum name="both" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="left" value="3"/>
+        </attr><attr format="enum" name="swipeActionLeft">
+            <enum name="reveal" value="0"/>
+            <enum name="dismiss" value="1"/>
+            <enum name="choice" value="2"/>
+        </attr><attr format="enum" name="swipeActionRight">
+            <enum name="reveal" value="0"/>
+            <enum name="dismiss" value="1"/>
+            <enum name="choice" value="2"/>
+        </attr><attr format="reference" name="swipeDrawableChecked"/><attr format="reference" name="swipeDrawableUnchecked"/></declare-styleable>
+    <declare-styleable name="TitleBar"><attr format="enum" name="theme_titlebar">
+            <enum name="driver" value="1"/>
+            <enum name="shipper" value="2"/>
+            <enum name="common" value="0"/>
+        </attr></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="auto_dialog_bg_root_corner">8dp</dimen>
+    <dimen name="auto_dialog_confirm_font_size">17dp</dimen>
+    <dimen name="auto_dialog_divider_height_or_width">0.7dp</dimen>
+    <dimen name="auto_dialog_normal_content_font_size">16dp</dimen>
+    <dimen name="auto_dialog_normal_title_font_size">18dp</dimen>
+    <dimen name="btn_height">44dp</dimen>
+    <dimen name="common_dialog_both_horizontal_margin">10dp</dimen>
+    <dimen name="common_dialog_confirm_size">18dp</dimen>
+    <dimen name="common_dialog_confirm_size2">18dp</dimen>
+    <dimen name="common_dialog_content_line_space">10dp</dimen>
+    <dimen name="common_dialog_content_size">16dp</dimen>
+    <dimen name="common_dialog_height">230dp</dimen>
+    <dimen name="common_dialog_root_horizontal_margin">20dp</dimen>
+    <dimen name="common_dialog_root_tv_padding_left">20dp</dimen>
+    <dimen name="common_dialog_single_horizontal_margin">20dp</dimen>
+    <dimen name="common_dialog_single_horizontal_padding">10dp</dimen>
+    <dimen name="eight_dp">8dp</dimen>
+    <dimen name="img_height">28dp</dimen>
+    <dimen name="img_height1">40dp</dimen>
+    <dimen name="img_height2">20dp</dimen>
+    <dimen name="img_height_main">34dp</dimen>
+    <dimen name="img_height_main1">14dp</dimen>
+    <dimen name="img_width">28dp</dimen>
+    <dimen name="img_width1">40dp</dimen>
+    <dimen name="img_width2">20dp</dimen>
+    <dimen name="img_width_main">34dp</dimen>
+    <dimen name="img_width_main1">26dp</dimen>
+    <dimen name="img_widthandheight">20dp</dimen>
+    <dimen name="img_widthandheight1">28dp</dimen>
+    <dimen name="img_widthandheight2">40dp</dimen>
+    <dimen name="img_widthandheight3">60dp</dimen>
+    <dimen name="password_display_border_width">1dp</dimen>
+    <dimen name="password_display_divider_width">1dp</dimen>
+    <dimen name="password_display_height">45dp</dimen>
+    <dimen name="password_panel_divider_width">0.1dp</dimen>
+    <dimen name="password_panel_item_height">65dp</dimen>
+    <dimen name="password_widget_vertical_padding">15dp</dimen>
+    <dimen name="radius1">7dp</dimen>
+    <dimen name="radius2">3dp</dimen>
+    <dimen name="radius25">25dp</dimen>
+    <dimen name="radius3">5dp</dimen>
+    <dimen name="radius4">10dp</dimen>
+    <dimen name="radius5">6dp</dimen>
+    <dimen name="text_height">44dp</dimen>
+    <dimen name="text_minwidth">88dp</dimen>
+    <dimen name="text_padding1">10dp</dimen>
+    <dimen name="text_padding2">12dp</dimen>
+    <dimen name="text_padding3">17dp</dimen>
+    <dimen name="text_padding4">20dp</dimen>
+    <dimen name="text_size0">10sp</dimen>
+    <dimen name="text_size1">12sp</dimen>
+    <dimen name="text_size2">14sp</dimen>
+    <dimen name="text_size3">16sp</dimen>
+    <dimen name="text_size4">18sp</dimen>
+    <dimen name="text_size5">20sp</dimen>
+    <dimen name="text_size6">22sp</dimen>
+    <dimen name="text_size7">24sp</dimen>
+    <dimen name="text_width">80dp</dimen>
+    <dimen name="text_width1">70dp</dimen>
+    <dimen name="title_bar_avatar_height">40dp</dimen>
+    <dimen name="title_bar_height">47dp</dimen>
+    <dimen name="title_bar_padding1">7dp</dimen>
+    <dimen name="title_bar_padding2">12dp</dimen>
+    <dimen name="title_bar_right_image_height_inside">25dp</dimen>
+    <dimen name="title_bar_side_font_size">16dp</dimen>
+    <dimen name="toast_hover">64dp</dimen>
+    <item name="customize_title_bar" type="id"/>
+    <item name="fl_container" type="id"/>
+    <item name="wv_common" type="id"/>
+    <integer name="duration1">300</integer>
+    <integer name="duration2">500</integer>
+    <integer name="frame_loading">50</integer>
+    <integer name="max_user_name_length">8</integer>
+    <integer name="password_number_font_size">23</integer>
+    <integer name="password_text_font_size">15</integer>
+    <integer name="restrict_verify_code_length">6</integer>
+    <integer name="restrict_wellet_bankno_length">19</integer>
+    <integer name="restrict_wellet_money_length">15</integer>
+    <integer name="restrict_wellet_text_length">30</integer>
+    <integer name="splash_loading">200</integer>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">WalletSdk</string>
+    <string name="backspace_password">后退</string>
+    <string name="call">呼叫</string>
+    <string name="cancel">取消</string>
+    <string name="certificate">注：连同您的委托投资金额%1$s元，与当日其他用户的委托投资金额共计%2$s元，投资到了龙驹财行，您可根据以下信息进行核对。</string>
+    <string name="certificate2">注：连同您的委托投资金额%1$s元，将与当日其他用户的委托投资金额一同投资到龙驹财行对应的项目中，委托投资人投资后，您将可在这里查看相关信息。</string>
+    <string name="charge_money_with_colon">充值金额:</string>
+    <string name="clear_all_password">清空</string>
+    <string name="confirm">确认</string>
+    <string name="creditcard_holder">持卡人</string>
+    <string name="creditcard_number">卡号</string>
+    <string name="creditcard_number_hint">请输入信用卡卡号</string>
+    <string name="creditcard_paymentmoney">支付金额(元)</string>
+    <string name="creditcard_phone">手机号</string>
+    <string name="creditcard_phone_hint">办卡时在银行预留的手机号</string>
+    <string name="creditcard_safetycode">安全码</string>
+    <string name="creditcard_safetycode_hint">卡背面签名栏后3或4位数字</string>
+    <string name="creditcard_termofvalidity">有效期</string>
+    <string name="creditcard_termofvalidity_hint">4位数字，如2017年8月则填1708</string>
+    <string name="dialog_wallet_forget_payment_pwd_tip">为保证您的账户资金安全,请拨打客服电话4000566560,并通过人工方式确认您的身份之后,系统才会重置您的支付密码.\n是否拨打客服电话?</string>
+    <string name="estimate_profit">预计收益：</string>
+    <string name="estimate_profit_data">预计收益到账时间：</string>
+    <string name="get_cash_money_with_colon">提现金额:</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="hava_not_limit">全境</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hint_input_bankcard_cardno">国内主要银行卡号</string>
+    <string name="hint_input_bankcard_idcardno">请输入身份证号</string>
+    <string name="hint_input_bankcard_mobile">请输入要充值的手机号</string>
+    <string name="hint_input_bankcard_mobile2">办卡时在银行预留的手机号</string>
+    <string name="hint_input_bankcard_msg">恭喜您，银行卡号已绑定成功</string>
+    <string name="hint_input_wallet_confirm_pay_pwd">请重新输入6位数字支付密码</string>
+    <string name="hint_input_wallet_old_pay_pwd">请输入原支付密码</string>
+    <string name="hint_input_wallet_old_pay_pwd2">请输入原密码...</string>
+    <string name="hint_input_wallet_pay_pwd">请输入6位数字支付密码</string>
+    <string name="hint_input_wallet_payinfo_vicode">请输入验证码</string>
+    <string name="investment_money_hint">请输入大于等于0，小于等于0的整数</string>
+    <string name="loading_more">加载中...</string>
+    <string name="maxamt">单笔最多可投(元)</string>
+    <string name="moments">朋友圈</string>
+    <string name="no_limits">不限</string>
+    <string name="no_more">没有更多数据</string>
+    <string name="pay2topjet">付款给上海拓景信息科技有限公司</string>
+    <string name="paymeny_money_with_colon">支付金额:</string>
+    <string name="phone_charge_money_with_colon">话费充值金额:</string>
+    <string name="pls_input_password">请输入支付密码</string>
+    <string name="profit_data_start">开始计算收益日期：</string>
+    <string name="project_quota">项目金额：%1$s元</string>
+    <string name="receive_money_with_colon">收款金额:</string>
+    <string name="refund_money_with_colon">退款金额:</string>
+    <string name="ryt_Agreement">《容易投委托投资协议》</string>
+    <string name="ryt_yes">同意</string>
+    <string name="scan">扫一扫</string>
+    <string name="set">钱包设置</string>
+    <string name="smallamount_freepwd_promptcontent">温馨提示：\n开启小额免密功能后，当您单笔支出小于等于200元时，可以不用输入支付密码。您可以随时开启或关闭该功能。</string>
+    <string name="submit">提交</string>
+    <string name="subsidy_money_with_colon">补贴金额:</string>
+    <string name="term_of_validity">该二维码有效期为10分钟，请及时完成支付。</string>
+    <string name="tishi">温馨提示：</string>
+    <string name="tishi1">您可以使用另一个手机，打开微信，使用“扫一扫”扫描该二维码进行支付。或将二维码分享给好友，请好友帮忙支付。</string>
+    <string name="tishi2">您可以使用另一个手机，打开支付宝，使用“扫一扫”扫描该二维码进行支付。或将二维码分享给好友，请好友帮忙支付。</string>
+    <string name="toast_load_more_failure2">加载失败，请点击重试</string>
+    <string name="toast_no_load">数据获取失败\n请检查您的网络</string>
+    <string name="toast_no_more_data2">没有更多数据</string>
+    <string name="user_money">总金额</string>
+    <string name="user_money_canout">可提现金额</string>
+    <string name="wait_payment_result_timeout">等待支付结果超时，如有疑问请联系客服。</string>
+    <string name="wallet_100money_recommend">100元以上支付推荐使用</string>
+    <string name="wallet_56loan">56贷</string>
+    <string name="wallet_agree">同意560钱包协议</string>
+    <string name="wallet_bankcard_bangdingcard">绑定银行卡</string>
+    <string name="wallet_bankcard_cardholder_explain">持卡人说明</string>
+    <string name="wallet_bankcard_cardholder_explain_hint">为保证账户资金安全，只能使用您本人的银行卡</string>
+    <string name="wallet_bankcard_cardno">卡号</string>
+    <string name="wallet_bankcard_cozy_explain">温馨提示：\n绑定银行卡需要对您的银行卡、手机号等信息进行核实，请如实填写。</string>
+    <string name="wallet_bankcard_explain">银行预留的手机号是办理该银行卡时所填写手机号码。\n没有预留，手机号忘记或者已停用，请联系银行客服更新处理。</string>
+    <string name="wallet_bankcard_finish">完成</string>
+    <string name="wallet_bankcard_idcardno">身份证号</string>
+    <string name="wallet_bankcard_mobile">手机号</string>
+    <string name="wallet_bankcard_mobile_explain">手机号说明</string>
+    <string name="wallet_bankcard_ok">知道了</string>
+    <string name="wallet_bankcard_safetycode_explain">信用卡安全码说明</string>
+    <string name="wallet_bankcard_safetycode_explain_hint">信用卡安全码一般为卡背面签名栏处7位数字的后3位（有的为4位）。</string>
+    <string name="wallet_bankcard_send">开户行</string>
+    <string name="wallet_bankcard_send_select">请选择</string>
+    <string name="wallet_bankcard_sms_confirm">确定</string>
+    <string name="wallet_bankcard_sms_content">输入短信验证码</string>
+    <string name="wallet_bankcard_sms_content1">验证码已发送至手机</string>
+    <string name="wallet_bankcard_sms_hint">短信验证码，请输入</string>
+    <string name="wallet_bankcard_sms_no">收不到验证码？</string>
+    <string name="wallet_bankcard_sms_no_content">验证码已发送至你的银行预留手机号</string>
+    <string name="wallet_bankcard_sms_no_content1">1、请确认当前使用的是否为银行预留手机号码 \n2、请检查短信是否被手机安全软件拦截 \n3、若预留号码已停用，请联系银行客服咨询</string>
+    <string name="wallet_bankcard_sms_no_title">收不到验证码</string>
+    <string name="wallet_bankcard_username">持卡人</string>
+    <string name="wallet_btn_next">下一步</string>
+    <string name="wallet_cancel">取消</string>
+    <string name="wallet_confirm_new_pay_pwd">确认新密码：</string>
+    <string name="wallet_confirm_pay_pwd">确认密码：</string>
+    <string name="wallet_forget_pay_pwd">如您忘记密码\n请致电4000566560重置</string>
+    <string name="wallet_forget_pwd_call">点击呼叫</string>
+    <string name="wallet_goldrecharge_account">账号</string>
+    <string name="wallet_goldrecharge_balance">当前钱包余额</string>
+    <string name="wallet_goldrecharge_balance2">可用金额</string>
+    <string name="wallet_goldrecharge_btn">确认支付</string>
+    <string name="wallet_goldrecharge_hint">请输入要充值的趣赢棋牌账号</string>
+    <string name="wallet_goldrecharge_hint1">请输入要充值的金额</string>
+    <string name="wallet_goldrecharge_limit">0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="wallet_goldrecharge_one">1元=1000游戏币</string>
+    <string name="wallet_goodluckpurchase_account">手机号</string>
+    <string name="wallet_goodluckpurchase_hint">请输入要充值的好运购手机号</string>
+    <string name="wallet_goodluckpurchase_one">1元=1好运购币</string>
+    <string name="wallet_money">金额</string>
+    <string name="wallet_money_remark">备注(10字以内)</string>
+    <string name="wallet_money_sign">￥</string>
+    <string name="wallet_money_unit">元</string>
+    <string name="wallet_money_unit2">元）</string>
+    <string name="wallet_new_pay_pwd">新支付密码：</string>
+    <string name="wallet_old_pay_pwd">原支付密码：</string>
+    <string name="wallet_old_pay_pwd2">请输入原密码：</string>
+    <string name="wallet_pay_pwd">支付密码：</string>
+    <string name="wallet_pay_pwd_modify">修改支付密码</string>
+    <string name="wallet_pay_pwd_reset">您正在为11111111111重置密码\n验证您的个人信息以确认您的身份</string>
+    <string name="wallet_pay_pwd_reset_code">短信验证码</string>
+    <string name="wallet_pay_pwd_reset_codehint">请输入验证码</string>
+    <string name="wallet_pay_pwd_reset_hint">已向您的手机11111111111发送了短信验证码</string>
+    <string name="wallet_pay_pwd_reset_one">请设置新的支付密码</string>
+    <string name="wallet_pay_pwd_reset_sd">身份证号</string>
+    <string name="wallet_pay_pwd_reset_sdhint">请输入完整的身份证号码</string>
+    <string name="wallet_pay_pwd_reset_two">请再次输入支付密码</string>
+    <string name="wallet_payinfo_addbankcard">添加银行卡</string>
+    <string name="wallet_payinfo_addbankcardmsg">资金安全由上海拓景保障，极速全额赔付</string>
+    <string name="wallet_payinfo_cashaddress">请选择</string>
+    <string name="wallet_payinfo_casharrival">实际到账:</string>
+    <string name="wallet_payinfo_cashbankarrival">到账银行卡：</string>
+    <string name="wallet_payinfo_cashbanktishi">温馨提示：\n为保证顺利提现，请务必填写正确的开户行信息，若忘记开户行信息，请拨打银行客服电话咨询。</string>
+    <string name="wallet_payinfo_cashconfirm">确认提现</string>
+    <string name="wallet_payinfo_cashfree">免费提现</string>
+    <string name="wallet_payinfo_cashmin">最小提现额度:0.00元</string>
+    <string name="wallet_payinfo_cashmoney">提现金额</string>
+    <string name="wallet_payinfo_cashmoney_hint">可免费提现</string>
+    <string name="wallet_payinfo_cashpoundage">手续费:</string>
+    <string name="wallet_payinfo_cashtotal">可提现总额</string>
+    <string name="wallet_payinfo_cashtotals">全部提现</string>
+    <string name="wallet_payinfo_cashwz">金额</string>
+    <string name="wallet_payinfo_cashzhihang">支行名称</string>
+    <string name="wallet_payinfo_cashzhihang2">开户地址</string>
+    <string name="wallet_payinfo_cashzhihang3">如：xx支行</string>
+    <string name="wallet_payinfo_chongflow">充流量</string>
+    <string name="wallet_payinfo_chongmoney">请输入金额</string>
+    <string name="wallet_payinfo_chongphonemoney">充话费</string>
+    <string name="wallet_payinfo_companyname">上海拓景信息科技有限公司</string>
+    <string name="wallet_payinfo_createtime">创建时间：</string>
+    <string name="wallet_payinfo_fashpay">56贷支付</string>
+    <string name="wallet_payinfo_finishtime">完成时间：</string>
+    <string name="wallet_payinfo_flowhint">温馨提示：\n1、当月流量包充值完成尽快使用，下月1号失效\n2、流量充值成功后预计2小时左右到账，实际到账时间以运营商到时间为准。</string>
+    <string name="wallet_payinfo_hint">温馨提示：\n1、话费充值：请尽量避开在月末月初进行充值。\n2、流量充值：充值的当月流量包下月1号即失效，请及时使用。\n3、到账：话费或流量充值成功后预计2小时左右到账，实际到账时间以运营商到账时间为准。</string>
+    <string name="wallet_payinfo_inputpaypwd">请输入支付密码</string>
+    <string name="wallet_payinfo_modify">更改</string>
+    <string name="wallet_payinfo_ordertype">订单类型：</string>
+    <string name="wallet_payinfo_pay">支付</string>
+    <string name="wallet_payinfo_payed">已支付</string>
+    <string name="wallet_payinfo_paygoldnum">游戏币数</string>
+    <string name="wallet_payinfo_paymoney">金额：</string>
+    <string name="wallet_payinfo_payorderid">支付订单号码：</string>
+    <string name="wallet_payinfo_paysucess">支付成功</string>
+    <string name="wallet_payinfo_paysucessend">预计2小时左右到账，实际到账时间以运营商到账时间为准，请留意运营商给您发送的提示短信。</string>
+    <string name="wallet_payinfo_paysum">支付金额</string>
+    <string name="wallet_payinfo_paytime">付款时间：</string>
+    <string name="wallet_payinfo_paytype">交易类型：</string>
+    <string name="wallet_payinfo_phonechongmoney">充值金额：</string>
+    <string name="wallet_payinfo_phonechongmoney100">100元</string>
+    <string name="wallet_payinfo_phonechongmoney150">150元</string>
+    <string name="wallet_payinfo_phonechongmoney200">200元</string>
+    <string name="wallet_payinfo_phonechongmoney30">1元</string>
+    <string name="wallet_payinfo_phonechongmoney300">300元</string>
+    <string name="wallet_payinfo_phonechongmoney50">50元</string>
+    <string name="wallet_payinfo_phonecurrentmoney">当前余额</string>
+    <string name="wallet_payinfo_phonecurrentmoney2">（可用金额</string>
+    <string name="wallet_payinfo_phonepay">确认充值</string>
+    <string name="wallet_payinfo_phonepayclear">清空历史充值号码</string>
+    <string name="wallet_payinfo_phonepaymobile">充值手机号码：</string>
+    <string name="wallet_payinfo_remark">备注：</string>
+    <string name="wallet_payinfo_tgtime">托管时间：</string>
+    <string name="wallet_payinfo_useryue">账户余额：</string>
+    <string name="wallet_payinfo_vicode">请输入验证码：</string>
+    <string name="wallet_payinfo_xiancard">选择卡号...</string>
+    <string name="wallet_payinfo_yuepay">余额支付</string>
+    <string name="wallet_payinfo_yunorderid">关联运单号码：</string>
+    <string name="wallet_protocol">自动勾选同意协议</string>
+    <string name="wallet_set_pay_pwd_succ">恭喜您！支付密码设置成功</string>
+    <string name="wallet_transfers_balance">钱包余额</string>
+    <string name="wallet_transfers_btn">下一步</string>
+    <string name="wallet_transfers_confirm">确认转账</string>
+    <string name="wallet_transfers_content">您只能向560注册用户转账!</string>
+    <string name="wallet_transfers_hint">请输入对方手机号</string>
+    <string name="wallet_transfers_money">转账金额</string>
+    <string name="wallet_transfers_othermoblie">对方手机号</string>
+    <string name="wallet_transfers_quota">单笔最高0.00元，单日最高0.00元!</string>
+    <string name="wallet_userbankcard">我的银行卡</string>
+    <string name="wallet_userbill">我的账单</string>
+    <string name="wallet_usercash">钱包提现</string>
+    <string name="wallet_userdialog">知道了</string>
+    <string name="wallet_usergold">趣赢棋牌</string>
+    <string name="wallet_usergoodluck">好运购</string>
+    <string name="wallet_userinvest">投资理财</string>
+    <string name="wallet_usermodifypaypwd">修改支付密码</string>
+    <string name="wallet_usermoneywenzi">已更新到最新的余额(元)</string>
+    <string name="wallet_usermoneywenzi_no">没有获取到最新的余额，↓下拉重新获取</string>
+    <string name="wallet_userpay">钱包充值</string>
+    <string name="wallet_userphonepay">手机充值</string>
+    <string name="wallet_userscorewenzi">我的积分</string>
+    <string name="wallet_usertransfers">转账</string>
+    <string name="wallet_usertrusteeshiptrade">托管中交易查询</string>
+    <string name="wechat">微信好友</string>
+    <string name="withdrawals_qa3">部分系统赠送金额不可提现，只能用于消费。</string>
+    <style name="AbsListView_Common" parent="Layout_Match_Match">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+    <style name="AutoDialog_theme" parent="Dialog_Dim2">
+        <item name="android:backgroundDimAmount">0.399</item>
+    </style>
+    <style name="BlueStyle" parent="LibsTheme">
+        <item name="rytTitleBg">@drawable/wallet_ryt_title_blue_bg</item>
+        <item name="rytTitleImgBg">@drawable/wallet_distribution_investment_b</item>
+        <item name="rytTitleTxtBg">@color/ryt_theme_color_b</item>
+        <item name="rytTitleTxt2Bg">@color/ryt_theme_color2_b</item>
+        <item name="rytListTxtBg">@drawable/ryt_touzi_bg_b</item>
+        <item name="rytIconMoney">@drawable/wallet_distribution_icon_money_b</item>
+        <item name="rytBottomGuarantee">@drawable/wallet_distribution_bottom_guarantee_b</item>
+        <item name="baseTextColor">@color/color_blue_6E90FF</item>
+        <item name="btnGradient">@drawable/fuel_card_blue_btn_sel</item>
+        <item name="btnDenomination">@drawable/fuel_card_blue_sel</item>
+    </style>
+    <style name="DefaultDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="DefaultRootLayout">
+        <item name="android:background">@drawable/background_standard_gray</item>
+    </style>
+    <style name="DefaultText">
+        <item name="android:text">Default</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+    <style name="Dialog_Dim2" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.12</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="GetVerifyCode_Btn_Common" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:background">@drawable/wallet_btn_round</item>
+        <item name="android:text">@string/get_verify_code</item>
+    </style>
+    <style name="GreenStyle" parent="LibsTheme">
+        <item name="rytTitleBg">@drawable/wallet_ryt_title_bg</item>
+        <item name="rytTitleImgBg">@drawable/wallet_distribution_investment</item>
+        <item name="rytTitleTxtBg">@color/ryt_theme_color</item>
+        <item name="rytTitleTxt2Bg">@color/ryt_theme_color2</item>
+        <item name="rytListTxtBg">@drawable/ryt_touzi_bg</item>
+        <item name="rytIconMoney">@drawable/wallet_distribution_icon_money</item>
+        <item name="rytBottomGuarantee">@drawable/wallet_distribution_bottom_guarantee</item>
+        <item name="baseTextColor">@color/color_green_16CA4E</item>
+        <item name="btnGradient">@drawable/fuel_card_green_btn_sel</item>
+        <item name="btnDenomination">@drawable/fuel_card_green_sel</item>
+    </style>
+    <style name="Iv_password_display_divider">
+        <item name="android:layout_width">@dimen/password_display_divider_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/password_display_border_width</item>
+        <item name="android:layout_marginBottom">@dimen/password_display_border_width</item>
+        <item name="android:src">@color/password_display_border</item>
+    </style>
+    <style name="Layout_Match_Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="Layout_Match_Wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Layout_Wrap_Match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="Layout_Wrap_Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="LibsTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="RYTTabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:textSize">@dimen/sp12</item>
+    </style>
+    <style name="Root_Common" parent="Layout_Match_Match">
+        <item name="android:background">@color/bg_root</item>
+    </style>
+    <style name="TitleBar_Wallet_Avatar_Right">
+        <item name="android:layout_width">@dimen/title_bar_avatar_height</item>
+        <item name="android:layout_height">@dimen/title_bar_avatar_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/v3_avatar_default</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="TitleBar_Wallet_Iv_Side" parent="Layout_Wrap_Match">
+        <item name="android:layout_width">@dimen/title_bar_right_image_height_inside</item>
+        <item name="android:layout_height">@dimen/title_bar_right_image_height_inside</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="TitleBar_Wallet_Tv_Title" parent="Layout_Wrap_Match">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_size4</item>
+    </style>
+    <style name="Tv_password_display" parent="Weight_Horizontal_Match">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/password_panel_item_font_normal</item>
+        <item name="android:password">true</item>
+        <item name="android:textSize">@dimen/text_size5</item>
+    </style>
+    <style name="Weight_Horizontal_Match">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="Weight_Vertical_Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="alertAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/pull_down_out</item>
+    </style>
+    <style name="alertTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/bg_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/alertAnimation</item>
+    </style>
+    <style name="btn_style" parent="Layout_Match_Wrap">
+        <item name="android:height">@dimen/btn_height</item>
+        <item name="android:layout_marginLeft">@dimen/dp12</item>
+        <item name="android:layout_marginRight">@dimen/dp12</item>
+        <item name="android:layout_marginTop">@dimen/dp20</item>
+        <item name="android:layout_marginBottom">@dimen/dp20</item>
+        <item name="android:background">@drawable/gradient_gray</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp16</item>
+    </style>
+    <style name="myTransparent" parent="LibsTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="myTransparent29" parent="LibsTheme">
+        <item name="android:windowBackground">@color/bg_transparent29</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="myTransparentZero" parent="LibsTheme">
+        <item name="android:windowBackground">@color/transparentZero</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="view_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp02</item>
+        <item name="android:background">@color/bg_line_gray</item>
+    </style>
+</resources>

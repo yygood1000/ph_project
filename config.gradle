@@ -1,0 +1,59 @@
+ext {
+    def lib_version = "27.1.1"
+
+    dependencies = [
+
+            // Android support
+            support_v4             : "com.android.support:support-v4:${lib_version}",
+            appcompat_v7           : "com.android.support:appcompat-v7:${lib_version}",
+            gridlayout             : "com.android.support:gridlayout-v7:${lib_version}",
+            design                 : "com.android.support:design:${lib_version}",
+            // multidex
+            multidex               : "com.android.support:multidex:1.0.2",
+
+            //Glide
+            glide                  : "com.github.bumptech.glide:glide:3.7.0",
+
+            // ButterKnife
+            butterknife            : "com.jakewharton:butterknife:8.7.0",
+            butterknife_compiler   : "com.jakewharton:butterknife-compiler:8.7.0",
+
+            // RxJava
+            rxjava                 : "io.reactivex.rxjava2:rxjava:2.1.1",
+            rxandroid              : "io.reactivex.rxjava2:rxandroid:2.0.1",
+            rxbinding              : "com.jakewharton.rxbinding2:rxbinding:2.0.0",
+            rx_lifecycle           : "com.trello.rxlifecycle2:rxlifecycle:2.1.0",
+            rx_lifecycle_components: "com.trello.rxlifecycle2:rxlifecycle-components:2.1.0",
+            //permissions
+            rx_premission          : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar",
+
+            // Retrofitphotoview
+            retrofit               : "com.squareup.retrofit2:retrofit:2.3.0",
+            converter_gson         : "com.squareup.retrofit2:converter-gson:2.3.0",
+            adapter_rxjava2        : "com.squareup.retrofit2:adapter-rxjava2:2.3.0",
+            logging_interceptor    : "com.squareup.okhttp3:logging-interceptor:3.8.1",
+            barlibrary             : "com.gyf.barlibrary:barlibrary:2.2.6",
+
+//            gif                    : "pl.droidsonroids.gif:android-gif-drawable:1.2.3",
+            brvah                  : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.26",
+
+            //others
+            photoview              : "com.github.chrisbanes.photoview:library:+",
+            gson                   : "com.google.code.gson:gson:2.7",
+
+            umeng_statistics       : "com.umeng.analytics:analytics:latest.integration",
+
+            rebound_anim           : "com.facebook.rebound:rebound:0.3.8",
+
+            // 数据库
+            greendao               : 'org.greenrobot:greendao:3.2.2',
+            greendao_generator     : 'org.greenrobot:greendao-generator:3.2.2',
+
+            // library
+            common                 : project(':common'),
+            easeui                 : project(':easeui'),
+            easeim                 : project(':easeim'),
+            pickerview             : project(':pickerview'),
+    ]
+}
+

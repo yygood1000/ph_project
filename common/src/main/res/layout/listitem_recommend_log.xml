@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_12">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/iv_avatar_recommend"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_12"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/tv_size_16_color_22_style"
+                android:text="帅哥 11111111111"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/tv_size_12_color_96_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="1111/11/11"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_status_result"
+            style="@style/tv_size_13_color_66_style"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:text="状态：你知道的       结果：你知道的"/>
+
+        <TextView
+            android:id="@+id/tv_remark"
+            style="@style/tv_size_13_color_66_style"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:text="原因：你知道的"/>
+
+    </LinearLayout>
+</LinearLayout>

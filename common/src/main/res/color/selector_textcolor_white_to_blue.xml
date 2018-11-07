@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 白色变成蓝色 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/blue_button_emtry_color_unclick" android:state_pressed="true"/>
+    <item android:color="@color/white" android:state_pressed="false"/>
+</selector>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_change_text_size"
+            style="@style/RlSettingItemStyle">
+
+            <TextView
+                style="@style/TvSettingItemTitleStyle"
+                android:text="@string/change_text_size"/>
+
+            <ImageView
+                android:id="@+id/iv_step0"
+                style="@style/TvSettingItemArrowStyle"/>
+
+            <View
+                style="@style/LineHeigth1Left12"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_change_password"
+            style="@style/RlSettingItemStyle">
+
+            <TextView
+                style="@style/TvSettingItemTitleStyle"
+                android:text="@string/change_password"/>
+
+            <ImageView
+                android:id="@+id/iv_step1"
+                style="@style/TvSettingItemArrowStyle"/>
+
+            <View
+                style="@style/LineHeigth1Left12"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_referrer"
+            style="@style/RlSettingItemStyle">
+
+            <TextView
+                style="@style/TvSettingItemTitleStyle"
+                android:text="@string/referrer"/>
+
+            <TextView
+                android:id="@+id/tv_referrer"
+                style="@style/TvSettingItemInfoStyle"
+                android:layout_toLeftOf="@+id/iv_arrow_referrer"/>
+
+            <ImageView
+                android:id="@+id/iv_arrow_referrer"
+                style="@style/TvSettingItemArrowStyle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_about_us"
+            style="@style/RlSettingItemStyle"
+            android:layout_marginTop="@dimen/spacing_12">
+
+            <TextView
+                style="@style/TvSettingItemTitleStyle"
+                android:text="@string/about_us"/>
+
+            <ImageView
+                style="@style/TvSettingItemArrowStyle"/>
+
+            <View
+                style="@style/LineHeigth1Left12"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_check_updata"
+            style="@style/RlSettingItemStyle">
+
+            <TextView
+                style="@style/TvSettingItemTitleStyle"
+                android:text="@string/check_updata"/>
+
+            <TextView
+                android:id="@+id/tv_app_version"
+                style="@style/TvSettingItemInfoStyle"
+                android:layout_toLeftOf="@+id/iv_check_updata"/>
+
+            <ImageView
+                android:id="@+id/iv_check_updata"
+                style="@style/TvSettingItemArrowStyle"/>
+
+            <View
+                style="@style/LineHeigth1Left12"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_clear_cache"
+            style="@style/RlSettingItemStyle">
+
+            <TextView
+                style="@style/TvSettingItemTitleStyle"
+                android:text="@string/clear_cache"/>
+
+            <TextView
+                android:id="@+id/tv_cache_size"
+                style="@style/TvSettingItemInfoStyle"
+                android:layout_toLeftOf="@+id/iv_claer_cache"/>
+
+            <ImageView
+                android:id="@+id/iv_claer_cache"
+                style="@style/TvSettingItemArrowStyle"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_quit_account"
+        style="@style/tv_size_17_color_white_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_btn_square_green"
+        android:gravity="center"
+        android:text="@string/quit_account"/>
+</RelativeLayout>

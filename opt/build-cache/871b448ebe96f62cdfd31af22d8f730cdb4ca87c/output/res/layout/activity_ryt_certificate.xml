@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp32"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp32"
+            android:layout_height="@dimen/dp32"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp7"
+            android:src="@drawable/title_bar_wallet_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="投资凭证"
+            android:textColor="#333440"
+            android:textSize="@dimen/sp15" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp7"
+                android:background="?attr/rytTitleBg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dp16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:text="投资本金(元)"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/tv_investamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp25"
+                    android:layout_marginTop="@dimen/dp7"
+                    android:text="--"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp26" />
+
+                <TextView
+                    android:id="@+id/tv_certificate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp7"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp7"
+                    android:text="项目资金去向："
+                    android:textColor="#FF333440"
+                    android:textSize="@dimen/sp14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp05"
+                    android:background="#FFEEEEEE" />
+
+                <LinearLayout
+                    android:id="@+id/ll_examined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp7"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp7"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:text="龙驹项目名称:  "
+                            android:textColor="#FF888888"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tv_projectname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:textColor="#FF424242"
+                            android:textSize="@dimen/sp12" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp05"
+                        android:background="#FFEEEEEE" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_website"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp7"
+                        android:background="#FFFDFDFD"
+                        android:gravity="center"
+                        android:padding="@dimen/dp7"
+                        android:text="您可登录龙驹财行官网或APP核对项目资金去向"
+                        android:textColor="#FF888888"
+                        android:textSize="@dimen/sp10" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_examined_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp25"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:drawablePadding="@dimen/dp7"
+                    android:drawableTop="@drawable/wallet_no_audited"
+                    android:gravity="center"
+                    android:text="资金审核中，暂未投资到龙驹财行\n请耐心等待。"
+                    android:textColor="#FFCCCCCC"
+                    android:textSize="@dimen/sp12"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp7"
+                    android:text="被委托人在该项目的投资记录截图："
+                    android:textColor="#FF333440"
+                    android:textSize="@dimen/sp14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp05"
+                    android:background="#FFEEEEEE" />
+
+                <LinearLayout
+                    android:id="@+id/ll_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_examined_tip2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp25"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:drawablePadding="@dimen/dp7"
+                    android:drawableTop="@drawable/wallet_no_audited"
+                    android:gravity="center"
+                    android:text="资金审核中，暂未投资到龙驹财行\n请耐心等待。"
+                    android:textColor="#FFCCCCCC"
+                    android:textSize="@dimen/sp12"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

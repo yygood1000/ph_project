@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#aaaaaa">
+
+    <com.topjet.common.widget.clip.ClipImageLayout
+        android:id="@+id/id_clipImageLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <TextView
+        android:id="@+id/tv_take_photo"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/tv_use_photo"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</RelativeLayout>

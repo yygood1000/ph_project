@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- 红色按钮 背景 -->
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/red_button_end_color_clicked"/>
+            <corners
+                android:bottomLeftRadius="@dimen/spacing_4"
+                android:bottomRightRadius="@dimen/spacing_4"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/red_button_start_color_clicked"/>
+            <corners
+                android:bottomLeftRadius="@dimen/spacing_4"
+                android:bottomRightRadius="@dimen/spacing_4"/>
+        </shape>
+    </item>
+</selector>

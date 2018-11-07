@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Wrap"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tv_city"
+            style="@style/Layout_Match_Wrap"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:text="测试文本"
+            android:textColor="@color/text_color_666666"
+            android:textSize="@dimen/text_size16" />
+    </LinearLayout>
+
+</LinearLayout>

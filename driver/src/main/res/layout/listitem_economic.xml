@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/spacing_12">
+
+
+    <LinearLayout
+        android:id="@+id/ll_user_info"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_marginRight="@dimen/spacing_12"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/tv_size_9_color_22_style"
+            android:layout_marginTop="@dimen/spacing_8"
+            android:textSize="@dimen/text_size8"/>
+
+        <TextView
+            style="@style/tv_size_7_color_white_style"
+            android:layout_marginTop="@dimen/spacing_6"
+            android:background="@drawable/shape_blue_r2"
+            android:paddingBottom="@dimen/spacing_1"
+            android:paddingLeft="@dimen/spacing_3"
+            android:paddingRight="@dimen/spacing_3"
+            android:paddingTop="@dimen/spacing_1"
+            android:text="线下认证"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_toEndOf="@+id/ll_user_info"
+        android:layout_toLeftOf="@+id/iv_chat"
+        android:layout_toRightOf="@+id/ll_user_info"
+        android:layout_toStartOf="@+id/iv_chat"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/tv_size_13_color_66_style"
+            android:text="经营路线："
+            />
+
+        <TextView
+            android:id="@+id/tv_business_line1"
+            style="@style/tv_size_13_color_22_style"
+            android:singleLine="true"
+            android:text="江苏 南京——湖北 武汉"/>
+
+        <TextView
+            android:id="@+id/tv_business_line2"
+            style="@style/tv_size_13_color_22_style"
+            android:singleLine="true"
+            android:text="江苏 南京——湖北 武汉"/>
+
+        <TextView
+            android:id="@+id/tv_business_line3"
+            style="@style/tv_size_13_color_22_style"
+            android:singleLine="true"
+            android:text="江苏 南京——湖北 武汉"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_chat"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/spacing_12"
+        android:layout_toLeftOf="@+id/iv_call"
+        android:background="@drawable/iv_icon_message_driver"/>
+
+    <ImageView
+        android:id="@+id/iv_call"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/iv_icon_call_up"/>
+</RelativeLayout>

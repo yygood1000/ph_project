@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_44"
+        android:layout_marginTop="200dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_size_17_color_22_style"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:background="@drawable/iv_icon_close"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/parting_line_heigth"
+            android:layout_alignParentBottom="true"
+            android:background="@color/parding_line"
+            />
+    </RelativeLayout>
+
+    <com.topjet.common.widget.RecyclerViewWrapper.RecyclerViewWrapper
+        android:id="@+id/recyclerViewWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/common_background"
+        />
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#7f000000">
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_44"
+            android:background="@color/v3_common_green">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                style="@style/tv_size_15_color_white_style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/spacing_16"
+                android:paddingRight="@dimen/spacing_16"
+                android:text="@string/pickerview_cancel"
+                />
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                style="@style/tv_size_15_color_white_style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="@dimen/spacing_16"
+                android:paddingRight="@dimen/spacing_16"
+                android:text="@string/pickerview_submit"
+                />
+        </RelativeLayout>
+
+        <com.lvfq.pickerview.lib.WheelView
+            android:id="@+id/wv_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    style="@style/Layout_Match_Wrap"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/transparent_100">
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:orientation="vertical"
+        android:background="@drawable/shape_bg_dialog_root_top_left_right_r8">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Layout_Match_Wrap"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_20"
+            android:paddingLeft="@dimen/spacing_15"
+            android:paddingRight="@dimen/spacing_15"
+            android:paddingTop="@dimen/spacing_20"
+            android:textColor="@color/text_color_333333"
+            android:textSize="@dimen/auto_dialog_normal_content_font_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/Layout_Match_Wrap"
+            android:gravity="center"
+            android:lineSpacingExtra="9dp"
+            android:paddingBottom="@dimen/spacing_20"
+            android:paddingLeft="@dimen/spacing_15"
+            android:paddingRight="@dimen/spacing_15"
+            android:paddingTop="@dimen/spacing_20"
+            android:textColor="@color/auto_dialog_content_color"
+            android:textSize="@dimen/auto_dialog_normal_content_font_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/parting_line_heigth"
+        android:background="@color/parding_line" />
+
+    <TextView
+        android:id="@+id/btn_single_confirm"
+        style="@style/Layout_Match_Match"
+        android:background="@drawable/selector_dialog_singlebtn_bg_driver"
+        android:gravity="center"
+        android:paddingBottom="@dimen/spacing_13"
+        android:paddingTop="@dimen/spacing_13"
+        android:text="@string/confirm"
+        android:textColor="@color/color_007AFF"
+        android:textSize="@dimen/auto_dialog_confirm_font_size"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_both_confirm"
+        style="@style/Layout_Match_Wrap"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_left_confirm"
+            style="@style/Weight_Horizontal_Match"
+            android:background="@drawable/selector_dialog_leftbtn_bg_driver"
+            android:paddingBottom="@dimen/spacing_13"
+            android:paddingTop="@dimen/spacing_13"
+            android:text="@string/cancel"
+            android:textColor="@color/color_007AFF"
+            android:textSize="@dimen/auto_dialog_confirm_font_size"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="@dimen/parting_line_width"
+            android:layout_height="match_parent"
+            android:background="@color/parding_line" />
+
+        <TextView
+            android:id="@+id/btn_right_confirm"
+            style="@style/Weight_Horizontal_Match"
+            android:background="@drawable/selector_dialog_rightbtn_bg_driver"
+            android:paddingBottom="@dimen/spacing_13"
+            android:paddingTop="@dimen/spacing_13"
+            android:text="@string/confirm"
+            android:textColor="@color/color_007AFF"
+            android:textSize="@dimen/auto_dialog_confirm_font_size"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

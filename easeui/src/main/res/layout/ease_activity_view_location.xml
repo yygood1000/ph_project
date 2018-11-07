@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 查看位置 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/map"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/spacing_23"
+            android:layout_marginRight="@dimen/spacing_17"
+            android:src="@drawable/iv_around_goods_location" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/spacing_12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/tv_navigation"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="位置分享"
+                android:textColor="@color/text_color_222222"
+                android:textSize="@dimen/text_size18" />
+
+            <TextView
+                android:id="@+id/tv_show_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_6"
+                android:text=""
+                android:textColor="@color/text_color_666666"
+                android:textSize="@dimen/text_size13" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_bg_btn_gradient_blue"
+            android:paddingBottom="@dimen/spacing_13"
+            android:paddingLeft="@dimen/spacing_23"
+            android:paddingRight="@dimen/spacing_23"
+            android:paddingTop="@dimen/spacing_13"
+            android:text="导航"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size17" />
+    </RelativeLayout>
+</RelativeLayout>

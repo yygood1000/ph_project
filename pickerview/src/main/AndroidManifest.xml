@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bigkoo.pickerview">
+    <!--该库为3D滚动控件库-->
+
+</manifest>

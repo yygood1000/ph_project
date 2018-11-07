@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 相册和拍照popupwindow -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:padding="@dimen/spacing_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_bg_white_r4">
+        <TextView
+            android:id="@+id/tv_take_photo"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/take_photo"
+            android:textSize="@dimen/text_size20"
+            android:textColor="@color/text_color_16CA4E"
+            android:gravity="center"
+            android:padding="@dimen/spacing_18"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_4D4D4D"/>
+        <TextView
+            android:id="@+id/tv_album"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/album"
+            android:textSize="@dimen/text_size20"
+            android:textColor="@color/text_color_222222"
+            android:gravity="center"
+            android:padding="@dimen/spacing_18"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_marginTop="@dimen/spacing_8"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="@dimen/text_size20"
+        android:textColor="@color/text_color_969696"
+        android:gravity="center"
+        android:padding="@dimen/spacing_18"
+        android:background="@drawable/shape_bg_white_r4"/>
+</LinearLayout>

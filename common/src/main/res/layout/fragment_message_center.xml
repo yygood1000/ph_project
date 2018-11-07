@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        style="@style/Layout_Match_Wrap"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_size_18_color_22_style"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/spacing_12"
+            android:text="@string/message_center"/>
+
+        <TextView
+            android:id="@+id/tv_black_list"
+            style="@style/tv_size_14_color_22_style"
+            android:text="@string/black_list"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/spacing_12"/>
+
+        <include
+            layout="@layout/include_line_dd_full"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_title"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_permission"
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="56dp"
+        android:background="#FF5E5E"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/tv_size_14_color_white_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@+id/bt_open_permission"
+            android:text="@string/message_permission"/>
+
+        <TextView
+            android:id="@+id/bt_open_permission"
+            style="@style/tv_size_14_color_33_style"
+            android:layout_width="60dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@+id/iv_close"
+            android:gravity="center"
+            android:text="开启"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="12dp"
+            android:src="@drawable/iv_icon_close"/>
+
+
+    </RelativeLayout>
+    <!-- 系统消息 -->
+    <RelativeLayout
+        android:id="@+id/rl_system"
+        style="@style/Layout_Match_Wrap"
+        android:background="@drawable/selector_btn_white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_message"
+            style="@style/Layout_Wrap_Wrap"
+            android:padding="@dimen/spacing_12"
+            android:src="@drawable/mes_icon_560"
+            />
+
+        <TextView
+            android:id="@+id/tv_message"
+            style="@style/tv_size_16_color_22_style"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_message"
+            android:text="@string/system_message"/>
+
+        <ImageView
+            android:id="@+id/iv_arrow_right_1"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:padding="@dimen/spacing_5"
+            android:src="@drawable/iv_arrow_right_gray"
+            />
+
+        <TextView
+            android:id="@+id/tv_message_num"
+            style="@style/tv_size_10_color_white_style"
+            android:layout_height="@dimen/spacing_16"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_4"
+            android:gravity="center"
+            android:paddingLeft="@dimen/spacing_5"
+            android:paddingRight="@dimen/spacing_5"
+            android:layout_toLeftOf="@+id/iv_arrow_right_1"
+            android:background="@drawable/em_massage_dot_bg"
+            android:text="1"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <!-- 订单消息 -->
+    <RelativeLayout
+        android:id="@+id/rl_order"
+        style="@style/Layout_Match_Wrap"
+        android:background="@drawable/selector_btn_white"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_message_order"
+            style="@style/Layout_Wrap_Wrap"
+            android:padding="@dimen/spacing_12"
+            android:src="@drawable/mes_icon_order"
+            />
+
+        <TextView
+            android:id="@+id/tv_message_order"
+            style="@style/tv_size_16_color_22_style"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_message_order"
+            android:text="@string/order_message"/>
+
+        <ImageView
+            android:id="@+id/iv_arrow_right_2"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:padding="@dimen/spacing_5"
+            android:src="@drawable/iv_arrow_right_gray"
+            />
+
+        <TextView
+            android:id="@+id/tv_message_order_num"
+            style="@style/tv_size_10_color_white_style"
+            android:layout_height="@dimen/spacing_16"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_4"
+            android:gravity="center"
+            android:paddingLeft="@dimen/spacing_5"
+            android:paddingRight="@dimen/spacing_5"
+            android:layout_toLeftOf="@+id/iv_arrow_right_2"
+            android:background="@drawable/em_massage_dot_bg"
+            android:text="11"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_toRightOf="@+id/iv_message_order"
+            />
+    </RelativeLayout>
+    <!-- 钱包消息 -->
+    <RelativeLayout
+        android:id="@+id/rl_wallet"
+        style="@style/Layout_Match_Wrap"
+        android:background="@drawable/selector_btn_white"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_message_wallet"
+            style="@style/Layout_Wrap_Wrap"
+            android:padding="@dimen/spacing_12"
+            android:src="@drawable/mes_icon_wallet"
+            />
+
+        <TextView
+            android:id="@+id/tv_message_wallet"
+            style="@style/tv_size_16_color_22_style"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_message_wallet"
+            android:text="@string/wallet_message"/>
+
+        <ImageView
+            android:id="@+id/iv_arrow_right_3"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:padding="@dimen/spacing_5"
+            android:src="@drawable/iv_arrow_right_gray"
+            />
+
+        <TextView
+            android:id="@+id/tv_message_wallet_num"
+            style="@style/tv_size_10_color_white_style"
+            android:layout_height="@dimen/spacing_16"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_4"
+            android:gravity="center"
+            android:paddingLeft="@dimen/spacing_5"
+            android:paddingRight="@dimen/spacing_5"
+            android:layout_toLeftOf="@+id/iv_arrow_right_3"
+            android:background="@drawable/em_massage_dot_bg"
+            android:text="99+"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_toRightOf="@+id/iv_message_wallet"
+            />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_chat"
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginTop="@dimen/spacing_12"/>
+
+</LinearLayout>

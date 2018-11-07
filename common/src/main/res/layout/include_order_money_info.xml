@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Wrap"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 运费 -->
+    <LinearLayout
+        style="@style/LLCenterPaddingLR12"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_size_15_color_22_style"
+            android:layout_width="@dimen/spacing_60"
+            android:text="@string/freight_total" />
+
+        <TextView
+            android:id="@+id/tv_freight"
+            style="@style/tv_size_15_color_red_style"
+            android:layout_width="@dimen/spacing_80"
+            android:layout_marginLeft="@dimen/spacing_23"
+            android:text="￥999999" />
+
+        <TextView
+            android:id="@+id/tv_trusteeship_freight"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_marginLeft="@dimen/spacing_11"
+            android:background="@drawable/shape_bg_yellow_r2_l"
+            android:paddingBottom="@dimen/spacing_1"
+            android:paddingLeft="@dimen/spacing_7"
+            android:paddingRight="@dimen/spacing_7"
+            android:paddingTop="@dimen/spacing_1"
+            android:text="托管"
+            android:textColor="@color/text_color_FFB000"
+            android:textSize="@dimen/text_size11" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_unfold_money"
+            style="@style/Layout_Wrap_Wrap"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/spacing_15"
+            android:paddingTop="@dimen/spacing_15">
+
+            <TextView
+                android:id="@+id/tv_unfold_money"
+                style="@style/tv_size_15_color_96_style"
+                android:text="@string/unfold_detail" />
+
+            <ImageView
+                android:id="@+id/iv_unfold_money"
+                style="@style/Layout_Wrap_Wrap"
+                android:src="@drawable/iv_icon_arrow_bottom" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_line_dd" />
+
+    <!-- 提付，到付，回单付 -->
+    <LinearLayout
+        android:id="@+id/ll_hidden_money"
+        style="@style/Layout_Match_Match"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_payment_put"
+            style="@style/LLCenterPaddingLR12"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tv_size_14_color_96_style"
+                android:layout_width="@dimen/spacing_60"
+                android:paddingBottom="@dimen/spacing_7"
+                android:paddingTop="@dimen/spacing_7"
+                android:text="@string/payment_put" />
+
+            <TextView
+                android:id="@+id/tv_payment_put"
+                style="@style/tv_size_15_color_red_style"
+                android:layout_width="@dimen/spacing_80"
+                android:layout_marginLeft="@dimen/spacing_23"
+                android:text="￥9999" />
+
+            <TextView
+                android:id="@+id/tv_state_put"
+                style="@style/tv_size_12_color_66_style"
+                android:layout_marginLeft="@dimen/spacing_11"
+                android:text="@string/state_paid" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_payment_arrive"
+            style="@style/LLCenterPaddingLR12"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tv_size_14_color_96_style"
+                android:layout_width="@dimen/spacing_60"
+                android:paddingBottom="@dimen/spacing_7"
+                android:paddingTop="@dimen/spacing_7"
+                android:text="@string/payment_arrive" />
+
+            <TextView
+                android:id="@+id/tv_payment_arrive"
+                style="@style/tv_size_15_color_red_style"
+                android:layout_width="@dimen/spacing_80"
+                android:layout_marginLeft="@dimen/spacing_23"
+                android:text="￥9999"/>
+
+            <TextView
+                android:id="@+id/tv_state_arrive"
+                style="@style/tv_size_12_color_66_style"
+                android:layout_marginLeft="@dimen/spacing_11"
+                android:text="@string/state_paid" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_payment_return"
+            style="@style/LLCenterPaddingLR12"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tv_size_14_color_96_style"
+                android:layout_width="@dimen/spacing_60"
+                android:paddingBottom="@dimen/spacing_7"
+                android:paddingTop="@dimen/spacing_7"
+                android:text="@string/payment_return" />
+
+            <TextView
+                android:id="@+id/tv_payment_return"
+                style="@style/tv_size_15_color_red_style"
+                android:layout_width="@dimen/spacing_80"
+                android:layout_marginLeft="@dimen/spacing_23"
+                android:text="￥9999" />
+
+            <TextView
+                android:id="@+id/tv_state_return"
+                style="@style/tv_size_12_color_66_style"
+                android:layout_marginLeft="@dimen/spacing_11"
+                android:text="@string/state_paid"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/include_line_dd_full" />
+    </LinearLayout>
+    <!-- 定金 -->
+    <LinearLayout
+        style="@style/LLCenterPaddingLR12"
+        android:orientation="horizontal"
+        android:id="@+id/ll_deposit">
+
+        <TextView
+            android:id="@+id/tv_show_deposit"
+            style="@style/tv_size_15_color_22_style"
+            android:layout_width="@dimen/spacing_60"
+            android:paddingBottom="@dimen/spacing_15"
+            android:paddingTop="@dimen/spacing_15"
+            android:text="@string/payment_deposit" />
+
+        <TextView
+            android:id="@+id/tv_deposit"
+            style="@style/tv_size_15_color_red_style"
+            android:layout_width="@dimen/spacing_80"
+            android:layout_marginLeft="@dimen/spacing_23"
+            android:text="￥9999" />
+
+        <TextView
+            android:id="@+id/tv_state_deposit"
+            style="@style/tv_size_12_color_66_style"
+            android:layout_marginLeft="@dimen/spacing_11"
+            android:text="@string/state_paid" />
+        <TextView
+            android:id="@+id/tv_trusteeship_deposit"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_marginLeft="@dimen/spacing_11"
+            android:background="@drawable/shape_bg_yellow_r2_l"
+            android:paddingBottom="@dimen/spacing_1"
+            android:paddingLeft="@dimen/spacing_7"
+            android:paddingRight="@dimen/spacing_7"
+            android:paddingTop="@dimen/spacing_1"
+            android:text="托管"
+            android:textColor="@color/text_color_FFB000"
+            android:textSize="@dimen/text_size11"
+            android:visibility="gone"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_arrived_account"
+            style="@style/tv_size_15_color_66_style"
+            android:layout_marginLeft="@dimen/spacing_11"
+            android:text="@string/arrived_account" />
+    </LinearLayout>
+
+</LinearLayout>

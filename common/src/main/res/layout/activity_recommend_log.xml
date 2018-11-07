@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_options"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/ll_time_range"
+                style="@style/TopOptionsLLStyle">
+
+                <CheckBox
+                    android:id="@+id/cb_time_range"
+                    style="@style/TopOptionsCheckBoxStyle"
+                    android:text="@string/all_time"/>
+            </LinearLayout>
+
+            <ImageView
+                style="@style/PardinglineStyle"/>
+
+            <LinearLayout
+                android:id="@+id/ll_status"
+                style="@style/TopOptionsLLStyle">
+
+                <CheckBox
+                    android:id="@+id/cb_status"
+                    style="@style/TopOptionsCheckBoxStyle"
+                    android:text="@string/all_status"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/parting_line_heigth"
+            android:layout_alignParentBottom="true"
+            android:background="@color/parding_line"/>
+    </RelativeLayout>
+
+    <com.topjet.common.widget.RecyclerViewWrapper.RecyclerViewWrapper
+        android:id="@+id/recyclerViewWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

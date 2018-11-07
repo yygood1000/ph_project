@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 车型车长 -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_transparent"
+    style="@style/Layout_Match_Match"
+    android:paddingTop="200dp"
+    android:background="@color/transparent_100">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_12"
+            android:paddingTop="@dimen/spacing_14">
+
+            <TextView
+                android:id="@+id/tv_entirety_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/spacing_11"
+                android:text="是否整车"
+                android:textColor="@color/text_color_222222"
+                android:textSize="@dimen/text_size15"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gv_entirety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_length_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/spacing_11"
+                android:paddingTop="@dimen/spacing_10"
+                android:text="选择车长"
+                android:textColor="@color/text_color_222222"
+                android:textSize="@dimen/text_size15" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gv_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_type_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/spacing_11"
+                android:paddingTop="@dimen/spacing_10"
+                android:text="选择车型"
+                android:textColor="@color/text_color_222222"
+                android:textSize="@dimen/text_size15"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gv_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_dddddd"/>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_10"
+            android:layout_marginLeft="@dimen/spacing_12"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:background="@drawable/selector_btn_corner_green"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/spacing_10"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size17"/>
+    </LinearLayout>
+</RelativeLayout>

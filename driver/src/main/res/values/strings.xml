@@ -1,0 +1,74 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+
+    <string name="app_name">交运配货</string>
+    <string name="add_city">添加城市</string>
+    <string name="add_usual_city">添加常跑城市</string>
+    <string name="usual_city">常跑城市</string>
+    <string name="add_usual_city_warning">根据您的常跑城市，我们将为您自动推送您附近相关路线的货源。</string>
+    <string name="most_add_eigth_cities">最多允许添加八个城市！</string>
+    <string name="upload_succeed">上传成功</string>
+    <string name="my_bidding">我的报价</string>
+    <string name="list_is_empty">暂无订单</string>
+
+
+    <string name="matching_center">匹配中心</string>
+    <string name="economic">货运经纪人</string>
+    <string name="all_subscribe_route">全部路线</string>
+    <string name="all_route">全部路线</string>
+    <string name="add_subscribe_route">添加订阅路线</string>
+    <string name="edit">编辑</string>
+    <string name="pelease_select">请选择</string>
+    <string name="confirm_to_add">确认添加</string>
+    <string name="subscribe_route_empty_warning">添加您常跑的路线，第一时间获取新货源</string>
+    <string name="goods_list_empty_warning">暂无新货源，请点击刷新</string>
+    <string name="click_to_refresh">点击刷新</string>
+    <string name="around_goods">附近货源</string>
+    <string name="bidding">报价</string>
+    <string name="number_of_people">已有%1$d人报价</string>
+    <string name="depard">出发</string>
+    <string name="arrive">到达</string>
+    <string name="subcribe">订阅</string>
+    <string name="alter_quoted_price">修改报价</string>
+    <string name="standard">标准</string>
+    <string name="magnify">放大</string>
+    <string name="text_size_change">字体大小</string>
+
+    <!-- 2016年12月5日15:19:38 -->
+    <!-- 听单 -->
+    <string name="voice_on">开启听单</string>
+    <string name="voice_cl">关闭听单</string>
+    <string name="voice_se">设置路线</string>
+    <string name="integral_mall">积分商城</string>
+
+    <!-- 我的车队 -->
+    <!-- 2017年10月16日 15:25:06 -->
+    <string name="all_work">全部求货</string>
+    <string name="all_rest">全部休息</string>
+    <string name="car_info">车辆信息</string>
+    <string name="driver">开车司机</string>
+    <string name="edit_car_info">修改信息</string>
+    <string name="delete_car_info">删除车辆</string>
+    <string name="my_truck_team">我的车队</string>
+    <string name="add_truck_car">添加车辆</string>
+    <string name="car_details">车辆详情</string>
+    <string name="edit_car_information">修改车辆信息</string>
+    <string name="truck_team_remarks">备注：%1$s %2$s</string>
+    <string name="default_car_location">沪</string>
+    <string name="plate_no1_error">车牌所在地为空</string>
+    <string name="carNumber_error">车牌号为空</string>
+    <string name="carNumberLength_error">车牌号长度不正确</string>
+    <string name="plate_color_error">车牌颜色未选择</string>
+    <string name="truck_icon_img_error">车头照未拍摄</string>
+    <string name="truck_license_img_error">行驶证未拍摄</string>
+    <string name="call_log">通话记录</string>
+    <string name="platNoDigits">0123456789ABCDEFGHIJGKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</string>
+    <string name="navigation">导航</string>
+    <string name="undo_quote">撤销报价</string>
+    <string name="update_quote">修改报价</string>
+    <string name="orders">接单</string>
+
+    <string name="warning_matching_center">找不到合适货源？快去联系560匹配中心！</string>
+    <string name="warning_economic">找不到合适货源？快去联系货运经纪人！</string>
+
+</resources>

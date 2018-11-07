@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/spacing_12">
+
+    <RelativeLayout
+        android:id="@+id/rl_all_route"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/tv_size_16_color_22_style"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/all_route"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_child_route"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_44"
+        android:visibility="visible"
+        android:layout_toLeftOf="@+id/tv_goods_count">
+
+        <CheckBox
+            android:id="@+id/cb_select"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_15"
+            android:background="@drawable/selector_cb_bg_blue"
+            android:button="@null"
+            android:visibility="gone"/>
+
+        <View
+            style="@style/LineMatchWidthHeigth1"
+            android:layout_alignParentTop="true"/>
+
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/cb_select"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_depart_address"
+                style="@style/tv_size_16_color_22_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="上海市 徐汇区"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_6"
+                android:layout_marginRight="@dimen/spacing_6"
+                android:layout_marginTop="@dimen/spacing_5"
+                android:background="@drawable/order_list_icon_blueline"/>
+
+            <TextView
+                android:id="@+id/tv_destation_address"
+                style="@style/tv_size_16_color_22_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="上海市 徐汇区"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_truck_type_and_length"
+            style="@style/tv_size_16_color_22_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_8"
+            android:layout_toRightOf="@+id/ll_address"
+            android:singleLine="true"
+            android:text="ssdsssdsssdsssds"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_goods_count"
+        style="@style/Subcribe_Route_Count_Style"
+        android:layout_marginLeft="@dimen/spacing_8"
+        android:text="99"
+        android:visibility="visible"/>
+</RelativeLayout>

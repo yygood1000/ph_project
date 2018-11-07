@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_root"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        style="@style/Layout_Match_Match"
+        android:orientation="vertical">
+
+        <View
+            style="@style/view_line"
+            android:layout_marginTop="@dimen/text_padding2" />
+
+        <RelativeLayout
+            style="@style/Layout_Match_Wrap"
+            android:layout_height="@dimen/text_height"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/text_padding2"
+            android:paddingRight="@dimen/text_padding2">
+
+            <TextView
+                android:id="@+id/tv_goldrecharge_mobile"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_centerVertical="true"
+                android:minWidth="@dimen/text_width1"
+                android:text="@string/wallet_goldrecharge_account"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/text_size3"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_goldrecharge_account"
+                style="@style/Layout_Match_Wrap"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_goldrecharge_mobileclear"
+                android:layout_toRightOf="@+id/tv_goldrecharge_mobile"
+                android:background="@null"
+                android:digits="@string/wallet_goldrecharge_limit"
+                android:hint="@string/wallet_goldrecharge_hint"
+                android:textColor="@color/text_color4"
+                android:textColorHint="@color/text_color2"
+                android:textSize="@dimen/text_size3" />
+
+            <ImageView
+                android:id="@+id/iv_goldrecharge_mobileclear"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/credit_clear"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/view_line" />
+
+        <View
+            style="@style/view_line"
+            android:layout_marginTop="@dimen/text_padding2" />
+
+        <RelativeLayout
+            style="@style/Layout_Match_Wrap"
+            android:layout_height="@dimen/text_height"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/text_padding2"
+            android:paddingRight="@dimen/text_padding2">
+
+            <TextView
+                android:id="@+id/tv_goldrecharge_money"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_centerVertical="true"
+                android:minWidth="@dimen/text_width1"
+                android:text="@string/wallet_payinfo_cashwz"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/text_size3"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_goldrecharge_money"
+                style="@style/Layout_Match_Wrap"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_goldrecharge_moneyclear"
+                android:layout_toRightOf="@+id/tv_goldrecharge_money"
+                android:background="@null"
+                android:hint="@string/wallet_goldrecharge_hint1"
+                android:inputType="number"
+                android:textColor="@color/text_color4"
+                android:textColorHint="@color/text_color2"
+                android:textSize="@dimen/text_size3" />
+
+            <ImageView
+                android:id="@+id/iv_goldrecharge_moneyclear"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/credit_clear"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            style="@style/Layout_Match_Wrap"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:text="@string/wallet_goldrecharge_balance2"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/text_size3" />
+
+            <TextView
+                android:id="@+id/tv_goldrecharge_balance"
+                style="@style/Layout_Wrap_Wrap"
+                android:paddingLeft="@dimen/text_padding2"
+                android:text="0.00"
+                android:textColor="@color/color_red2"
+                android:textSize="@dimen/text_size3" />
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:text="@string/wallet_money_unit"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/text_size3" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Layout_Wrap_Wrap"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/wallet_goldrecharge_one"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/text_size2" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_goldrecharge_next"
+            style="@style/btn_style"
+            android:text="@string/wallet_goldrecharge_btn" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 我的车队item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Wrap"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_car_photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/spacing_13"
+        android:layout_marginLeft="@dimen/spacing_12"
+        android:layout_marginTop="@dimen/spacing_13" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/iv_car_photo"
+        android:layout_toRightOf="@+id/iv_car_photo">
+
+        <LinearLayout
+            android:id="@+id/ll_car_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_car_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_8"
+                android:layout_toRightOf="@+id/tv_car_info"
+                android:background="@drawable/shape_bg_btn_gradient_blue"
+                android:paddingTop="@dimen/spacing_2"
+                android:paddingBottom="@dimen/spacing_2"
+                android:paddingLeft="@dimen/spacing_5"
+                android:paddingRight="@dimen/spacing_5"
+                android:text="aaaaaaaaaaaaa"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size10" />
+
+            <ImageView
+                android:id="@+id/iv_car_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_6"
+                android:layout_toRightOf="@+id/tv_car_number"
+                android:src="@drawable/icon_car_status_adopt" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_car_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_8"
+            android:layout_centerVertical="true"
+            android:text="bbbbbbbbbbbbb"
+            android:textColor="@color/text_color_222222"
+            android:textSize="@dimen/text_size15" />
+
+        <TextView
+            android:id="@+id/tv_car_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/spacing_8"
+            android:text="ccccccccccccccccccccccc"
+            android:textColor="@color/text_color_666666"
+            android:textSize="@dimen/text_size13" />
+
+        <CheckBox
+            android:id="@+id/cb_car_work_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/selector_my_fleet"
+            android:paddingRight="@dimen/spacing_12" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/iv_car_photo"
+        android:layout_marginLeft="@dimen/spacing_12"
+        android:background="@color/parding_line" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_background"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_layout_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/listitem_goods_list"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_layout_large"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/listitem_goods_list_large"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/spacing_30"
+            android:gravity="bottom">
+
+            <TextView
+                style="@style/tv_size_15_color_22_style"
+                android:text="@string/standard"/>
+
+            <TextView
+                style="@style/tv_size_18_color_22_style"
+                android:layout_marginLeft="85dp"
+                android:text="@string/magnify"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_text_size"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_below="@+id/ll_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:background="@drawable/selector_cb_bg_change_textsize"
+            android:button="@null"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

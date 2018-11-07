@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="folder_padding">10dp</dimen>
+    <dimen name="folder_cover_size">72dp</dimen>
+    <dimen name="image_size">120dp</dimen>
+    <dimen name="space_size">1dp</dimen>
+    <dimen name="action_text_size">16sp</dimen>
+
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">12dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">18dp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+</resources>

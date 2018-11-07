@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/iv_location"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_marginBottom="@dimen/spacing_45"
+        android:layout_marginLeft="@dimen/spacing_15"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:src="@drawable/icon_map_position_a"/>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        style="@style/Layout_Match_Wrap"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_15"
+        android:paddingLeft="@dimen/spacing_12"
+        android:paddingRight="@dimen/spacing_12"
+        >
+
+        <TextView
+            android:id="@+id/tv_map_info"
+            style="@style/tv_size_15_color_22_style"
+            android:layout_width="0dp"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:layout_weight="1"
+            android:padding="1px"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tv_navigation"
+            style="@style/tv_size_17_color_white_style"
+            android:background="@drawable/selector_btn_corner_blue"
+            android:clickable="true"
+            android:paddingBottom="@dimen/spacing_5"
+            android:paddingLeft="@dimen/spacing_23"
+            android:paddingRight="@dimen/spacing_23"
+            android:paddingTop="@dimen/spacing_5"
+            android:text="@string/navigation"
+            />
+
+    </LinearLayout>
+
+    <!-- 搜索 -->
+    <LinearLayout
+        android:id="@+id/ll_input"
+        style="@style/Layout_Match_Wrap"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_12">
+
+        <TextView
+            android:id="@+id/tv_city"
+            style="@style/tv_size_14_color_66_style"
+            android:text="上海"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_10"
+            android:background="@drawable/shape_bg_gray_r4"
+            android:visibility="visible"
+            >
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_clear"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="请输入详细提货地址"
+                android:padding="@dimen/spacing_10"
+                android:paddingBottom="@dimen/spacing_5"
+                android:paddingLeft="@dimen/spacing_8"
+                android:paddingRight="@dimen/spacing_8"
+                android:paddingTop="@dimen/spacing_5"
+                android:singleLine="true"
+                android:textColor="@color/text_color_222222"
+                android:textColorHint="@color/color_CCCCCC"
+                android:textSize="@dimen/text_size13"/>
+
+            <ImageView
+                android:id="@+id/iv_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/spacing_7"
+                android:paddingRight="@dimen/spacing_7"
+                android:src="@drawable/icon_clear"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_poi_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_input"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/Layout_Match_Wrap"
+    android:background="@color/white"
+    android:padding="@dimen/spacing_12"
+    android:id="@+id/ll_goods_info">
+
+    <TextView
+        style="@style/tv_size_15_color_96_style"
+        android:text="@string/goods_info"/>
+
+    <TextView
+        android:id="@+id/tv_goods_info"
+        style="@style/tv_size_14_color_22_style"
+        android:paddingTop="@dimen/spacing_10"
+        android:text="有普货，纸箱包装，25吨，一装一卸，求14米、9.6米、11.7米、12.5米、16米高栏车，随到随走，货到付款（不托管） "/>
+
+</LinearLayout>

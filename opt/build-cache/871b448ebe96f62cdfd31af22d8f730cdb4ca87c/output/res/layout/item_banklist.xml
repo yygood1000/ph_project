@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp12"
+        android:background="@drawable/wallet_bank_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_banklist"
+            style="@style/Layout_Match_Wrap"
+            android:padding="@dimen/dp12">
+
+            <ImageView
+                android:id="@+id/item_image"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_width="@dimen/img_widthandheight1"
+                android:layout_height="@dimen/img_widthandheight1"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp16"
+                android:scaleType="centerInside"
+                android:src="@drawable/wallet_no_bankcard" />
+
+            <TextView
+                android:id="@+id/item_title"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/item_image"
+                android:text=""
+                android:textColor="@color/text_color0"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="解绑"
+                android:textColor="@color/color_blue_6E90FF"
+                android:textSize="@dimen/sp14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/Layout_Match_Wrap"
+            android:padding="@dimen/text_padding2">
+
+            <ImageView
+                android:id="@+id/item_image1"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_width="@dimen/img_widthandheight1"
+                android:layout_height="@dimen/img_widthandheight1"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp16"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/item_text"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_toRightOf="@id/item_image1"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/text_color0"
+                android:textSize="@dimen/sp18" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

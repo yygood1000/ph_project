@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Layout_Match_Match"
+        android:layout_margin="@dimen/dp16"
+        android:background="@drawable/bg_btn_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/Layout_Match_Wrap"
+            android:orientation="vertical"
+            android:padding="@dimen/dp12">
+
+            <TextView
+                android:id="@+id/tv_explain"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp12"
+                android:text="@string/wallet_bankcard_mobile_explain"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_add_send"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/wallet_bank_explain" />
+
+            <TextView
+                android:id="@+id/tv_hint"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/text_padding2"
+                android:lineSpacingExtra="@dimen/dp5"
+                android:text="@string/wallet_bankcard_explain"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <TextView
+            android:id="@+id/tv_explain_ok"
+            style="@style/Layout_Match_Wrap"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/dp12"
+            android:text="@string/wallet_bankcard_ok"
+            android:textColor="@color/color_blue2"
+            android:textSize="@dimen/sp18" />
+    </LinearLayout>
+
+</LinearLayout>

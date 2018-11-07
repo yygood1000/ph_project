@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 用户被冻结 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/transparent_100">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_circle_white"
+            android:src="@drawable/icon_call_pop_cancel"
+            android:padding="@dimen/spacing_10"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/spacing_20"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/spacing_24"
+        android:paddingRight="@dimen/spacing_24"
+        android:background="@drawable/bg_user_be_banned">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="您好，您登录的账号已被冻结，暂时无法登录！"
+            android:textColor="@color/red_button_start_color_clicked"
+            android:textSize="@dimen/text_size16"
+            android:paddingBottom="@dimen/spacing_22"/>
+        <TextView
+            android:id="@+id/tv_banned_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="冻结时间："
+            android:textColor="@color/text_color_030303"
+            android:textSize="@dimen/text_size14"
+            android:paddingBottom="@dimen/spacing_3"/>
+
+        <TextView
+            android:id="@+id/tv_banned_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="冻结原因："
+            android:textColor="@color/text_color_030303"
+            android:textSize="@dimen/text_size14" />
+    </LinearLayout>
+
+    <!--  联系客服 -->
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_red_bottom_r4"
+        android:gravity="center"
+        android:padding="@dimen/spacing_13"
+        android:text="@string/call_customer_service"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size17" />
+</LinearLayout>

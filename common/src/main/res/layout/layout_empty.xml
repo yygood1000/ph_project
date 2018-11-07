@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 无数据 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_empty"
+    style="@style/Layout_Match_Match"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:background="@color/white"
+    android:padding="@dimen/spacing_50">
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iv_icon_empty_large"/>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        style="@style/tv_size_16_color_22_style"
+        android:layout_marginTop="@dimen/spacing_23"
+        android:layout_marginLeft="@dimen/spacing_32"
+        android:layout_marginRight="@dimen/spacing_32"
+        android:gravity="center"
+        android:text="暂无订单"/>
+
+    <TextView
+        android:id="@+id/tv_empty_mini"
+        style="@style/tv_size_13_color_22_style"
+        android:layout_marginTop="@dimen/spacing_8"
+        android:layout_marginLeft="@dimen/spacing_16"
+        android:layout_marginRight="@dimen/spacing_16"
+        android:gravity="center"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/tv_btn_empty"
+        android:layout_marginTop="@dimen/spacing_23"
+        android:text="@string/add_contact"
+        style="@style/btn_green_line_lr22_tb8_r"/>
+
+</LinearLayout>

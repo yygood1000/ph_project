@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Wrap"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="45dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_city"
+            style="@style/Layout_Match_Wrap"
+            android:gravity="center"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/sp15" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 车辆认证 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_submit"
+        android:background="@color/common_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_status"
+                style="@style/Layout_Match_Wrap"
+                android:background="@color/color_FFF2D8"
+                android:padding="@dimen/spacing_12"
+                android:text="@string/authentication_can_up_reputation"
+                android:textColor="@color/black_222222" />
+
+            <LinearLayout
+                android:id="@+id/ll_progress"
+                style="@style/Layout_Match_Wrap"
+                android:gravity="center"
+                android:paddingBottom="@dimen/spacing_16"
+                android:paddingTop="@dimen/spacing_16">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/approve_process_check_blue01" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/spacing_8"
+                        android:text="@string/real_name_authentication"
+                        android:textColor="@color/text_color_6E90FF"
+                        android:textSize="@dimen/text_size14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/approve_process_check_blue02" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/spacing_8"
+                        android:text="@string/identity_authentication"
+                        android:textColor="@color/text_color_6E90FF"
+                        android:textSize="@dimen/text_size14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/approve_process_check_rblue01" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/spacing_8"
+                        android:text="@string/car_authentication"
+                        android:textColor="@color/text_color_6E90FF"
+                        android:textSize="@dimen/text_size14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vvvvvv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_10"
+                android:background="@color/common_background" />
+
+            <include layout="@layout/include_carinfo"
+                android:id="@+id/include_carinfo"/>
+
+            <include
+                android:id="@+id/include_carinfo_result"
+                layout="@layout/include_carinfo_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone"/>
+            <include layout="@layout/include_car_photo" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_btn_square_blue"
+        android:enabled="false"
+        android:gravity="center"
+        android:padding="@dimen/spacing_10"
+        android:text="@string/submit_examine"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size17" />
+</RelativeLayout>

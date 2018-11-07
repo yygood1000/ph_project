@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Match"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/tv_size_18_color_33_style"
+            android:layout_marginTop="@dimen/spacing_40"
+            android:text="@string/my_qr"/>
+
+
+        <FrameLayout
+            android:layout_width="234dp"
+            android:layout_height="294dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/share_car_bg"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_qr"
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                android:scaleType="centerCrop"/>
+        </FrameLayout>
+
+        <TextView
+            style="@style/tv_size_14_color_33_style"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:text="@string/msg_qr"/>
+
+        <LinearLayout
+            style="@style/Layout_Match_Wrap"
+            android:layout_marginTop="@dimen/spacing_40"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <View
+                android:layout_width="@dimen/spacing_77"
+                android:layout_height="@dimen/parting_line_heigth"
+                android:background="@color/color_dddddd"/>
+
+            <TextView
+                style="@style/tv_size_15_color_33_style"
+                android:layout_marginLeft="@dimen/spacing_6"
+                android:layout_marginRight="@dimen/spacing_6"
+                android:text="@string/more_share"/>
+
+            <View
+                android:layout_width="@dimen/spacing_77"
+                android:layout_height="@dimen/parting_line_heigth"
+                android:background="@color/color_dddddd"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Layout_Match_Wrap"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/LL_Weight_1_Width_0"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_wechat"
+                    style="@style/Width_40_Heigth_40"
+                    android:src="@drawable/icon_share_wechat"/>
+
+                <TextView
+                    style="@style/tv_size_15_color_33_style"
+                    android:layout_marginTop="@dimen/spacing_8"
+                    android:text="@string/wechat"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LL_Weight_1_Width_0"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_wechat_circle"
+                    style="@style/Width_40_Heigth_40"
+                    android:src="@drawable/icon_wechat_circle"/>
+
+                <TextView
+                    style="@style/tv_size_15_color_33_style"
+                    android:layout_marginTop="@dimen/spacing_8"
+                    android:text="@string/wechat_circle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LL_Weight_1_Width_0"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_sms"
+                    style="@style/Width_40_Heigth_40"
+                    android:src="@drawable/icon_phone_sms"/>
+
+                <TextView
+                    style="@style/tv_size_15_color_33_style"
+                    android:layout_marginTop="@dimen/spacing_8"
+                    android:text="@string/phone_sms"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

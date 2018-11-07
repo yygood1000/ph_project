@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+
+def config = rootProject.ext.android // 配置
+def dep = rootProject.ext.dependencies // 依赖
+android {
+	compileSdkVersion config.compileSdkVersion
+	buildToolsVersion config.buildToolsVersion
+
+	defaultConfig {
+		minSdkVersion config.minSdkVersion
+		targetSdkVersion config.targetSdkVersion
+	}
+
+	buildTypes {
+		release {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+			// 环信key
+			if(ENVIRONMENT.equals("dev")) {
+				manifestPlaceholders = ["EASEMOB_KEY": "${EASEMOB_KEY_DEV}"]
+			} else if(ENVIRONMENT.equals("test")){
+				manifestPlaceholders = ["EASEMOB_KEY": "${EASEMOB_KEY_TEST}"]
+			} else if(ENVIRONMENT.equals("baolei")){
+				manifestPlaceholders = ["EASEMOB_KEY": "${EASEMOB_KEY_BAOLEI}"]
+			} else if(ENVIRONMENT.equals("product")){
+				manifestPlaceholders = ["EASEMOB_KEY": "${EASEMOB_KEY_PRODUCT}"]
+			} else if(ENVIRONMENT.equals("closed_beta")){
+				manifestPlaceholders = ["EASEMOB_KEY": "${EASEMOB_KEY_TEST}"]
+			}
+		}
+
+		debug {
+			minifyEnabled false
+			// 环信key
+			if(ENVIRONMENT.equals("dev")) {
+				manifestPlaceholders = ["EASEMOB_KEY": "${EASEMOB_KEY_DEV}"]
+			} else if(ENVIRONMENT.equals("test")){
+				manifestPlaceholders = ["EASEMOB_KEY": "${EASEMOB_KEY_TEST}"]
+			} else if(ENVIRONMENT.equals("baolei")){
+				manifestPlaceholders = ["EASEMOB_KEY": "${EASEMOB_KEY_BAOLEI}"]
+			} else if(ENVIRONMENT.equals("product")){
+				manifestPlaceholders = ["EASEMOB_KEY": "${EASEMOB_KEY_PRODUCT}"]
+			} else if(ENVIRONMENT.equals("closed_beta")){
+				manifestPlaceholders = ["EASEMOB_KEY": "${EASEMOB_KEY_TEST}"]
+			}
+		}
+	}
+}
+
+dependencies {
+
+	api dep.easeui
+}

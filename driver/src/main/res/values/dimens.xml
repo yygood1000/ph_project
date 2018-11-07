@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 2016年12月5日15:19:38 -->
+    <!-- 听单 -->
+    <dimen name="voice_top">44dp</dimen>
+    <dimen name="voice_padding">10dp</dimen>        <!-- 文字和图片间距 -->
+    <dimen name="voice_left">46dp</dimen>
+    <dimen name="voice_bottom">40dp</dimen>
+    <dimen name="voice_text_size">16sp</dimen>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--只有一个TextView 的Item布局。用于：1、详细地址地图选择页地址联想下拉列表 2、简单筛选弹窗下拉列表-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_12"
+        android:paddingTop="@dimen/spacing_12"
+        android:paddingLeft="@dimen/spacing_12"
+        android:textColor="@color/text_color_222222"
+        android:textSize="@dimen/text_size15"/>
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/LineHeigth1Left12"/>
+</LinearLayout>

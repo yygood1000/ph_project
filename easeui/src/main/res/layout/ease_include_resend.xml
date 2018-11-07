@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_message_resend"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:visibility="gone">
+    <!-- 发送失败，显示的文本 -->
+    <TextView
+        android:id="@+id/tv_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resend_message"
+        android:textColor="@color/resend_text_color"
+        android:textSize="12sp"/>
+
+</LinearLayout>

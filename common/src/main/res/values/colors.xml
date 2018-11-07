@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题色-->
+    <color name="v3_common_green">#16CA4E</color>
+    <color name="v3_common_blue">#6E90FF</color>
+    <color name="color_e516ca4e">#E516CA4E</color>
+    <color name="color_e56e90ff">#E56E90FF</color>
+
+    <!-- Auto Dialog -->
+    <color name="auto_dialog_pressed_driver_v2">#FF5E5E</color>
+    <color name="auto_dialog_pressed_shipper_v2">#FF5E5E</color>
+    <color name="btn_pressed_driver">#646FFF</color>
+    <color name="btn_pressed_shipper">#00C649</color>
+    <color name="auto_dialog_content_color">#1C1C1C</color>
+    <color name="auto_dialog_content_font_color">#1C1C1C</color>
+    <color name="auto_dialog_confirm_font_color_normal_black">#999999</color>
+
+    <color name="black_121415">#121415</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+
+
+    <!--所有页面得公用背景色-->
+    <color name="common_background">#F3F5F9</color>
+
+    <!--Camera-->
+    <color name="black_usedin_camera">#121415</color>
+
+    <!--transparent background  透明黑-->
+    <color name="black_cc222222">#CC222222</color>
+    <color name="black_222222">#CC222222</color>
+
+    <color name="colorPrimary">#00000000</color>
+    <!--Status bar color-->
+    <color name="statusColor">#00000000</color>
+    <!-- toolBar color -->
+    <color name="toolBarColor">#00000000</color>
+    <!--Window color-->
+    <color name="widowColor">@color/white</color>
+    <!--colorAccent 对应EditText编辑时、RadioButton选中、CheckBox等选中时的颜色。-->
+    <color name="editColor">@color/red</color>
+
+    <!--灰色分割线 统一颜色-->
+    <color name="parding_line">#DDDDDD</color>
+    <color name="line_4d">#4D4D4D</color>
+
+
+    <color name="transparent_0">#FF000000</color>
+    <color name="transparent_5">#F2000000</color>
+    <color name="transparent_10">#E5000000</color>
+    <color name="transparent_15">#D8000000</color>
+    <color name="transparent_20">#CC000000</color>
+    <color name="transparent_25">#BF000000</color>
+    <color name="transparent_30">#B2000000</color>
+    <color name="transparent_35">#A5000000</color>
+    <color name="transparent_40">#99000000</color>
+    <color name="transparent_45">#8c000000</color>
+    <color name="transparent_50">#7F000000</color>
+    <color name="transparent_55">#72000000</color>
+    <color name="transparent_60">#66000000</color>
+    <color name="transparent_65">#59000000</color>
+    <color name="transparent_70">#4C000000</color>
+    <color name="transparent_75">#3F000000</color>
+    <color name="transparent_80">#33000000</color>
+    <color name="transparent_85">#21000000</color>
+    <color name="transparent_90">#19000000</color>
+    <color name="transparent_95">#0C000000</color>
+    <color name="transparent_100">#00000000</color>
+
+    <!--TextColor-->
+    <color name="text_color_969696">#969696</color>
+    <color name="text_color_CCCCCC">#CCCCCC</color>
+    <color name="text_color_222222">#222222</color>
+    <color name="text_color_666666">#666666</color>
+    <color name="text_color_333333">#333333</color>
+    <color name="text_color_999999">#999999</color>
+    <color name="text_color_8d8d8d">#8D8D8D</color>
+    <color name="text_color_16CA4E">#16CA4E</color>
+    <color name="text_color_6E90FF">#6E90FF</color>
+    <color name="text_color_030303">#030303</color>
+    <color name="text_color_FFB000">#FFB000</color>
+    <color name="text_color_0076FF">#0076FF</color>
+    <color name="text_color_8F8E94">#8F8E94</color>
+
+    <color name="color_E4E4E4">#E4E4E4</color>
+    <color name="color_687EFF">#687EFF</color>
+    <color name="color_17B745">#17B745</color>
+    <color name="color_aaaaaa">#AAAAAA</color>
+    <color name="color_dddddd">#DDDDDD</color>
+    <color name="color_CCCCCC">#CCCCCC</color>
+    <color name="color_FFF2D8">#FFF2D8</color>
+    <color name="color_D8D8D8">#D8D8D8</color>
+    <color name="color_4D4D4D">#4D4D4D</color>
+    <color name="color_EEEEEE">#EEEEEE</color>
+    <color name="color_FFBA00">#FFBA00</color>
+    <color name="color_FF9E00">#FF9E00</color>
+
+    <color name="color_FFBA00_clicked">#e2a604</color>
+    <color name="color_FF9E00_clicked">#df8b02</color>
+
+    <color name="blue_button_emtry_color_unclick">#6E90FF</color>
+    <color name="blue_button_start_color_clicked">#5963E5</color>   <!-- 蓝色按钮点击后起始色 -->
+    <color name="blue_button_end_color_clicked">#668CE5</color>     <!-- 蓝色按钮点击后终止色 -->
+    <color name="blue_button_start_color_unclick">#646FFF</color>   <!-- 蓝色按钮点击前终止色 -->
+    <color name="blue_button_end_color_unclick">#729DFF</color>     <!-- 蓝色按钮点击前终止色 -->
+
+    <color name="green_button_start_color_clicked">#00B141</color>   <!-- 绿色按钮点击后起始色 -->00C649
+    <color name="green_button_end_color_clicked">#65C558</color>     <!-- 绿色按钮点击后终止色 -->71DC62
+    <color name="green_button_start_color_unclick">#00C649</color>   <!-- 绿色按钮点击前终止色 -->00B141
+    <color name="green_button_end_color_unclick">#71DC62</color>     <!-- 绿色按钮点击前终止色 -->65C558
+
+    <color name="red_button_start_color_clicked">#FF5E5E</color>   <!-- 红色按钮点击后起始色 -->
+    <color name="red_button_end_color_clicked">#FF573B</color>     <!-- 红色按钮点击后终止色 -->
+    <color name="red_button_start_color_unclick">#ff5757</color>   <!-- 红色按钮点击前终止色 -->
+    <color name="red_button_end_color_unclick">#ff5336</color>     <!-- 红色按钮点击前终止色 -->
+
+    <color name="auto_dialog_root_bg">#eeffffff</color>
+    <color name="color_blue">#4d94f1</color>
+
+    <!--红色按钮颜色-->
+    <color name="color_btn_red">#FF5E5E</color>
+    <color name="shippercolors">#1FBC8E</color>
+
+    <!--地图线路颜色-->
+    <color name="route_color">#3B48EE</color>
+
+    <!--地图Title颜色-->
+    <color name="color_6D8EFF">#6D8EFF</color>
+
+    <color name="color_007AFF">#007AFF</color>
+</resources>

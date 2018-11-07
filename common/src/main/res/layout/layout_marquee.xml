@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_marquee"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:background="@color/color_FFF2D8"
+                android:paddingLeft="@dimen/spacing_12"
+                android:paddingRight="@dimen/spacing_12">
+
+    <ImageView
+        android:id="@+id/iv_marquee_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/spacing_8"
+        android:background="@drawable/iv_icon_marquee"/>
+
+
+    <!--使用该控件要注意，在绘制见面时要先调用一次init方法，否则在页面进行绘制的时候paint会空指针。要么就是设置Visible为gone-->
+    <com.topjet.common.widget.AutoScrollTextView
+        android:id="@+id/tv_marquee"
+        style="@style/tv_size_14_color_22_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/spacing_11"
+        android:layout_toEndOf="@+id/iv_marquee_icon"
+        android:layout_toLeftOf="@+id/iv_close_marquee"
+        android:layout_toRightOf="@+id/iv_marquee_icon"
+        android:layout_toStartOf="@+id/iv_close_marquee"
+        android:background="@color/color_FFF2D8"
+        android:drawablePadding="@dimen/spacing_12"/>
+
+    <ImageView
+        android:id="@+id/iv_close_marquee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/spacing_8"
+        android:background="@drawable/iv_icon_close"/>
+</RelativeLayout>

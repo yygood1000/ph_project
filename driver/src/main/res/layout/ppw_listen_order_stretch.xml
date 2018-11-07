@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 语音弹窗
+     伸展开以后 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Match"
+    android:id="@+id/r0">
+    <RelativeLayout
+        android:layout_width="268dp"
+        android:layout_height="238dp"
+        android:id="@+id/r1"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_touch_triangle">
+        <RelativeLayout
+            android:layout_width="268dp"
+            android:layout_height="238dp"
+            android:id="@+id/r2"
+            android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/iv_open"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pop_icon_listen_on"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/voice_top"
+            android:paddingBottom="@dimen/voice_padding"/>
+        <TextView
+            android:id="@+id/tv_open"
+            android:clickable="true"
+            android:layout_below="@+id/iv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/voice_on"
+            android:textSize="@dimen/voice_text_size"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/voice_cl"
+            android:textSize="@dimen/voice_text_size"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/voice_padding"
+            android:layout_alignRight="@+id/iv_close"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:clickable="true"
+            android:layout_above="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pop_icon_listen_off"
+            android:paddingLeft="@dimen/voice_left"
+            android:paddingRight="@dimen/voice_padding"
+            android:paddingBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_set"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/voice_se"
+            android:textSize="@dimen/voice_text_size"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/voice_padding"
+            android:layout_alignLeft="@+id/iv_set"/>
+
+        <ImageView
+            android:id="@+id/iv_set"
+            android:clickable="true"
+            android:layout_above="@+id/tv_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pop_icon_set_nor"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/voice_padding"
+            android:paddingRight="@dimen/voice_left"
+            android:paddingBottom="15dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

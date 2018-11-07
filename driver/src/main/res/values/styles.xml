@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+
+    <!--我的订单 小点样式-->
+    <style name="Point_MyOrder_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/spacing_6</item>
+        <item name="android:background">@drawable/shape_point_my_order</item>
+    </style>
+
+    <!--我的订单 LinearLayout 样式-->
+    <style name="LinearLayout_MyOrder_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--数量文本 样式-->
+    <style name="Subcribe_Route_Count_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/spacing_12</item>
+        <item name="android:background">@drawable/tv_bg_subscribe_count</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">16dp</item>
+        <item name="android:paddingBottom">@dimen/spacing_2</item>
+        <item name="android:paddingLeft">@dimen/spacing_5</item>
+        <item name="android:paddingRight">@dimen/spacing_5</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size11</item>
+    </style>
+    <!--智能找货页面 订阅路线货源数量数量文本 样式-->
+    <style name="Subcribe_Goods_Count_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_marginTop">@dimen/spacing_2</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/spacing_4</item>
+        <item name="android:background">@drawable/tv_bg_subscribe_count</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">16dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size10</item>
+    </style>
+
+    <!--添加订阅路线 单项父布局 样式-->
+    <style name="Add_Subcribe_Route_Rl_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">@dimen/spacing_12</item>
+    </style>
+
+    <!--添加订阅路线 输入框 标题 样式-->
+    <style name="Add_Subcribe_Route_Title_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/spacing_36</item>
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textSize">@dimen/text_size15</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--添加订阅路线 输入框 样式-->
+    <style name="Add_Subcribe_Route_Tv_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@string/pelease_select</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/text_size15</item>
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textColorHint">@color/text_color_CCCCCC</item>
+    </style>
+    <!--添加订阅路线 右边箭头 样式-->
+    <style name="Add_Subcribe_Route_Icon_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/spacing_12</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/icon_right_arrow</item>
+    </style>
+
+</resources>

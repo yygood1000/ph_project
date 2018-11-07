@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_20"
+        android:layout_marginLeft="@dimen/spacing_20"
+        android:layout_marginRight="@dimen/spacing_20"
+        android:gravity="center"
+        >
+
+        <!-- 显示视图 -->
+        <LinearLayout
+            android:id="@+id/ll_update"
+            android:layout_width="330dp"
+            android:layout_height="450dp"
+            android:layout_below="@+id/iv_close"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_maintain_dialog"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/Layout_Match_Wrap"
+                android:layout_marginTop="180dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="服务器正在维护"
+                android:textColor="#222"
+                android:textSize="@dimen/auto_dialog_normal_title_font_size"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/Layout_Match_Wrap"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="9dp"
+                android:padding="@dimen/spacing_10"
+                android:scrollbars="vertical"
+                android:text=""
+                android:textColor="@color/auto_dialog_content_font_color"
+                android:textSize="@dimen/auto_dialog_normal_content_font_size"/>
+
+
+            <TextView
+                android:id="@+id/tv_btn_single_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/selector_btn_red_bottom_r4"
+                android:gravity="center"
+                android:padding="@dimen/spacing_12"
+                android:text="关闭APP"
+                android:textColor="@color/white"
+                android:textSize="@dimen/auto_dialog_confirm_font_size"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 身份认证 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_submit"
+        android:background="@color/common_background">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_status"
+                style="@style/Layout_Match_Wrap"
+                android:background="@color/color_FFF2D8"
+                android:padding="@dimen/spacing_12"
+                android:text="@string/authentication_can_up_reputation"
+                android:textColor="@color/black_222222" />
+
+            <LinearLayout
+                android:id="@+id/ll_progress"
+                style="@style/Layout_Match_Wrap"
+                android:gravity="center"
+                android:paddingBottom="@dimen/spacing_16"
+                android:paddingTop="@dimen/spacing_16">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-50dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/approve_process_check_lgreen01" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/spacing_8"
+                        android:text="@string/real_name_authentication"
+                        android:textColor="@color/text_color_16CA4E"
+                        android:textSize="@dimen/text_size14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="-50dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/approve_process_check_rgreen01" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/spacing_8"
+                        android:text="@string/identity_authentication"
+                        android:textColor="@color/text_color_666666"
+                        android:textSize="@dimen/text_size14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vvvvvvv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_10"
+                android:background="@color/common_background" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/register_address"
+                    android:textColor="@color/text_color_222222"
+                    android:textSize="@dimen/text_size15" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="定位中..."
+                    android:textColor="@color/text_color_16CA4E"
+                    android:textSize="@dimen/text_size15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_8"
+                    android:layout_toLeftOf="@+id/tv_address"
+                    android:src="@drawable/approve_icon_position_green" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_10"
+                android:background="@color/common_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/spacing_16"
+                android:paddingTop="@dimen/spacing_16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_16"
+                    android:layout_marginLeft="@dimen/spacing_12"
+                    android:text="以下四项任选一项"
+                    android:textColor="@color/text_color_666666"
+                    android:textSize="@dimen/text_size14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_upload_door_photo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_12"
+                        android:layout_marginRight="@dimen/spacing_6"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg_upload_id_card">
+
+                        <ImageView
+                            android:id="@+id/iv_door_photo_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:paddingTop="@dimen/spacing_32"
+                            android:src="@drawable/approve_icon_add_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_door_photo_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_door_photo_add"
+                            android:layout_centerHorizontal="true"
+                            android:paddingBottom="@dimen/spacing_32"
+                            android:paddingTop="@dimen/spacing_10"
+                            android:text="@string/upload_door_photo"
+                            android:textColor="@color/text_color_969696"
+                            android:textSize="@dimen/text_size13" />
+
+                        <ImageView
+                            android:id="@+id/iv_show_door_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/tv_door_photo_hint"
+                            android:layout_alignTop="@+id/iv_door_photo_add" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_door_photo_authenticaioning"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/tv_door_photo_hint"
+                            android:layout_alignTop="@+id/iv_door_photo_add"
+                            android:background="@drawable/shape_bg_tran60_r5"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_door_photo_authenticaioning"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="审核中"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size16" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_door_photo_fail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/tv_door_photo_hint"
+                            android:layout_alignTop="@+id/iv_door_photo_add"
+                            android:background="@drawable/shape_bg_tran60_r5"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_door_photo_authentication_fail"
+                                style="@style/Layout_Wrap_Wrap"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/shape_bg_authentication_fail"
+                                android:paddingBottom="@dimen/spacing_3"
+                                android:paddingLeft="@dimen/spacing_6"
+                                android:paddingRight="@dimen/spacing_6"
+                                android:paddingTop="@dimen/spacing_3"
+                                android:text="@string/authentication_fail2"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size10" />
+
+                            <ImageView
+                                android:id="@+id/iv_door_photo_upload_again"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="@dimen/spacing_32"
+                                android:src="@drawable/icon_approve_add_white" />
+
+                            <TextView
+                                android:id="@+id/tv_door_photo_upload_again"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_door_photo_upload_again"
+                                android:layout_centerHorizontal="true"
+                                android:paddingBottom="@dimen/spacing_32"
+                                android:paddingTop="@dimen/spacing_10"
+                                android:text="@string/upload_again"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size13" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_upload_business_card"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_6"
+                        android:layout_marginRight="@dimen/spacing_12"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg_upload_id_card"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_business_card_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:paddingTop="@dimen/spacing_32"
+                            android:src="@drawable/approve_icon_add_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_business_card_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_business_card_add"
+                            android:layout_centerHorizontal="true"
+                            android:paddingBottom="@dimen/spacing_32"
+                            android:paddingTop="@dimen/spacing_10"
+                            android:text="@string/business_card"
+                            android:textColor="@color/text_color_969696" />
+
+                        <ImageView
+                            android:id="@+id/iv_show_business_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tv_business_card_hint"
+                            android:layout_alignTop="@+id/iv_business_card_add" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_business_card_authenticaioning"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/tv_business_card_hint"
+                            android:layout_alignTop="@+id/iv_business_card_add"
+                            android:background="@drawable/shape_bg_tran60_r5"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_business_card_authenticaioning"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="审核中"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size16" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_business_card_fail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/tv_business_card_hint"
+                            android:layout_alignTop="@+id/iv_business_card_add"
+                            android:background="@drawable/shape_bg_tran60_r5"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_business_card_authentication_fail"
+                                style="@style/Layout_Wrap_Wrap"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/shape_bg_authentication_fail"
+                                android:paddingBottom="@dimen/spacing_3"
+                                android:paddingLeft="@dimen/spacing_6"
+                                android:paddingRight="@dimen/spacing_6"
+                                android:paddingTop="@dimen/spacing_3"
+                                android:text="@string/authentication_fail2"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size10" />
+
+                            <ImageView
+                                android:id="@+id/iv_business_card_upload_again"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="@dimen/spacing_32"
+                                android:src="@drawable/icon_approve_add_white" />
+
+                            <TextView
+                                android:id="@+id/tv_business_card_upload_again"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_business_card_upload_again"
+                                android:layout_centerHorizontal="true"
+                                android:paddingBottom="@dimen/spacing_32"
+                                android:paddingTop="@dimen/spacing_10"
+                                android:text="@string/upload_again"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size13" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_12"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_upload_invoice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_12"
+                        android:layout_marginRight="@dimen/spacing_6"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg_upload_id_card">
+
+                        <ImageView
+                            android:id="@+id/iv_invoice_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:paddingTop="@dimen/spacing_32"
+                            android:src="@drawable/approve_icon_add_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_invoice_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_invoice_add"
+                            android:layout_centerHorizontal="true"
+                            android:paddingBottom="@dimen/spacing_32"
+                            android:paddingTop="@dimen/spacing_10"
+                            android:text="@string/upload_invoice"
+                            android:textColor="@color/text_color_969696"
+                            android:textSize="@dimen/text_size13" />
+
+                        <ImageView
+                            android:id="@+id/iv_show_invoice"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/tv_invoice_hint"
+                            android:layout_alignTop="@+id/iv_invoice_add" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_invoice_authenticaioning"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/tv_invoice_hint"
+                            android:layout_alignTop="@+id/iv_invoice_add"
+                            android:background="@drawable/shape_bg_tran60_r5"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_invoice_authenticaioning"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="审核中"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size16" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_invoice_fail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/tv_invoice_hint"
+                            android:layout_alignTop="@+id/iv_invoice_add"
+                            android:background="@drawable/shape_bg_tran60_r5"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_invoice_authentication_fail"
+                                style="@style/Layout_Wrap_Wrap"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/shape_bg_authentication_fail"
+                                android:paddingBottom="@dimen/spacing_3"
+                                android:paddingLeft="@dimen/spacing_6"
+                                android:paddingRight="@dimen/spacing_6"
+                                android:paddingTop="@dimen/spacing_3"
+                                android:text="@string/authentication_fail2"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size10" />
+
+                            <ImageView
+                                android:id="@+id/iv_invoice_upload_again"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="@dimen/spacing_32"
+                                android:src="@drawable/icon_approve_add_white" />
+
+                            <TextView
+                                android:id="@+id/tv_invoice_upload_again"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_invoice_upload_again"
+                                android:layout_centerHorizontal="true"
+                                android:paddingBottom="@dimen/spacing_32"
+                                android:paddingTop="@dimen/spacing_10"
+                                android:text="@string/upload_again"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size13" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_upload_business_license"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_6"
+                        android:layout_marginRight="@dimen/spacing_12"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg_upload_id_card"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_business_license_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:paddingTop="@dimen/spacing_32"
+                            android:src="@drawable/approve_icon_add_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_business_license_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_business_license_add"
+                            android:layout_centerHorizontal="true"
+                            android:paddingBottom="@dimen/spacing_32"
+                            android:paddingTop="@dimen/spacing_10"
+                            android:text="@string/upload_business_license"
+                            android:textColor="@color/text_color_969696" />
+
+                        <ImageView
+                            android:id="@+id/iv_show_business_license"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tv_business_license_hint"
+                            android:layout_alignTop="@+id/iv_business_license_add" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_business_license_authenticaioning"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/tv_business_license_hint"
+                            android:layout_alignTop="@+id/iv_business_license_add"
+                            android:background="@drawable/shape_bg_tran60_r5"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_business_license_authenticaioning"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="审核中"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size16" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_business_license_fail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/tv_business_license_hint"
+                            android:layout_alignTop="@+id/iv_business_license_add"
+                            android:background="@drawable/shape_bg_tran60_r5"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_business_license_authentication_fail"
+                                style="@style/Layout_Wrap_Wrap"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/shape_bg_authentication_fail"
+                                android:paddingBottom="@dimen/spacing_3"
+                                android:paddingLeft="@dimen/spacing_6"
+                                android:paddingRight="@dimen/spacing_6"
+                                android:paddingTop="@dimen/spacing_3"
+                                android:text="@string/authentication_fail2"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size10" />
+
+                            <ImageView
+                                android:id="@+id/iv_business_license_upload_again"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="@dimen/spacing_32"
+                                android:src="@drawable/icon_approve_add_white" />
+
+                            <TextView
+                                android:id="@+id/tv_business_license_upload_again"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_business_license_upload_again"
+                                android:layout_centerHorizontal="true"
+                                android:paddingBottom="@dimen/spacing_32"
+                                android:paddingTop="@dimen/spacing_10"
+                                android:text="@string/upload_again"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size13" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_btn_square_green"
+        android:enabled="false"
+        android:gravity="center"
+        android:padding="@dimen/spacing_10"
+        android:text="@string/submit_examine"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size17" />
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="auto_dialog_bg_root_corner">4dp</dimen>
+    <dimen name="status_bar_height">0dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <integer name="activity_animation_time">500</integer><!-- activity切场动画时长 -->
+
+    <!--TitleBar 高度-->
+    <dimen name="titlebar_heigth">48dp</dimen>
+    <dimen name="titlebar_height2">73dp</dimen>
+
+    <dimen name="spacing_2px">2px</dimen>
+
+    <dimen name="edit_code_height">45dp</dimen>
+    <dimen name="order_state_height">24dp</dimen>
+
+    <!--间距 包括padding marging-->
+    <dimen name="spacing_1">1dp</dimen>
+    <dimen name="spacing_2">2dp</dimen>
+    <dimen name="spacing_3">3dp</dimen>
+    <dimen name="spacing_4">4dp</dimen>
+    <dimen name="spacing_5">5dp</dimen>
+    <dimen name="spacing_6">6dp</dimen>
+    <dimen name="spacing_7">7dp</dimen>
+    <dimen name="spacing_8">8dp</dimen>
+    <dimen name="spacing_9">9dp</dimen>
+    <dimen name="spacing_10">10dp</dimen>
+    <dimen name="spacing_11">11dp</dimen>
+    <dimen name="spacing_12">12dp</dimen>
+    <dimen name="spacing_13">13dp</dimen>
+    <dimen name="spacing_14">14dp</dimen>
+    <dimen name="spacing_16">16dp</dimen>
+    <dimen name="spacing_17">17dp</dimen>
+    <dimen name="spacing_15">15dp</dimen>
+    <dimen name="spacing_18">18dp</dimen>
+    <dimen name="spacing_20">20dp</dimen>
+    <dimen name="spacing_21">21dp</dimen>
+    <dimen name="spacing_22">22dp</dimen>
+    <dimen name="spacing_23">23dp</dimen>
+    <dimen name="spacing_24">24dp</dimen>
+    <dimen name="spacing_25">25dp</dimen>
+    <dimen name="spacing_28">28dp</dimen>
+    <dimen name="spacing_30">30dp</dimen>
+    <dimen name="spacing_31">31dp</dimen>
+    <dimen name="spacing_32">32dp</dimen>
+    <dimen name="spacing_36">36dp</dimen>
+    <dimen name="spacing_38">38dp</dimen>
+    <dimen name="spacing_40">40dp</dimen>
+    <dimen name="spacing_45">45dp</dimen>
+    <dimen name="spacing_41">41dp</dimen>
+    <dimen name="spacing_50">50dp</dimen>
+    <dimen name="spacing_57">50dp</dimen>
+    <dimen name="spacing_60">60dp</dimen>
+    <dimen name="spacing_64">64dp</dimen>
+    <dimen name="spacing_66">66dp</dimen>
+    <dimen name="spacing_77">77dp</dimen>
+    <dimen name="spacing_80">80dp</dimen>
+    <dimen name="spacing_100">100dp</dimen>
+    <dimen name="spacing_280">280dp</dimen>
+    <!--下拉刷新 动画距左边距离-->
+    <dimen name="spacing_refresh_left">128dp</dimen>
+
+    <!-- 通用字体大小 -->
+    <dimen name="text_size6">6dp</dimen>
+    <dimen name="text_size7">7dp</dimen>
+    <dimen name="text_size8">8dp</dimen>
+    <dimen name="text_size9">9dp</dimen>
+    <dimen name="text_size10">10dp</dimen>
+    <dimen name="text_size11">11dp</dimen>
+    <dimen name="text_size12">12dp</dimen>
+    <dimen name="text_size13">13dp</dimen>
+    <dimen name="text_size14">14dp</dimen>
+    <dimen name="text_size15">15dp</dimen>
+    <dimen name="text_size16">16dp</dimen>
+    <dimen name="text_size17">17dp</dimen>
+    <dimen name="text_size18">18dp</dimen>
+    <dimen name="text_size19">19dp</dimen>
+    <dimen name="text_size20">20dp</dimen>
+    <dimen name="text_size21">21dp</dimen>
+    <dimen name="text_size22">22dp</dimen>
+    <dimen name="text_size24">24dp</dimen>
+    <dimen name="text_size26">26dp</dimen>
+    <dimen name="text_size28">28dp</dimen>
+    <dimen name="text_size70">70dp</dimen>
+
+    <!--高度-->
+    <dimen name="hight_57">57dp</dimen>
+
+    <!--按钮圆角-->
+    <dimen name="radius_4">4dp</dimen>
+    <dimen name="radius_5">5dp</dimen>
+    <dimen name="radius_10">10dp</dimen>
+    <dimen name="radius_20">20dp</dimen>
+    <dimen name="radius_100">100dp</dimen>
+
+    <!--Dialog 相关尺寸-->
+    <dimen name="auto_dialog_btn_corner">8dp</dimen>
+
+    <!--分割线长宽-->
+    <dimen name="parting_line_width">1px</dimen>
+    <dimen name="parting_line_heigth">1px</dimen>
+    <dimen name="tablayout_item_width">75dp</dimen>
+    <dimen name="tablayout_item_height">49dp</dimen>
+    <dimen name="tablayout_image_size">28dp</dimen>
+
+    <!-- TitleBar -->
+    <dimen name="title_bar_height">47dp</dimen>
+    <dimen name="title_bar_side_font_size">16dp</dimen>
+    <dimen name="title_bar_right_image_height_inside">25dp</dimen>
+    <dimen name="title_bar_padding1">7dp</dimen>
+    <dimen name="title_bar_padding2">12dp</dimen>
+    <dimen name="title_bar_avatar_height">40dp</dimen>
+
+    <!-- Auto Dialog -->
+    <dimen name="auto_dialog_normal_title_font_size">18dp</dimen>
+    <dimen name="auto_dialog_normal_content_font_size">16dp</dimen>
+    <dimen name="auto_dialog_confirm_font_size">17dp</dimen>
+    <dimen name="auto_dialog_divider_height_or_width">0.7dp</dimen>
+    <dimen name="auto_dialog_root_corner">4dp</dimen>
+
+    <!--高度-->
+    <dimen name="height_44">44dp</dimen>
+    <dimen name="height_40">40dp</dimen>
+    <dimen name="height_48">48dp</dimen>
+    <dimen name="height_60">60dp</dimen>
+    <dimen name="heigth_143">143dp</dimen>
+    <dimen name="btn_large_height">44dp</dimen>
+
+    <dimen name="textsize_middle">16dp</dimen>
+    <dimen name="textsize_timewheel">5dp</dimen>
+
+</resources>

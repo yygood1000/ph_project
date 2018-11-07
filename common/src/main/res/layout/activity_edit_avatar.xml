@@ -1,0 +1,49 @@
+<!-- 修改头像 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Match"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_avatar"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacing_30">
+
+        <ImageView
+            android:id="@+id/iv_show_avatar"
+            style="@style/Layout_Match_Match"
+            android:src="@drawable/icon_edit_avatar_default_photo"/>
+
+        <TextView
+            android:id="@+id/tv_show_status"
+            style="@style/Layout_Match_Match"
+            android:background="@drawable/shape_bg_tran60_r4"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size16"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_show_hint"
+        style="@style/Layout_Match_Wrap"
+        android:layout_below="@+id/rl_avatar"
+        android:gravity="center"
+        android:layout_marginTop="105dp"
+        android:lineSpacingExtra="25dp"
+        android:text="头像修改后，需等待客服审核。\n请参考头像示例，上传清晰的头像照片。\n头像每月只可修改一次"
+        android:textColor="@color/text_color_222222"
+        android:textSize="@dimen/text_size15" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        style="@style/tv_size_17_color_white_style"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_btn_square_blue"
+        android:enabled="false"
+        android:gravity="center"
+        android:padding="@dimen/spacing_10"
+        android:text="@string/submit_examine" />
+</RelativeLayout>

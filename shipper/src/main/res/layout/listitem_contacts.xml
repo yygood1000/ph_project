@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.topjet.common.widget.SwipeMenuLayout
+    android:id="@+id/sml_contacts"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Wrap"
+    android:background="@color/white">
+
+    <RelativeLayout
+        style="@style/Layout_Match_Wrap"
+        android:gravity="center"
+        android:id="@+id/rl_item"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingTop="11dp" >
+
+
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_listitem_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_user_nor" />
+
+        <LinearLayout
+            style="@style/Layout_Match_Wrap"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/Layout_Wrap_Wrap"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_listitem_address"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:ellipsize="end"
+                    android:maxEms="16"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#222"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_listitem_username"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_width="64dp"
+                    android:layout_marginRight="10dp"
+                    android:ellipsize="end"
+                    android:maxEms="12"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:text="黄老老师"
+                    android:textColor="#666"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/tv_listitem_mobile"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:ellipsize="end"
+                    android:maxEms="15"
+                    android:singleLine="true"
+                    android:text="15901609048"
+                    android:textColor="#666"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_listitem_line"
+                style="@style/Layout_Match_Wrap"
+                android:layout_height="1dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/parding_line" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Layout_Wrap_Match"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_listitem_editor"
+            style="@style/Layout_Wrap_Match"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:src="@drawable/linkman_icon_edit_nor" />
+
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_delete"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            style="@style/Layout_Match_Match"
+            android:background="@color/red"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size16" />
+    </LinearLayout>
+</com.topjet.common.widget.SwipeMenuLayout>

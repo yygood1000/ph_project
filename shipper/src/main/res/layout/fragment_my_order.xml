@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              style="@style/Layout_Match_Match"
+              android:orientation="vertical">
+    <!--Title -->
+    <RelativeLayout
+        android:id="@+id/ll_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/white"
+        app:layout_scrollFlags="scroll">
+
+        <RadioGroup
+            android:id="@+id/rg_title"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_my_order"
+                style="@style/MyOrder_TopRb_Style"
+                android:background="@drawable/selector_myorder_topbtn_bg"
+                android:checked="true"
+                android:text="@string/my_order"/>
+
+            <RadioButton
+                android:id="@+id/rb_history_order"
+                style="@style/MyOrder_TopRb_Style"
+                android:background="@drawable/selector_myorder_topbtn_bg_right"
+                android:checked="false"
+                android:text="@string/history_order"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_share_goods"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:text="@string/share_goods"
+            android:textColor="@color/text_color_222222"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/parting_line_heigth"
+        android:background="@color/parding_line"/>
+
+    <include
+        layout="@layout/layout_marquee"
+        android:visibility="gone"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/my_order_tab_layout"
+        style="@style/TabLayoutMyOrderStyle"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/text_color_16CA4E"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/text_color_16CA4E"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/text_color_666666"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/histroy_order_tab_layout"
+        style="@style/TabLayoutMyOrderStyle"
+        android:visibility="gone"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/text_color_16CA4E"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/text_color_16CA4E"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/text_color_666666"/>
+
+    <include layout="@layout/include_line_dd_full"/>
+
+    <com.topjet.common.widget.RecyclerViewWrapper.RecyclerViewWrapper
+        android:id="@+id/rvw_order"
+        style="@style/Layout_Match_Match"
+        android:background="@color/white"/>
+</LinearLayout>

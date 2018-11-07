@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 所有渐变绿色按钮都在这儿 -->
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/color_dddddd"/>
+
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:endColor="@color/green_button_end_color_clicked"
+                android:startColor="@color/green_button_start_color_clicked"/>
+
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:endColor="@color/green_button_end_color_unclick"
+                android:startColor="@color/green_button_start_color_unclick"/>
+
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+</selector>

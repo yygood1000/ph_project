@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_background"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+    <!-- 分享货源UI -->
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        style="@style/Layout_Match_Wrap"
+        android:background="@color/v3_common_green"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_user_info"
+            style="@style/tv_size_24_color_white_style"
+            android:padding="@dimen/spacing_16"
+            android:text="王福华 18318047838"
+            />
+
+        <TextView
+            style="@style/tv_size_12_color_white_style"
+            android:layout_marginBottom="@dimen/spacing_12"
+            android:background="@drawable/shape_border_white_r100"
+            android:paddingBottom="@dimen/spacing_5"
+            android:paddingLeft="@dimen/spacing_15"
+            android:paddingRight="@dimen/spacing_15"
+            android:paddingTop="@dimen/spacing_5"
+            android:text="联系时请告诉对方是从560上看到的货源"/>
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/tv_size_20_color_yellow_style"
+        android:padding="@dimen/spacing_16"
+        android:text="有新货源，有车的快来看看"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_12"
+        android:layout_marginRight="@dimen/spacing_12"/>
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/tv_size_14_color_96_style"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:text="@string/share_time"
+        />
+
+    <LinearLayout
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_size_14_color_96_style"
+            android:text="货源详情信息请在“"/>
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            style="@style/tv_size_14_color_green_style"
+            android:text="560交运配货"/>
+
+        <TextView
+            style="@style/tv_size_14_color_96_style"
+            android:text="”App内查看"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_12"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/spacing_16">
+
+        <ImageView
+            android:id="@+id/iv_qr"
+            android:layout_width="@dimen/spacing_64"
+            android:layout_height="@dimen/spacing_64"
+            android:src="@drawable/share_car_bg"
+            android:layout_marginRight="@dimen/spacing_12"/>
+
+        <TextView
+            android:id="@+id/tv_qr"
+            style="@style/tv_size_15_color_22_style"
+            android:text="长按识别二维码，下载560交运配货及时获取更多货源资讯！"/>
+
+    </LinearLayout>
+
+</LinearLayout>

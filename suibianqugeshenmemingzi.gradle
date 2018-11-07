@@ -1,0 +1,19 @@
+ext{
+    android = [
+
+            driver           : "com.topjet.crediblenumber",
+            shipper          : "com.topjet.shipper",
+            compileSdkVersion: 27,
+            buildToolsVersion: "27.0.3",
+            minSdkVersion    : 16,
+            targetSdkVersion : 27,
+            multiDexEnabled  : true,
+            JavaVersion      : 1.7,
+            versionCode      : 30500,
+            versionName      : "3.0.5",
+
+            property2 : "com.android.tools.build:gradle:2.3.3",
+
+    ]
+}
+

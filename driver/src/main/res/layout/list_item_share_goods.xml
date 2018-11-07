@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    style="@style/Layout_Match_Wrap"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/cb_order"
+        style="@style/cb_blue_style"
+        android:layout_marginLeft="@dimen/spacing_15"
+        android:layout_marginRight="@dimen/spacing_12"
+        android:checked="false"
+        android:visibility="visible"
+        android:enabled="false"/>
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_order_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingBottom="@dimen/spacing_10"
+            android:paddingLeft="@dimen/spacing_12"
+            android:paddingRight="@dimen/spacing_12">
+
+            <LinearLayout
+                android:id="@+id/ll_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/spacing_18"
+                android:layout_marginTop="@dimen/spacing_14"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_depart_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="上海市 徐汇区"
+                    android:textColor="@color/text_color_222222"
+                    android:textSize="@dimen/text_size17"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_6"
+                    android:layout_marginRight="@dimen/spacing_6"
+                    android:layout_marginTop="@dimen/spacing_5"
+                    android:background="@drawable/order_list_icon_blueline"/>
+
+                <TextView
+                    android:id="@+id/tv_destination_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="上海市 徐汇区"
+                    android:textColor="@color/text_color_222222"
+                    android:textSize="@dimen/text_size17"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_delivery_time"
+                    style="@style/MyOrderTextViewStyle"
+                    android:text="59分钟前"/>
+            </LinearLayout>
+
+
+            <!--货物信息模块-->
+            <LinearLayout
+                android:id="@+id/ll_order_info"
+                style="@style/LinearLayout_MyOrder_Style"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ll_address"
+                android:layout_marginBottom="@dimen/spacing_8"
+                android:gravity="left|center_vertical">
+
+                <ImageView
+                    style="@style/Point_MyOrder_Style"/>
+
+                <TextView
+                    android:id="@+id/tv_order_info"
+                    style="@style/MyOrderTextViewStyle"
+                    android:text=""/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include layout="@layout/include_line_dd"/>
+    </LinearLayout>
+
+</LinearLayout>
+

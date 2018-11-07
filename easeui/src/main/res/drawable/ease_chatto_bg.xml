@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:state_pressed="true" android:drawable="@drawable/ease_chatto_bg_focused" />-->
+    <!--<item android:drawable="@drawable/ease_chatto_bg_normal" />-->
+
+    <item android:state_pressed="true"  >
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#AAFFFFFF"
+                android:endColor="#AAFFFFFF"
+                android:angle="45"/>
+
+            <padding android:left="@dimen/message_default_padding"
+                     android:top="@dimen/message_default_padding"
+                     android:right="@dimen/message_default_padding"
+                     android:bottom="@dimen/message_default_padding" />
+
+            <corners android:radius="8dp" />
+
+            <stroke android:color="#E7E7E9"
+                android:width="1px"/>
+        </shape>
+    </item>
+
+
+    <item  >
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FFFFFF"
+                android:endColor="#FFFFFF"
+                android:angle="45"/>
+
+            <padding android:left="@dimen/message_default_padding"
+                     android:top="@dimen/message_default_padding"
+                     android:right="@dimen/message_default_padding"
+                     android:bottom="@dimen/message_default_padding" />
+
+            <corners android:radius="8dp" />
+
+            <stroke android:color="#E7E7E9"
+                    android:width="1px"/>
+        </shape>
+
+    </item>
+</selector>

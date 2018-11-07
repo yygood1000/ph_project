@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_16"
+        android:paddingTop="@dimen/spacing_16">
+
+        <RelativeLayout
+            android:id="@+id/rl_upload_car_front_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_12"
+            android:layout_marginRight="@dimen/spacing_6"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_upload_id_card">
+
+            <ImageView
+                android:id="@+id/iv_car_front_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/spacing_32"
+                android:src="@drawable/approve_icon_add_gray" />
+
+            <TextView
+                android:id="@+id/tv_car_front_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_car_front_add"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="@dimen/spacing_32"
+                android:paddingTop="@dimen/spacing_10"
+                android:text="@string/upload_car_front_photo"
+                android:textColor="@color/text_color_969696"
+                android:textSize="@dimen/text_size13" />
+
+            <ImageView
+                android:id="@+id/iv_show_car_front_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/tv_car_front_hint"
+                android:layout_alignTop="@+id/iv_car_front_add" />
+
+            <LinearLayout
+                android:id="@+id/ll_car_front_authenticaioning"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/tv_car_front_hint"
+                android:layout_alignTop="@+id/iv_car_front_add"
+                android:background="@drawable/shape_bg_tran60_r5"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_car_front_authenticaioning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="审核中"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size16"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_car_front_fail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/tv_car_front_hint"
+                android:layout_alignTop="@+id/iv_car_front_add"
+                android:background="@drawable/shape_bg_tran60_r5"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_car_front_authentication_fail"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_bg_authentication_fail"
+                    android:paddingBottom="@dimen/spacing_3"
+                    android:paddingLeft="@dimen/spacing_6"
+                    android:paddingRight="@dimen/spacing_6"
+                    android:paddingTop="@dimen/spacing_3"
+                    android:text="@string/authentication_fail2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size10" />
+
+                <ImageView
+                    android:id="@+id/iv_car_front_upload_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/spacing_32"
+                    android:src="@drawable/icon_approve_add_white" />
+
+                <TextView
+                    android:id="@+id/tv_car_front_upload_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_car_front_upload_again"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/spacing_32"
+                    android:paddingTop="@dimen/spacing_10"
+                    android:text="@string/upload_again"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size13" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_upload_vehicle_license"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_6"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_upload_id_card"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_vehicle_license_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/spacing_32"
+                android:src="@drawable/approve_icon_add_gray" />
+
+            <TextView
+                android:id="@+id/tv_vehicle_license_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_vehicle_license_add"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="@dimen/spacing_32"
+                android:paddingTop="@dimen/spacing_10"
+                android:text="@string/upload_vehicle_license"
+                android:textColor="@color/text_color_969696" />
+
+            <ImageView
+                android:id="@+id/iv_show_vehicle_license"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_vehicle_license_hint"
+                android:layout_alignTop="@+id/iv_vehicle_license_add" />
+
+            <LinearLayout
+                android:id="@+id/ll_vehicle_license_authenticaioning"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/tv_vehicle_license_hint"
+                android:layout_alignTop="@+id/iv_vehicle_license_add"
+                android:background="@drawable/shape_bg_tran60_r5"
+                android:gravity="center"
+                android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_vehicle_license_authenticaioning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="审核中"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size16" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_vehicle_license_fail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/tv_vehicle_license_hint"
+                android:layout_alignTop="@+id/iv_vehicle_license_add"
+                android:background="@drawable/shape_bg_tran60_r5"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_vehicle_license_authentication_fail"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_bg_authentication_fail"
+                    android:paddingBottom="@dimen/spacing_3"
+                    android:paddingLeft="@dimen/spacing_6"
+                    android:paddingRight="@dimen/spacing_6"
+                    android:paddingTop="@dimen/spacing_3"
+                    android:text="@string/authentication_fail2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size10" />
+
+                <ImageView
+                    android:id="@+id/iv_vehicle_license_upload_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/spacing_32"
+                    android:src="@drawable/icon_approve_add_white" />
+
+                <TextView
+                    android:id="@+id/tv_vehicle_license_upload_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_vehicle_license_upload_again"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/spacing_32"
+                    android:paddingTop="@dimen/spacing_10"
+                    android:text="@string/upload_again"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size13" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

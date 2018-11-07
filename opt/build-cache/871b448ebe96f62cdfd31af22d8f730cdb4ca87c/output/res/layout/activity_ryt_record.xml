@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F6F6F6">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp65"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp40"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp32"
+                        android:background="?attr/rytTitleBg"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp16"
+                            android:layout_marginTop="@dimen/dp14"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dp3"
+                                android:alpha="0.7"
+                                android:text="预期年化收益"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/sp12" />
+
+                            <TextView
+                                android:id="@+id/tv_yearrate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dp3"
+                                android:text="--"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/sp26" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp1"
+                            android:alpha="0.2"
+                            android:background="@android:color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp3"
+                            android:layout_marginTop="@dimen/dp3"
+                            android:padding="@dimen/dp7">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:alpha="0.7"
+                                    android:text="项目期限"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/sp10" />
+
+                                <TextView
+                                    android:id="@+id/tv_projectterm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="--"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/sp14" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:alpha="0.7"
+                                    android:text="起投金额"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/sp10" />
+
+                                <TextView
+                                    android:id="@+id/tv_invminamt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="--"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/sp14" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp7"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dp16"
+                                android:text="项目类型:"
+                                android:textColor="#FF888888"
+                                android:textSize="@dimen/sp12" />
+
+                            <TextView
+                                android:id="@+id/tv_projecttype"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#FF424242"
+                                android:textSize="@dimen/sp12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp10">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dp16"
+                                android:text="还款方式:"
+                                android:textColor="#FF888888"
+                                android:textSize="@dimen/sp12" />
+
+                            <TextView
+                                android:id="@+id/tv_repaymenttype"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#FF424242"
+                                android:textSize="@dimen/sp12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dp16"
+                                android:text="还款日期:"
+                                android:textColor="#FF888888"
+                                android:textSize="@dimen/sp12" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="到期后次日"
+                                android:textColor="#FF424242"
+                                android:textSize="@dimen/sp12" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp32"
+                    android:background="@android:color/white"
+                    app:layout_collapseMode="pin">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="@dimen/dp32"
+                        android:layout_height="@dimen/dp32"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dp7"
+                        android:src="@drawable/wallet_arrow_back_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_projectname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#333440"
+                        android:textSize="@dimen/sp15" />
+                </RelativeLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp32"
+                    android:layout_gravity="bottom"
+                    android:background="@android:color/white"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="?attr/rytTitleTxtBg"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="?attr/rytTitleTxtBg"
+                    app:tabTextAppearance="@style/RYTTabLayout"
+                    app:tabTextColor="#888888" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+
+    <TextView
+        android:id="@+id/tv_btn_touzi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/rytTitleTxtBg"
+        android:gravity="center"
+        android:padding="@dimen/dp7"
+        android:text="立即投资"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp14" />
+</LinearLayout>

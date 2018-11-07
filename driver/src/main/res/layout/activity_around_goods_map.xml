@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height2"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_25"
+            android:background="@drawable/shape_bg_gradient_driver"/>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/TitleBarDriverIvBack"
+            android:layout_below="@+id/view"/>
+
+        <TextView
+            style="@style/TitleBarDriverTvSide"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:text="@string/around_goods"/>
+
+        <ImageView
+            android:id="@+id/iv_title_right_list"
+            style="@style/TitleBarDriverIvSide"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:background="@drawable/iv_around_goods_list"/>
+
+        <ImageView
+            android:id="@+id/iv_title_right_search"
+            style="@style/TitleBarDriverIvSide"
+            android:layout_alignTop="@+id/iv_title_right_list"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/iv_title_right_list"
+            android:layout_toStartOf="@+id/iv_title_right_list"
+            android:background="@drawable/iv_around_goods_search"/>
+    </RelativeLayout>
+
+    <!--筛选条件布局-->
+    <RelativeLayout
+        android:id="@+id/rl_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title">
+
+        <include
+            android:id="@+id/include_options"
+            layout="@layout/include_layout_filter_options"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_options">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv_local_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_6"
+                android:background="@drawable/iv_icon_location_point"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_location"
+        android:layout_marginLeft="@dimen/spacing_15"
+        android:background="@drawable/iv_around_goods_refresh"/>
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/spacing_20"
+        android:layout_marginLeft="@dimen/spacing_15"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:background="@drawable/iv_around_goods_location"/>
+</RelativeLayout>

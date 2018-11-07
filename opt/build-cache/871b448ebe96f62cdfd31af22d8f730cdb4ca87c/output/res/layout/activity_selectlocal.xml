@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_select_local"
+    style="@style/Layout_Match_Match"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp5"
+    android:paddingRight="@dimen/dp5">
+
+    <RadioGroup
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginTop="128dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_province"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp52"
+            android:layout_weight="1"
+            android:background="@drawable/btn_select_local_left_green"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text="省"
+            android:textColor="@color/selecter_rb_text_color_green"
+            android:textSize="@dimen/sp18" />
+
+        <View
+            android:layout_width="@dimen/dp02"
+            android:layout_height="match_parent"
+            android:background="@color/text_color2" />
+
+        <RadioButton
+            android:id="@+id/rb_city"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp52"
+            android:layout_weight="1"
+            android:background="@drawable/btn_select_local_center_green"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text="市"
+            android:textColor="@color/selecter_rb_text_color_green"
+            android:textSize="@dimen/sp18" />
+
+        <View
+            android:layout_width="@dimen/dp02"
+            android:layout_height="match_parent"
+            android:background="@color/text_color2" />
+
+        <RadioButton
+            android:id="@+id/rb_area"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp52"
+            android:layout_weight="1"
+            android:background="@drawable/btn_select_local_right_green"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text="区"
+            android:textColor="@color/selecter_rb_text_color_green"
+            android:textSize="@dimen/sp18" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp02"
+        android:background="@color/text_color2" />
+
+    <FrameLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/bg_shape_city_select_options">
+
+        <GridView
+            android:id="@+id/gv_area"
+            style="@style/AbsListView_Common"
+            android:numColumns="4"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/gv_city"
+            style="@style/AbsListView_Common"
+            android:numColumns="4"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/gv_province"
+            style="@style/AbsListView_Common"
+            android:numColumns="4"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/viewPager_container"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/transparent_100"
+             android:clipChildren="false">
+
+    <!--clipChildren:是否限制子视图在其范围内-->
+    <com.topjet.common.widget.banner.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"/>
+
+</FrameLayout>

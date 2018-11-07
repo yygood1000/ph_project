@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_above="@+id/iv_location"
+        android:layout_marginLeft="@dimen/spacing_15"
+        android:src="@drawable/icon_map_refurbish_a"/>
+
+    <ImageView
+        android:id="@+id/iv_location"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_alignLeft="@+id/iv_refresh"
+        android:layout_alignStart="@+id/iv_refresh"
+        android:layout_marginBottom="19dp"
+        android:src="@drawable/icon_map_position_a"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        style="@style/Layout_Match_Wrap"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_line_dd_full"/>
+
+        <TextView
+            style="@style/tv_size_19_color_22_style"
+            android:layout_marginLeft="@dimen/spacing_12"
+            android:paddingTop="@dimen/spacing_20"
+            android:text="司机当前位置"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/tv_size_13_color_22_style"
+            android:layout_marginLeft="@dimen/spacing_12"
+            android:layout_marginTop="@dimen/spacing_8"
+            android:text="上海市徐汇区宜山路1009号创新大楼"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/tv_size_13_color_66_style"
+            android:layout_marginLeft="@dimen/spacing_12"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:paddingBottom="@dimen/spacing_20"
+            android:text="@string/update_time"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_call"
+        android:layout_width="@dimen/spacing_64"
+        android:layout_height="@dimen/spacing_64"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/iv_refresh"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/icon_call_map"/>
+
+</RelativeLayout>

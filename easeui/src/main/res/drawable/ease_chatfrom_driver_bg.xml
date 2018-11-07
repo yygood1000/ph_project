@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"  >
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#AA869CFF"
+                android:endColor="#AA667EEB"
+                android:angle="180"/>
+
+            <padding android:left="@dimen/message_default_padding"
+                     android:top="@dimen/message_default_padding"
+                     android:right="@dimen/message_default_padding"
+                     android:bottom="@dimen/message_default_padding" />
+
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+
+    <item  >
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#869CFF"
+                android:endColor="#667EEB"
+                android:angle="180"/>
+
+            <padding android:left="@dimen/message_default_padding"
+                     android:top="@dimen/message_default_padding"
+                     android:right="@dimen/message_default_padding"
+                     android:bottom="@dimen/message_default_padding" />
+
+            <corners android:radius="8dp" />
+        </shape>
+
+    </item>
+
+</selector>

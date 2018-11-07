@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/selector_btn_white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/spacing_12"
+    android:id="@+id/rl_content">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/spacing_12"
+        android:src="@drawable/iv_icon_search_address"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/spacing_12"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:text="浦东新区"
+        android:textColor="@color/text_color_222222"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/parting_line_heigth"
+        android:layout_alignParentBottom="true"
+        android:background="@color/parding_line"/>
+
+</RelativeLayout>

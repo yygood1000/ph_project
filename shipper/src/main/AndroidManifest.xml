@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.topjet.shipper">
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!--通过GPS芯片接收卫星的定位信息，定位精度达10米以内    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <!--用于申请获取蓝牙信息进行室内定位-->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <!--允许程序获取网络状态, 用于获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--允许程序访问WiFi网络信息,wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 悬浮窗权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <!-- 极光 star-->
+    <!-- Required -->
+    <permission
+        android:name="com.topjet.shipper.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="com.topjet.shipper.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- 极光end -->
+
+    <application
+        android:name=".ShipperApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_shipper"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <!--启动页-->
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--主Activity-->
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme">
+
+            <!-- 设置scheme 可以从网页跳转到这个页面 推送页通过这个页面处理 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <!-- 跳转链接 shipperapp://openpage?actionAndroid=com.topjet.shipper.ui.activity.V4_OrderEntryActivity&homeIndex=1 -->
+                <data
+                    android:host="openpage"
+                    android:scheme="shipperapp"/>
+            </intent-filter>
+        </activity>
+        <!--装机引导页-->
+        <activity
+            android:name="com.topjet.common.common.view.activity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--注册页面-->
+        <activity
+            android:name="com.topjet.common.user.view.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <!--服务协议页面-->
+        <activity
+            android:name="com.topjet.common.user.view.activity.ServiceContractActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme">
+        </activity>
+
+        <!-- 登录界面 -->
+        <activity
+            android:name="com.topjet.common.user.view.activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+        <!-- 实名认证 -->
+        <activity
+            android:name=".user.view.activity.RealNameAuthenticationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+        <!-- 身份认证 -->
+        <activity
+            android:name=".user.view.activity.IdentityAuthenticationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!-- 发货 -->
+        <activity
+            android:name=".deliver.view.activity.DeliverGoodsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 发货->其他信息 -->
+        <activity
+            android:name=".deliver.view.activity.OtherInformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 发货->发货收货信息录入 -->
+        <activity
+            android:name=".deliver.view.activity.AddressInformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+        <!-- 地图拖动选择详细地址 -->
+        <activity
+            android:name=".deliver.view.activity.SelectAddressMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+        <!-- 是否托管运费 -->
+        <activity
+            android:name=".deliver.view.activity.TrusteeshipActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--常发货源-->
+        <activity
+            android:name=".deliver.view.activity.OftenGoodsListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme">
+        </activity>
+
+        <!-- 添加联系人 -->
+        <activity
+            android:name=".user.view.activity.ContactsInputActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme">
+        </activity>
+
+        <!-- 常用联系人 -->
+        <activity
+            android:name=".user.view.activity.ContactsListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme">
+        </activity>
+
+        <!-- 选择常用联系人 -->
+        <activity
+            android:name=".deliver.view.activity.SelectContactsListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme">
+        </activity>
+
+        <!-- 重置密码 -->
+        <activity
+            android:name="com.topjet.common.user.view.activity.ResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!-- 自定义相机 -->
+        <activity
+            android:name="com.topjet.common.common.view.activity.CameraActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <activity
+            android:name="com.topjet.common.common.view.activity.ShowPicActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--忘记密码-->
+        <activity
+            android:name="com.topjet.common.user.view.activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme">
+        </activity>
+
+        <!-- 新手引导Dialog -->
+        <activity
+            android:name="com.topjet.common.common.view.activity.NoviceBootDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogActivityCommon"/>
+
+        <!-- 相册多选 -->
+        <activity
+            android:name="com.foamtrace.photopicker.PhotoPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+        <activity
+            android:name="com.foamtrace.photopicker.PhotoPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!-- 订单详情 -->
+        <activity
+            android:name="com.topjet.shipper.order.view.activity.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--退款 页面-->
+        <activity
+            android:name="com.topjet.common.order_detail.view.activity.RefundActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!-- 查看大图 -->
+        <activity
+            android:name="com.topjet.common.common.view.activity.ShowBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!-- 查看报价 -->
+        <activity
+            android:name="com.topjet.shipper.order.view.activity.ShowOfferActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+        <!--交易协议 页面-->
+        <activity
+            android:name="com.topjet.common.order_detail.view.activity.ProtocolActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--我的熟车 页面-->
+        <activity
+            android:name=".familiar_car.view.activity.FamiliarCarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--本地联系人 页面-->
+        <activity
+            android:name="com.topjet.common.contact.view.ContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--车辆详情  页面-->
+        <activity
+            android:name=".familiar_car.view.activity.TruckInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--我要用车  页面-->
+        <activity
+            android:name=".familiar_car.view.activity.FindTruckActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--附近车源  页面-->
+        <activity
+            android:name=".familiar_car.view.activity.AroundTruckMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <activity
+            android:name=".familiar_car.view.activity.AroundTruckMapListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleTranslucentTheme"/>
+
+        <!--附近车源 搜索地址页面-->
+        <activity
+            android:name="com.topjet.common.common.view.activity.SearchAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--分享下载  页面-->
+        <activity
+            android:name="com.topjet.common.common.view.activity.ShareDownloadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!-- 匿名  页面-->
+        <activity
+            android:name=".user.view.activity.AnonymousSetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+
+        <!--车辆位置  页面-->
+        <activity
+            android:name=".familiar_car.view.activity.TruckPositionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--分享货源  页面-->
+        <activity
+            android:name=".order.view.activity.ShareGoodsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--我的积分  页面-->
+        <activity
+            android:name="com.topjet.common.common.view.activity.MyIntegralActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--积分商城  页面-->
+        <activity
+            android:name="com.topjet.common.common.view.activity.IntegralMallActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--设置页面-->
+        <activity
+            android:name="com.topjet.common.common.view.activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!-- 关于我们 -->
+        <activity
+            android:name="com.topjet.common.user.view.activity.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--修改头像-->
+        <activity
+            android:name="com.topjet.common.user.view.activity.EditAvatarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--修改密码 验证旧密码页面-->
+        <activity
+            android:name="com.topjet.common.user.view.activity.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--修改秘密 新密码录入页面-->
+        <activity
+            android:name="com.topjet.common.user.view.activity.ChangePasswordInputActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--我的推荐人页面-->
+        <activity
+            android:name="com.topjet.common.user.view.activity.ReferrerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--推荐记录页面-->
+        <activity
+            android:name="com.topjet.common.user.view.activity.RecommendLogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--帮助中心-->
+        <activity
+            android:name="com.topjet.common.common.view.activity.HelpCenterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--我要投诉-->
+        <activity
+            android:name="com.topjet.common.order_detail.view.activity.ComplainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--评价页面-->
+        <activity
+            android:name="com.topjet.common.common.view.activity.CommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--天气页面-->
+        <activity
+            android:name="com.topjet.common.common.view.activity.WeatherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--公用的WebView页面-->
+        <activity
+            android:name="com.topjet.common.common.view.activity.SimpleWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--诚信查询-->
+        <activity
+            android:name="com.topjet.common.common.view.activity.IntegrityInquiryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--诚信查询，结果-->
+        <activity
+            android:name=".user.view.activity.UserInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!--系统消息  页面-->
+        <activity
+            android:name="com.topjet.common.message.view.activity.MessageListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"/>
+
+        <!-- 裁剪图片 -->
+        <activity
+            android:name="com.topjet.common.widget.clip.ClipImageViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:windowFullscreen="true"/>
+
+        <!-- 推送 -->
+        <activity
+            android:name="com.topjet.common.jpush.JPushActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentTheme"
+            android:windowFullscreen="true"/>
+
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- 微信支付回调 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- 监听apk下载安装Receiver -->
+        <receiver
+            android:name="com.topjet.common.common.receiver.DownloadReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+
+        <!--资源更新服务-->
+        <service android:name="com.topjet.common.resource.ResourceService"/>
+        <!--高德定位服务-->
+        <service android:name="com.amap.api.location.APSService"/>
+        <!--定时上传定位信息服务-->
+        <service android:name="com.topjet.common.common.service.FixedCycleLocationService"/>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="5ea1ca6ff18d48048290e2302aba4024"/>
+
+        <!-- 极光 star-->
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+
+
+        <!-- since 3.0.9 Required SDK 核心功能-->
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:authorities="com.topjet.shipper.DataProvider"
+            android:exported="true"
+            />
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <category android:name="com.topjet.shipper"/>
+            </intent-filter>
+
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.topjet.shipper"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.topjet.shipper"/>
+            </intent-filter>
+        </activity>
+        <!-- SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/DefaultDialog">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.topjet.shipper"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver"/>
+
+        <!-- Required since 3.0.7 -->
+        <!-- 新的tag/alias接口结果返回需要开发者配置一个自定的广播 -->
+        <!-- 该广播需要继承JPush提供的JPushMessageReceiver类, 并如下新增一个 Intent-Filter -->
+        <receiver
+            android:name="com.topjet.common.jpush.MyJPushMessageReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE"/>
+                <category android:name="com.topjet.shipper"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined. 用户自定义的广播接收器-->
+        <receiver
+            android:name="com.topjet.common.jpush.MyReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <!--Required 用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <!--Required 用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <!--Required 用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <!--Required 用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.topjet.shipper"/>
+            </intent-filter>
+        </receiver>
+
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="default"/>
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="${JPUSH_KEY_SHIPPER}"/> <!--  </>值来自开发者平台取得的AppKey-->
+        <!-- 极光 end-->
+        <meta-data
+            android:name="com.topjet.common.config.CustomGlideModule"
+            android:value="GlideModule"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginTop="@dimen/spacing_15"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="@dimen/spacing_77"
+            android:layout_height="@dimen/parting_line_heigth"
+            android:background="@color/color_dddddd"/>
+
+        <TextView
+            style="@style/tv_size_15_color_33_style"
+            android:layout_marginLeft="@dimen/spacing_6"
+            android:layout_marginRight="@dimen/spacing_6"
+            android:text="将货源分享到"/>
+
+        <View
+            android:layout_width="@dimen/spacing_77"
+            android:layout_height="@dimen/parting_line_heigth"
+            android:background="@color/color_dddddd"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginLeft="@dimen/spacing_12"
+        android:layout_marginRight="@dimen/spacing_12"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_32">
+
+        <LinearLayout
+            style="@style/LL_Weight_1_Width_0"
+            >
+
+            <ImageView
+                android:id="@+id/iv_wechat"
+                style="@style/Width_40_Heigth_40"
+                android:src="@drawable/icon_share_wechat"/>
+
+            <TextView
+                style="@style/tv_size_15_color_33_style"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:text="@string/wechat"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LL_Weight_1_Width_0"
+            >
+
+            <ImageView
+                android:id="@+id/iv_wechat_circle"
+                style="@style/Width_40_Heigth_40"
+                android:src="@drawable/icon_wechat_circle"/>
+
+            <TextView
+                style="@style/tv_size_15_color_33_style"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:text="@string/wechat_circle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_line_dd_full"/>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        style="@style/tv_size_17_color_96_style"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_btn_white"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/spacing_10"
+        android:text="@string/cancel"/>
+
+</LinearLayout>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_root"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:scaleType="center"
+            android:src="@drawable/title_bar_wallet_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_color0"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="@dimen/dp16"
+            android:text="历史记录"
+            android:textColor="@color/text_color0"
+            android:textSize="@dimen/sp12" />
+
+        <View
+            style="@style/view_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="?attr/baseTextColor"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="?attr/baseTextColor"
+        app:tabTextAppearance="@style/RYTTabLayout"
+        app:tabTextColor="#888888" />
+
+    <com.topjet.wallet.ui.widget.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

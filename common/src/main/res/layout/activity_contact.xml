@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/common_background"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_familiar_msg"
+        android:layout_width="match_parent"
+        style="@style/tv_size_12_color_22_style"
+        android:padding="@dimen/spacing_12"
+        android:background="@color/color_FFF2D8"
+        android:text="@string/add_familiar_car_msg"/>
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="@dimen/spacing_12">
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/spacing_12"
+            android:paddingRight="@dimen/spacing_12"
+            android:paddingTop="@dimen/spacing_8"
+            android:paddingBottom="@dimen/spacing_8"
+            android:hint="@string/hint_contact_search"
+            android:maxLength="11"
+            android:textColorHint="@color/color_CCCCCC"
+            style="@style/tv_size_15_color_22_style"
+            android:background="@drawable/shape_bg_contact_search"/>
+
+
+        <TextView
+            android:id="@+id/tv_btn_invitation"
+            style="@style/tv_size_15_color_green_style"
+            android:text="@string/invitation"
+            android:paddingLeft="@dimen/spacing_16"
+            android:paddingRight="@dimen/spacing_16"
+            android:paddingTop="@dimen/spacing_8"
+            android:paddingBottom="@dimen/spacing_8"
+            android:clickable="true"
+            android:enabled="false"
+            android:layout_marginLeft="@dimen/spacing_16"
+            android:textColor="@color/selector_white_green_text_color"
+            android:background="@drawable/selector_btn_green_border"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.topjet.common.contact.view.MySideBar
+            android:id="@+id/sb_view"
+            android:layout_centerVertical="true"
+            android:layout_width="12dp"
+            android:layout_height="380dp"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/tvLetter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_bg_letters"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:visibility="gone" >
+        </TextView>
+
+        <include layout="@layout/include_empty_contact"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="tv_size_13_color_66_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_666666</item>
+        <item name="android:textSize">@dimen/text_size13</item>
+    </style>
+
+    <style name="tv_size_20_color_0076FF_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_0076FF</item>
+        <item name="android:textSize">@dimen/text_size20</item>
+    </style>
+
+    <style name="tv_size_20_color_blue_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/v3_common_blue</item>
+        <item name="android:textSize">@dimen/text_size20</item>
+    </style>
+
+    <style name="tv_size_20_color_red_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/color_btn_red</item>
+        <item name="android:textSize">@dimen/text_size20</item>
+    </style>
+
+    <style name="tv_size_20_color_33_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_333333</item>
+        <item name="android:textSize">@dimen/text_size20</item>
+    </style>
+
+    <style name="tv_size_13_color_96_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_969696</item>
+        <item name="android:textSize">@dimen/text_size13</item>
+    </style>
+
+    <style name="tv_size_12_color_96_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_969696</item>
+        <item name="android:textSize">@dimen/text_size12</item>
+    </style>
+
+    <style name="tv_size_12_color_99_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_969696</item>
+        <item name="android:textSize">@dimen/text_size12</item>
+    </style>
+
+    <style name="tv_size_14_color_22_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textSize">@dimen/text_size14</item>
+    </style>
+
+    <style name="tv_size_14_color_33_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_333333</item>
+        <item name="android:textSize">@dimen/text_size14</item>
+    </style>
+
+    <style name="tv_size_15_color_33_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_333333</item>
+        <item name="android:textSize">@dimen/text_size15</item>
+    </style>
+
+    <style name="tv_size_14_color_white_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size14</item>
+    </style>
+
+    <style name="tv_size_11_color_white_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size11</item>
+    </style>
+
+    <style name="tv_size_11_color_red_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/color_btn_red</item>
+        <item name="android:textSize">@dimen/text_size11</item>
+    </style>
+
+    <style name="tv_size_11_color_96_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_969696</item>
+        <item name="android:textSize">@dimen/text_size11</item>
+    </style>
+
+    <style name="tv_size_11_color_yellow_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_FFB000</item>
+        <item name="android:textSize">@dimen/text_size11</item>
+    </style>
+
+    <style name="tv_size_10_color_white_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size10</item>
+    </style>
+
+    <style name="tv_size_12_color_22_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textSize">@dimen/text_size12</item>
+    </style>
+
+    <style name="tv_size_19_color_22_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textSize">@dimen/text_size19</item>
+    </style>
+
+    <style name="tv_size_9_color_22_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textSize">@dimen/text_size8</item>
+    </style>
+
+    <style name="tv_size_12_color_red_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/color_btn_red</item>
+        <item name="android:textSize">@dimen/text_size12</item>
+    </style>
+
+    <style name="tv_size_12_color_66_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_666666</item>
+        <item name="android:textSize">@dimen/text_size12</item>
+    </style>
+
+
+    <style name="tv_size_14_color_66_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_666666</item>
+        <item name="android:textSize">@dimen/text_size14</item>
+    </style>
+
+    <style name="tv_size_15_color_66_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_666666</item>
+        <item name="android:textSize">@dimen/text_size15</item>
+    </style>
+
+    <style name="tv_size_16_color_66_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_666666</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+    </style>
+
+    <style name="tv_size_14_color_96_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_969696</item>
+        <item name="android:textSize">@dimen/text_size14</item>
+    </style>
+
+    <style name="tv_size_15_color_96_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_969696</item>
+        <item name="android:textSize">@dimen/text_size15</item>
+    </style>
+
+    <style name="tv_size_16_color_96_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_969696</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+    </style>
+
+    <style name="tv_size_15_color_22_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textSize">@dimen/text_size15</item>
+    </style>
+
+    <style name="tv_size_16_color_22_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+    </style>
+
+    <style name="tv_size_14_color_green_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_16CA4E</item>
+        <item name="android:textSize">@dimen/text_size14</item>
+    </style>
+
+    <style name="tv_size_15_color_green_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_16CA4E</item>
+        <item name="android:textSize">@dimen/text_size15</item>
+    </style>
+
+    <style name="tv_size_15_color_yellow_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_FFB000</item>
+        <item name="android:textSize">@dimen/text_size15</item>
+    </style>
+
+    <style name="tv_size_13_color_22_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textSize">@dimen/text_size13</item>
+    </style>
+
+    <style name="tv_size_16_color_white_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+    </style>
+
+    <style name="tv_size_17_color_white_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size17</item>
+    </style>
+
+    <style name="tv_size_17_color_66_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_666666</item>
+        <item name="android:textSize">@dimen/text_size17</item>
+    </style>
+
+    <style name="tv_size_8_color_white_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size8</item>
+    </style>
+
+    <style name="tv_size_7_color_white_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size7</item>
+    </style>
+
+    <style name="tv_size_17_color_96_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_969696</item>
+        <item name="android:textSize">@dimen/text_size17</item>
+    </style>
+
+    <style name="tv_size_17_color_22_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textSize">@dimen/text_size17</item>
+    </style>
+
+    <style name="tv_size_17_color_33_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_333333</item>
+        <item name="android:textSize">@dimen/text_size17</item>
+    </style>
+
+
+    <style name="tv_size_15_color_red_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/color_btn_red</item>
+        <item name="android:textSize">@dimen/text_size15</item>
+    </style>
+
+    <style name="tv_size_18_color_22_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textSize">@dimen/text_size18</item>
+    </style>
+
+    <style name="tv_size_18_color_33_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_333333</item>
+        <item name="android:textSize">@dimen/text_size18</item>
+    </style>
+
+    <style name="tv_size_18_color_white_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size18</item>
+    </style>
+
+    <style name="tv_size_17_color_green_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_16CA4E</item>
+        <item name="android:textSize">@dimen/text_size17</item>
+    </style>
+
+    <style name="tv_size_21_color_yellow_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_FFB000</item>
+        <item name="android:textSize">@dimen/text_size21</item>
+    </style>
+
+    <style name="tv_size_21_color_red_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/color_btn_red</item>
+        <item name="android:textSize">@dimen/text_size21</item>
+    </style>
+
+    <style name="tv_size_22_color_red_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/color_btn_red</item>
+        <item name="android:textSize">@dimen/text_size22</item>
+    </style>
+
+    <style name="tv_size_22_color_yellow_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_FFB000</item>
+        <item name="android:textSize">@dimen/text_size22</item>
+    </style>
+
+    <style name="tv_size_20_color_yellow_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_FFB000</item>
+        <item name="android:textSize">@dimen/text_size20</item>
+    </style>
+
+    <style name="tv_size_12_color_yellow_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_FFB000</item>
+        <item name="android:textSize">@dimen/text_size12</item>
+    </style>
+
+    <style name="tv_size_22_color_blue_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_6E90FF</item>
+        <item name="android:textSize">@dimen/text_size22</item>
+    </style>
+
+    <style name="tv_size_12_color_blue_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_6E90FF</item>
+        <item name="android:textSize">@dimen/text_size12</item>
+    </style>
+
+    <style name="tv_size_12_color_white_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size12</item>
+    </style>
+
+    <style name="tv_size_17_color_blue_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_6E90FF</item>
+        <item name="android:textSize">@dimen/text_size17</item>
+    </style>
+
+    <style name="tv_size_26_color_22_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textSize">@dimen/text_size26</item>
+    </style>
+
+    <style name="tv_size_26_color_96_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/text_color_969696</item>
+        <item name="android:textSize">@dimen/text_size26</item>
+    </style>
+
+    <style name="tv_size_22_color_white_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size22</item>
+    </style>
+
+    <style name="tv_size_24_color_white_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size24</item>
+    </style>
+
+    <style name="tv_size_15_color_white_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size15</item>
+    </style>
+
+    <style name="tv_size_70_color_white_style" parent="Layout_Wrap_Wrap">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size70</item>
+    </style>
+
+    <!-- 用户信息页，红色标记 -->
+    <style name="tv_user_info_mark" parent="tv_size_8_color_white_style">
+        <item name="android:layout_marginLeft">-6dp</item>
+        <item name="android:background">@drawable/shape_bg_red_mark</item>
+        <item name="android:paddingBottom">@dimen/spacing_1</item>
+        <item name="android:paddingLeft">@dimen/spacing_6</item>
+        <item name="android:paddingRight">@dimen/spacing_6</item>
+        <item name="android:paddingTop">@dimen/spacing_1</item>
+    </style>
+
+    <style name="tv_label_yellow_bg" parent="tv_size_11_color_yellow_style">
+        <item name="android:layout_marginRight">@dimen/spacing_6</item>
+        <item name="android:background">@drawable/icon_bg_yellow_frame</item>
+        <item name="android:paddingLeft">@dimen/spacing_6</item>
+        <item name="android:paddingRight">@dimen/spacing_6</item>
+    </style>
+
+    <style name="tv_label_gray_bg" parent="tv_size_11_color_96_style">
+        <item name="android:layout_marginRight">@dimen/spacing_6</item>
+        <item name="android:background">@drawable/icon_bg_gray_frame</item>
+        <item name="android:paddingLeft">@dimen/spacing_6</item>
+        <item name="android:paddingRight">@dimen/spacing_6</item>
+    </style>
+</resources>

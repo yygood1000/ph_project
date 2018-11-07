@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/common_background"
+              android:orientation="vertical">
+
+
+    <TextView
+        style="@style/tv_size_15_color_22_style"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/spacing_14"
+        android:paddingLeft="@dimen/spacing_12"
+        android:paddingRight="@dimen/spacing_12"
+        android:paddingTop="@dimen/spacing_14"
+        android:text="@string/often_city"/>
+
+    <include layout="@layout/include_line_dd"/>
+
+    <TextView
+        android:id="@+id/tv_often_city"
+        style="@style/tv_size_14_color_66_style"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/spacing_15"
+        android:paddingLeft="@dimen/spacing_12"
+        android:paddingRight="@dimen/spacing_12"
+        android:paddingTop="@dimen/spacing_15"
+        android:text="上海／拉萨／苏州／嘉兴／杭州／西安／临汾／太原上海／拉萨／苏州／嘉兴／杭州／西安／临汾／太原"/>
+
+    <TextView
+        style="@style/tv_size_15_color_22_style"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/spacing_8"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/spacing_14"
+        android:paddingLeft="@dimen/spacing_12"
+        android:paddingRight="@dimen/spacing_12"
+        android:paddingTop="@dimen/spacing_14"
+        android:text="@string/operation_car"/>
+
+    <include layout="@layout/include_line_dd"/>
+</LinearLayout>

@@ -1,0 +1,158 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Match"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/spacing_15"
+    android:paddingRight="@dimen/spacing_15">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginTop="@dimen/spacing_50">
+
+        <TextView
+            android:id="@+id/tv_cur_login_way"
+            style="@style/TvPageTitle"
+            android:text="@string/password_login"/>
+
+        <TextView
+            android:id="@+id/tv_other_way"
+            style="@style/tv_size_15_color_96_style"
+            android:layout_alignBaseline="@+id/tv_cur_login_way"
+            android:layout_alignBottom="@+id/tv_cur_login_way"
+            android:layout_toLeftOf="@+id/iv_other_way"
+            android:paddingRight="@dimen/spacing_8"
+            android:text="@string/verification_code_login"/>
+
+        <ImageView
+            android:id="@+id/iv_other_way"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_other_way"
+            android:src="@drawable/signin_icon_enter"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_phone"
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginTop="@dimen/spacing_24">
+
+        <EditText
+            android:id="@+id/et_phonenumber"
+            style="@style/EditTextRegister"
+            android:hint="@string/please_input_phone_number"
+            android:inputType="number"
+            android:maxLength="11"/>
+
+        <ImageView
+            android:id="@+id/iv_delete_phonenumber"
+            style="@style/IvDeleteIcon"/>
+
+        <TextView
+            android:id="@+id/tv_send_code"
+            style="@style/BtnCheckCode"
+            android:text="@string/get_verification_code"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        style="@style/Layout_Match_Wrap">
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/EditTextResetPassword"
+            android:hint="@string/please_input_password"/>
+
+        <ImageView
+            android:id="@+id/iv_see_password"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/signin_icon_closeeye_nor_green"/>
+    </RelativeLayout>
+
+    <!-- 验证码输入框 -->
+    <EditText
+        android:id="@+id/et_check_code"
+        style="@style/EditTextRegister"
+        android:hint="@string/please_input_verification_code"
+        android:inputType="number"
+        android:maxLength="6"/>
+
+    <TextView
+        android:id="@+id/tv_login"
+        style="@style/BtnLargeWithCorner"
+        android:layout_marginTop="@dimen/spacing_24"
+        android:enabled="true"
+        android:text="@string/login"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_forget_password"
+        style="@style/Layout_Match_Wrap">
+
+        <TextView
+            android:id="@+id/tv_register"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_15"
+            android:paddingRight="@dimen/spacing_15"
+            android:paddingTop="@dimen/spacing_15"
+            android:text="@string/new_user_register"
+            android:textColor="@color/color_aaaaaa"/>
+
+        <TextView
+            android:id="@+id/tv_forget_password"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_15"
+            android:paddingLeft="@dimen/spacing_15"
+            android:paddingTop="@dimen/spacing_15"
+            android:text="@string/forget_password"
+            android:textColor="@color/color_aaaaaa"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_send_voice"
+        style="@style/Layout_Match_Wrap"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_register2"
+            style="@style/Layout_Wrap_Wrap"
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_15"
+            android:paddingRight="@dimen/spacing_15"
+            android:paddingTop="@dimen/spacing_15"
+            android:text="@string/new_user_register"
+            android:textColor="@color/color_aaaaaa"/>
+
+        <LinearLayout
+            android:id="@+id/ll_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:gravity="center"
+                android:paddingBottom="@dimen/spacing_15"
+                android:paddingTop="@dimen/spacing_15"
+                android:text="@string/cant_receive_code1"
+                android:textColor="@color/color_aaaaaa"/>
+
+            <TextView
+                android:id="@+id/tv_voice_code"
+                style="@style/Layout_Wrap_Wrap"
+                android:gravity="center"
+                android:paddingBottom="@dimen/spacing_15"
+                android:paddingTop="@dimen/spacing_15"
+                android:text="@string/voice_code"
+                android:textColor="@color/text_color_16CA4E"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.topjet.common.widget.RecyclerViewWrapper.RecyclerViewWrapper
+        android:id="@+id/recyclerViewWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/common_background"/>
+
+    <TextView
+        android:id="@+id/tv_btn_share"
+        style="@style/tv_size_17_color_white_style"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_btn_square_green"
+        android:gravity="center"
+        android:padding="@dimen/spacing_12"
+        android:text="@string/share"
+        android:enabled="false"/>
+
+</LinearLayout>

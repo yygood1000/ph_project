@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Layout_Match_Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Layout_Match_Wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout_Wrap_Match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Layout_Wrap_Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--RatingBar样式-->
+    <style name="CustomRatingbar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/selector_ratingbar_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/spacing_8</item>
+        <item name="android:maxHeight">@dimen/spacing_8</item>
+    </style>
+
+    <style name="CustomRatingBar_13" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/selector_rating_bar_large_bg</item>
+        <item name="android:minHeight">@dimen/spacing_13</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">@dimen/spacing_13</item>
+    </style>
+
+    <!--长40dp 宽40dp-->
+    <style name="Width_40_Heigth_40">
+        <item name="android:layout_width">@dimen/spacing_40</item>
+        <item name="android:layout_height">@dimen/spacing_40</item>
+    </style>
+
+    <!--LinearLayout 宽度权重1 竖排 子控件居中 显示-->
+    <style name="LL_Weight_1_Width_0" parent="Layout_Match_Wrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- ======================================各种分割线样式====================================== -->
+
+    <!--宽Match 高1px 分割线-->
+    <style name="LineMatchWidthHeigth1" parent="Layout_Match_Wrap">
+        <item name="android:layout_height">@dimen/parting_line_heigth</item>
+        <item name="android:background">@color/parding_line</item>
+    </style>
+
+    <!--宽1px 高Match 分割线-->
+    <style name="LineWidth1MatchHeigth" parent="Layout_Wrap_Match">
+        <item name="android:layout_width">@dimen/parting_line_width</item>
+        <item name="android:background">@color/parding_line</item>
+    </style>
+
+    <!--左间距12dp 宽Match 高1px 分割线-->
+    <style name="LineHeigth1Left12" parent="LineMatchWidthHeigth1">
+        <item name="android:layout_marginLeft">@dimen/spacing_12</item>
+    </style>
+
+    <!-- ======================================各种分割线样式====================================== -->
+    <!-- ======================================TitleBar相关====================================== -->
+
+    <!-- TitleBar返回按钮 -->
+    <style name="TitleBarDriverIvBack" parent="Layout_Wrap_Match">
+        <item name="android:paddingLeft">@dimen/title_bar_padding1</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:src">@drawable/iv_back</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- TitleBar文字 -->
+    <style name="TitleBarDriverTvSide" parent="Layout_Wrap_Match">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textSize">@dimen/title_bar_side_font_size</item>
+    </style>
+
+    <!-- TitleBar右边的图片 -->
+    <style name="TitleBarDriverIvSide" parent="Layout_Wrap_Match">
+        <item name="android:layout_width">@dimen/title_bar_right_image_height_inside</item>
+        <item name="android:layout_height">@dimen/title_bar_right_image_height_inside</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- ======================================TitleBar相关====================================== -->
+    <!-- ======================================登录 注册 系列相关====================================== -->
+
+
+    <!-- 登录 注册 密码找回 顶部大标题 -->
+    <style name="TvPageTitle" parent="Layout_Wrap_Wrap">
+        <item name="android:layout_marginTop">@dimen/spacing_50</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/text_size24</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 登录 注册 密码找回 清空按钮 -->
+    <style name="IvDeleteIcon" parent="Layout_Wrap_Wrap">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/icon_delete_nor</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- ======================================登录 注册 系列相关====================================== -->
+    <!-- ======================================列表刷新/加载相关====================================== -->
+
+    <!--上拉加载更多，自定义ProgressBar Style-->
+    <style name="ProgressLoadFooter">
+        <item name="android:indeterminateDrawable">@anim/refresh_footer_rotate</item>
+        <item name="android:minWidth">25dp</item>
+        <item name="android:layout_marginRight">@dimen/spacing_12</item>
+        <item name="android:maxWidth">60dp</item>
+        <item name="android:maxHeight">60dp</item>
+    </style>
+
+    <!--上拉加载更多，TextView Style-->
+    <style name="TextViewLoadFooter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color_969696</item>
+        <item name="android:textSize">@dimen/text_size13</item>
+    </style>
+
+    <!-- ======================================列表刷新/加载相关====================================== -->
+    <!-- ======================================输入框 相关====================================== -->
+
+    <!--注册页 普通输入框主题-->
+    <style name="EditTextRegister">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/hight_57</item>
+        <item name="android:background">@drawable/selector_login_edittext_bg_green</item>
+        <item name="android:textColorHint">@color/text_color_CCCCCC</item>
+        <item name="android:textColor">@color/text_color_333333</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!--密码找回页 密码输入框主题-->
+    <style name="EditTextResetPassword" parent="EditTextRegister">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">16</item>
+        <item name="android:digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
+        <item name="android:paddingRight">@dimen/spacing_15</item>
+    </style>
+
+    <!-- 范围单位 输入框  只能输入3位整数 -->
+    <style name="dialog_input_edit">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/shape_bg_unit_not_select</item>
+        <item name="android:textSize">@dimen/text_size15</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLength">3</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <!-- 报价金额的样式 -->
+    <style name="et_bidding_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">6</item>
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:textSize">@dimen/text_size26</item>
+    </style>
+
+    <!-- ======================================输入框 相关====================================== -->
+    <!-- ======================================首页 TabLayout 相关====================================== -->
+
+    <style name="TabLayoutItemStyle">
+        <item name="android:layout_width">@dimen/tablayout_item_width</item>
+        <item name="android:layout_height">@dimen/tablayout_item_height</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="TabLayoutImageStyle">
+        <item name="android:layout_width">@dimen/tablayout_image_size</item>
+        <item name="android:layout_height">@dimen/tablayout_image_size</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/spacing_3</item>
+    </style>
+
+    <style name="TabLayoutTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/selector_text_color_tabbar_driver</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textSize">@dimen/text_size11</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_4</item>
+    </style>
+
+    <style name="TabLayoutTextViewStyleCorner">
+        <item name="android:layout_width">@dimen/spacing_9</item>
+        <item name="android:layout_height">@dimen/spacing_9</item>
+        <item name="android:background">@drawable/shape_circle_red</item>
+    </style>
+
+    <!-- ======================================TabLayout 相关====================================== -->
+    <!-- ======================================我的订单 相关====================================== -->
+
+    <!--我的订单列表TabLayout文本大小-->
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/text_size14</item>
+    </style>
+
+    <!--我的订单列表信息文本框样式-->
+    <style name="MyOrderTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size13</item>
+        <item name="android:textColor">@color/text_color_666666</item>
+    </style>
+
+    <!-- ======================================我的订单 相关====================================== -->
+    <!-- ====================================== 顶部条件筛选 相关====================================== -->
+
+    <!--顶部条件筛选 分割线 样式-->
+    <style name="PardinglineStyle">
+        <item name="android:layout_width">@dimen/parting_line_width</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">@color/text_color_999999</item>
+    </style>
+
+    <!--顶部条件筛选文本框样式-->
+    <style name="TopOptionsTvStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/text_color_222222</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:textSize">@dimen/text_size14</item>
+        <item name="android:textColorHint">@color/text_color_666666</item>
+    </style>
+
+    <!--顶部条件筛选LinearLayout样式-->
+    <style name="TopOptionsLLStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 顶部条件筛选RelativeLayout样式-->
+    <style name="TopOptionsRLStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 顶部条件筛选箭头样式-->
+    <style name="TopOptionsArrowStyle" parent="Layout_Wrap_Wrap">
+        <item name="android:layout_marginLeft">@dimen/spacing_7</item>
+        <item name="android:background">@drawable/arrows_down_gray</item>
+    </style>
+
+    <!-- 顶部条件筛选车型车长RelativeLayout 特有样式-->
+    <style name="TopOptionsTruckStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 顶部条件筛选车型车长RelativeLayout 特有样式-->
+    <style name="TopOptionsCheckBoxStyle" parent="tv_size_14_color_22_style">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:checked">false</item>
+        <item name="android:drawableRight">@drawable/selector_cb_options_driver</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/selector_cb_text_color_22_to_6e90ff</item>
+        <item name="android:clickable">false</item>
+        <item name="android:background">@null</item>
+        <item name="android:focusable">false</item>
+    </style>
+    <!-- ====================================== 顶部条件筛选 相关====================================== -->
+    <!-- ======================================订单详情 相关====================================== -->
+    <!-- 费用框 背景样式-->
+    <style name="LLCenterPaddingLR12" parent="Layout_Match_Wrap">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/spacing_12</item>
+        <item name="android:paddingRight">@dimen/spacing_12</item>
+    </style>
+
+    <!-- 订单详情，弹出菜单字体样式 -->
+    <style name="tv_order_menu_style" parent="tv_size_15_color_22_style">
+        <item name="android:background">@drawable/selector_btn_white</item>
+        <item name="android:paddingBottom">@dimen/spacing_12</item>
+        <item name="android:paddingLeft">@dimen/spacing_24</item>
+        <item name="android:paddingRight">@dimen/spacing_24</item>
+        <item name="android:paddingTop">@dimen/spacing_12</item>
+    </style>
+
+    <!-- ======================================订单详情 相关====================================== -->
+    <!-- ======================================数字键盘 相关====================================== -->
+
+    <!-- 数字键盘 横线 -->
+    <style name="dialog_input_line_row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#EEE</item>
+    </style>
+    <!-- 数字键盘 纵线 -->
+    <style name="dialog_input_line_column">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#EEE</item>
+    </style>
+    <!-- 数字键盘text style -->
+    <style name="dialog_input_text" parent="Layout_Wrap_Wrap">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#030303</item>
+        <item name="android:textSize">29sp</item>
+    </style>
+    <!-- 数字键盘text abc style -->
+    <style name="dialog_input_text_abc" parent="Layout_Wrap_Wrap">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#030303</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">3dp</item>
+    </style>
+    <!-- 数字键盘linear style -->
+    <style name="dialog_input_linear">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/selector_btn_white</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- ======================================数字键盘 相关====================================== -->
+    <!-- ======================================设置页面 相关====================================== -->
+
+    <!-- 设置页面 Item style -->
+    <style name="RlSettingItemStyle" parent="Layout_Match_Wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_48</item>
+        <item name="android:paddingLeft">@dimen/spacing_12</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- 设置页面 ItemTitle style -->
+    <style name="TvSettingItemTitleStyle" parent="tv_size_15_color_22_style">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_12</item>
+        <item name="android:textSize">@dimen/text_size15</item>
+    </style>
+
+    <!-- 设置页面 ItemInfo style -->
+    <style name="TvSettingItemInfoStyle" parent="tv_size_13_color_96_style">
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- 设置页面 ItemArrow style -->
+    <style name="TvSettingItemArrowStyle" parent="Layout_Wrap_Wrap">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/spacing_12</item>
+        <item name="android:background">@drawable/icon_right_arrow</item>
+    </style>
+
+    <!-- ======================================设置页面 相关====================================== -->
+</resources>

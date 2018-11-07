@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_view_already"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_page_title"
+            style="@style/Layout_Match_Wrap"
+            android:orientation="vertical">
+            <!-- 查看过的悬浮title -->
+            <com.topjet.common.widget.viewpagetitle.ViewPagerTitle
+                android:id="@+id/pager_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="visible"
+                app:background_content_color="@color/white"
+                app:defaultTextViewColor="@color/text_color_666666"
+                app:line_end_color="@color/text_color_16CA4E"
+                app:line_height="@dimen/spacing_2"
+                app:line_start_color="@color/text_color_16CA4E"
+                app:line_width="@dimen/spacing_28"
+                app:selectedTextViewColor="@color/text_color_16CA4E"
+                app:text_padding="@dimen/spacing_9"/>
+    </LinearLayout>
+
+    <!-- 查看过的司机列表 -->
+    <com.topjet.common.widget.MyViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        />
+
+</LinearLayout>

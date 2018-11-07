@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:id="@+id/ll_content"
+    >
+
+    <LinearLayout
+        style="@style/ll_h_margin_left_12"
+        android:layout_marginBottom="@dimen/spacing_14"
+        android:layout_marginRight="@dimen/spacing_12"
+        android:layout_marginTop="@dimen/spacing_14"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_car"
+            android:layout_width="@dimen/spacing_60"
+            android:layout_height="@dimen/spacing_60"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shape_avatar_loading"/>
+
+        <LinearLayout
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/Layout_Match_Wrap"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_plate_number"
+                style="@style/tv_size_10_color_white_style"
+                android:layout_height="@dimen/spacing_16"
+                android:layout_marginLeft="@dimen/spacing_8"
+                android:layout_marginRight="@dimen/spacing_6"
+                android:background="@drawable/shape_blue_r2"
+                android:gravity="center"
+                android:paddingLeft="@dimen/spacing_6"
+                android:paddingRight="@dimen/spacing_6"
+                android:text="sdfadfafas"
+                />
+
+                <TextView
+                    android:id="@+id/tv_label"
+                    style="@style/tv_label_yellow_bg"
+                    android:text="已认证"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_truck_info"
+                style="@style/tv_size_15_color_22_style"
+                android:layout_marginLeft="@dimen/spacing_8"
+                android:layout_marginTop="@dimen/spacing_5"
+                android:text="中卡 9.6米"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/tv_size_13_color_66_style"
+                android:layout_marginLeft="@dimen/spacing_8"
+                android:layout_marginTop="@dimen/spacing_5"
+                android:maxWidth="180dp"
+                android:singleLine="true"
+                android:text="上海市徐汇区宜山路1009"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_location"
+            style="@style/Layout_Wrap_Wrap"
+            android:scaleType="center"
+            android:src="@drawable/ic_icon_local"
+            />
+
+        <ImageView
+            android:id="@+id/iv_order"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_marginLeft="@dimen/spacing_20"
+            android:scaleType="center"
+            android:src="@drawable/ic_icon_order"
+            />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/include_line_dd"/>
+</LinearLayout>

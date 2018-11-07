@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tabbar_bg_root"
+        android:gravity="bottom"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_one"
+            style="@style/TabLayoutItemStyle">
+
+            <ImageView
+                android:id="@+id/iv_tab_one"
+                style="@style/TabLayoutImageStyle"
+                android:background="@drawable/selector_tl_home_driver"/>
+
+            <TextView
+                android:id="@+id/tv_tab_one"
+                style="@style/TabLayoutTextViewStyle"
+                android:text="@string/home"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_two"
+            style="@style/TabLayoutItemStyle"
+            android:layout_toEndOf="@+id/rl_tab_one"
+            android:layout_toRightOf="@+id/rl_tab_one">
+
+            <ImageView
+                android:id="@+id/iv_tab_two"
+                style="@style/TabLayoutImageStyle"
+                android:layout_above="@+id/tv_tab_two"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_tl_order_driver"/>
+
+            <TextView
+                android:id="@+id/tv_tab_two"
+                style="@style/TabLayoutTextViewStyle"
+                android:text="@string/my_order"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_three"
+            style="@style/TabLayoutItemStyle"
+            android:layout_toLeftOf="@+id/rl_tab_four"
+            android:layout_toStartOf="@+id/rl_tab_four">
+
+            <ImageView
+                android:id="@+id/iv_tab_three"
+                style="@style/TabLayoutImageStyle"
+                android:background="@drawable/selector_tl_message_driver"/>
+
+            <TextView
+                android:id="@+id/tv_tab_three"
+                style="@style/TabLayoutTextViewStyle"
+                android:text="@string/message_center"/>
+
+            <TextView
+                android:id="@+id/tv_tab_three_corner"
+                style="@style/TabLayoutTextViewStyleCorner"
+                android:layout_alignRight="@+id/iv_tab_three"
+                android:layout_marginTop="@dimen/spacing_4"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_four"
+            style="@style/TabLayoutItemStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/iv_tab_four"
+                style="@style/TabLayoutImageStyle"
+                android:background="@drawable/selector_tl_my_driver"/>
+
+            <TextView
+                android:id="@+id/tv_tab_four"
+                style="@style/TabLayoutTextViewStyle"
+                android:text="@string/person_center"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_center"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacing_14"
+        android:background="@drawable/tabbar_findgoods"/>
+</RelativeLayout>

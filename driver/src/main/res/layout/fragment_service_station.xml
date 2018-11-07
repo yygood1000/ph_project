@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F17C67"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="去认证"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size20"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFB86C"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="网络异常测试1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size20"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F17C67"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="网络异常测试2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size20"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#869B74"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="网络异常测试3"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size20"/>
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F17C67"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="交易协议"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size20"/>
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F17C67"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="提交评论"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size20"/>
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F17C67"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="查看回评"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size20"/>
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F17C67"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="查看自身"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size20"/>
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F17C67"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="查看他人"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size20"/>
+
+</LinearLayout>

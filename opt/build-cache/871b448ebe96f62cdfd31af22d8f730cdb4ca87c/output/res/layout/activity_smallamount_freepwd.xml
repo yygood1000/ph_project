@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_hide"
+        style="@style/Layout_Match_Match"
+        android:layout_above="@+id/rlayout" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/text_padding2">
+
+            <ImageView
+                android:id="@+id/iv_pwdfree_leftclose"
+                style="@style/Layout_Wrap_Wrap"
+                android:scaleType="fitCenter"
+                android:src="@drawable/title_bar_wallet_back" />
+
+            <TextView
+                android:id="@+id/tv_pwdfree_title"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_centerHorizontal="true"
+                android:text="开启小额免密"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/text_size4" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v1"
+            style="@style/view_line"
+            android:layout_below="@+id/rl" />
+
+        <LinearLayout
+            android:id="@+id/ll_pwdfree_pwd_display"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/password_display_height"
+            android:layout_below="@+id/v1"
+            android:layout_margin="15dp"
+            android:background="@drawable/bg_password_display"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Tv_password_display"
+                android:password="true" />
+
+            <ImageView style="@style/Iv_password_display_divider" />
+
+            <TextView
+                style="@style/Tv_password_display"
+                android:password="true" />
+
+            <ImageView style="@style/Iv_password_display_divider" />
+
+            <TextView
+                style="@style/Tv_password_display"
+                android:password="true" />
+
+            <ImageView style="@style/Iv_password_display_divider" />
+
+            <TextView
+                style="@style/Tv_password_display"
+                android:password="true" />
+
+            <ImageView style="@style/Iv_password_display_divider" />
+
+            <TextView
+                style="@style/Tv_password_display"
+                android:password="true" />
+
+            <ImageView style="@style/Iv_password_display_divider" />
+
+            <TextView
+                style="@style/Tv_password_display"
+                android:password="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pwdfree_forgetpwd"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_pwdfree_pwd_display"
+            android:paddingRight="5dp"
+            android:text="忘记密码？"
+            android:textColor="@color/color_orange5"
+            android:textSize="@dimen/sp14" />
+
+
+        <TextView
+            android:id="@+id/tv_pwdfree_prompt"
+            style="@style/Layout_Match_Wrap"
+            android:layout_below="@+id/tv_pwdfree_forgetpwd"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp5"
+            android:paddingRight="@dimen/dp15"
+            android:text="@string/smallamount_freepwd_promptcontent"
+            android:textColor="@color/text_color_969696"
+            android:textSize="@dimen/sp11" />
+
+        <GridView
+            android:id="@+id/gv_pwdfree_pwd"
+            style="@style/AbsListView_Common"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/password_display_border"
+            android:descendantFocusability="afterDescendants"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

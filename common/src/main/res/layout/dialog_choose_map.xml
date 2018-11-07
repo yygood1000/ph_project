@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginBottom="@dimen/spacing_8"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:layout_marginRight="@dimen/spacing_10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/tv_size_13_color_66_style"
+            android:layout_width="match_parent"
+            android:background="@drawable/selector_btn_white_top_r12"
+            android:padding="@dimen/spacing_13"
+            android:textColor="@color/text_color_8F8E94"
+            android:gravity="center"
+            android:text="请选择地图"
+            />
+        <include layout="@layout/include_line_dd_full"/>
+        <TextView
+            android:id="@+id/tv_baidu_map"
+            style="@style/tv_size_20_color_0076FF_style"
+            android:layout_width="match_parent"
+            android:background="@drawable/selector_btn_white"
+            android:gravity="center"
+            android:padding="@dimen/spacing_15"
+            android:text="用百度地图导航"/>
+
+        <include layout="@layout/include_line_dd_full"/>
+
+        <TextView
+            android:id="@+id/tv_gaode_map"
+            style="@style/tv_size_20_color_0076FF_style"
+            android:layout_width="match_parent"
+            android:background="@drawable/selector_btn_white_bottom_r12"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/spacing_15"
+            android:text="用高德地图导航"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/tv_size_20_color_0076FF_style"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/spacing_8"
+            android:background="@drawable/selector_btn_white_r12"
+            android:gravity="center"
+            android:padding="@dimen/spacing_15"
+            android:text="取消"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--地图点聚合时的布局样式-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_root"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/red"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_count"
+        style="@style/tv_size_14_color_white_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/spacing_3"
+        android:text="9"/>
+
+    <TextView
+        android:id="@+id/tv_unit"
+        style="@style/tv_size_11_color_white_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-2dp"
+        android:text="单"/>
+
+
+</LinearLayout>

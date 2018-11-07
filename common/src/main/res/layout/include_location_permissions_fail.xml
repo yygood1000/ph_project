@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/goods_image_position_off"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="无法获取您当前位置请打开系统开启定位"
+        android:textSize="@dimen/text_size15"
+        android:textColor="@color/text_color_222222"
+        android:layout_marginTop="@dimen/spacing_22"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置 > 隐私 > 定位服务 > 交运配货"
+        android:textSize="@dimen/text_size15"
+        android:textColor="@color/text_color_6E90FF"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="允许“560物流”使用您的位置"
+        android:textSize="@dimen/text_size15"
+        android:textColor="@color/text_color_222222"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="或手动选择出发地"
+        android:textSize="@dimen/text_size15"
+        android:textColor="@color/text_color_222222"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_set_permissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置定位服务"
+        android:textSize="@dimen/text_size17"
+        android:textColor="@color/selector_textcolor_white_to_blue"
+        android:background="@drawable/selector_btn_corner_blue"
+        android:layout_marginTop="@dimen/spacing_20"
+        android:paddingLeft="@dimen/spacing_30"
+        android:paddingRight="@dimen/spacing_30"
+        android:paddingTop="@dimen/spacing_10"
+        android:paddingBottom="@dimen/spacing_10"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

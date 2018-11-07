@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rv_fuel_card_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:background="@android:color/white"
+            android:padding="@dimen/dp16">
+
+            <LinearLayout
+                android:id="@+id/ll_card_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/edt_fuel_card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入19位中石化加油卡卡号"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColorHint="#CCC"
+                    android:textSize="@dimen/sp18" />
+
+                <ImageView
+                    android:id="@+id/btn_fuel_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="@dimen/dp14"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingTop="@dimen/dp14"
+                    android:src="@drawable/credit_clear"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_fuel_err"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_card_no"
+                android:layout_marginTop="@dimen/dp4"
+                android:text="中石化加油卡为19位数字，以100011开头。"
+                android:textColor="#FF5E5E"
+                android:textSize="@dimen/sp11"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dp16">
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可用金额：元"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp13" />
+
+            <com.topjet.wallet.ui.widget.MyGridView
+                android:id="@+id/gv_fuel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp16"
+                android:horizontalSpacing="@dimen/dp10"
+                android:numColumns="3"
+                android:verticalSpacing="@dimen/dp10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:background="@android:color/white"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingRight="@dimen/dp16"
+            android:paddingTop="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付金额："
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp16" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_pay_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0元"
+                android:textColor="#FF5E5E"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_fuel_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16"
+            android:textColor="#FF222222"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_fuel_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp10"
+            android:lineSpacingMultiplier="1.3"
+            android:textColor="#FF969696"
+            android:textSize="@dimen/sp12" />
+
+        <Button
+            android:id="@+id/btn_fuel_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp38"
+            android:layout_marginBottom="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="?attr/btnGradient"
+            android:enabled="false"
+            android:text="充值"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+</ScrollView>

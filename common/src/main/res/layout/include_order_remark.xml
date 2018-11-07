@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_remark_info"
+              style="@style/Layout_Match_Wrap"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="@dimen/spacing_12">
+
+
+    <TextView
+        style="@style/tv_size_15_color_96_style"
+        android:text="@string/remark_info"/>
+
+    <TextView
+        android:id="@+id/tv_remark_info"
+        style="@style/tv_size_14_color_22_style"
+        android:paddingTop="@dimen/spacing_10"
+        android:text="从客户需求出发，为客户的利益着想。从客户需求出发，为客户的利益着想。"/>
+
+    <ImageView
+        android:id="@+id/iv_remark_info"
+        android:layout_width="@dimen/spacing_80"
+        android:layout_height="@dimen/spacing_80"
+        android:layout_marginTop="@dimen/spacing_10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/shape_avatar_loading"/>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/Layout_Match_Wrap"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <!-- 上半部分 -->
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginLeft="@dimen/spacing_38"
+        android:layout_marginRight="@dimen/spacing_38"
+        android:background="@drawable/shape_bg_dialog_root_top_left_right_r8"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            style="@style/Layout_Match_Wrap">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/tv_size_18_color_22_style"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/spacing_13"
+                android:text="请输入提货码"/>
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/spacing_12"
+                android:clickable="true"
+                android:src="@drawable/iv_icon_close"/>
+        </RelativeLayout>
+
+        <include layout="@layout/include_line_dd_full"/>
+
+        <com.topjet.common.widget.PwdEditText
+            android:id="@+id/pe_pick_up"
+            style="@style/Layout_Match_Wrap"
+            android:layout_height="@dimen/edit_code_height"
+            android:layout_marginLeft="@dimen/spacing_16"
+            android:layout_marginRight="@dimen/spacing_16"
+            android:layout_marginTop="@dimen/spacing_24"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_btn_confirm"
+            style="@style/tv_size_18_color_white_style"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/spacing_16"
+            android:layout_marginRight="@dimen/spacing_16"
+            android:layout_marginTop="@dimen/spacing_24"
+            android:background="@drawable/selector_btn_red_r"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_13"
+            android:paddingTop="@dimen/spacing_13"
+            android:text="@string/confirm_pick_cp"/>
+
+
+        <TextView
+            android:id="@+id/tv_message"
+            style="@style/tv_size_12_color_22_style"
+            android:layout_marginLeft="@dimen/spacing_16"
+            android:layout_marginRight="@dimen/spacing_16"
+            android:layout_marginTop="@dimen/spacing_30"
+            android:gravity="center"
+            android:text="@string/pick_up_message"
+            />
+    </LinearLayout>
+    <!-- 下半部分 -->
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginLeft="@dimen/spacing_38"
+        android:layout_marginRight="@dimen/spacing_38"
+        android:background="@drawable/input_numerical_layout_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_call"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:clickable="true"
+            android:src="@drawable/iv_icon_call_up"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/tv_size_12_color_22_style"
+            android:padding="@dimen/spacing_6"
+            android:text="@string/call_sender"/>
+    </LinearLayout>
+
+</LinearLayout>

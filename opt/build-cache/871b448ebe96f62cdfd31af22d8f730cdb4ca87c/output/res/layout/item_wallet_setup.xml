@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/text_padding2" >
+
+    <TextView
+        android:id="@+id/item_setup_name"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_centerVertical="true"
+        android:minWidth="88dp"
+        android:text=""
+        android:textColor="@color/text_color4"
+        android:textSize="@dimen/text_size3" />
+
+     <TextView
+        android:id="@+id/item_setup_content"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/item_setup_img"
+        android:text=""
+        android:paddingRight="@dimen/text_padding1"
+        android:textColor="@color/text_color1"
+        android:textSize="@dimen/text_size2" />
+    <ImageView
+        android:id="@+id/item_setup_img"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wallet_right_arrow"
+        android:visibility="visible" />
+
+</RelativeLayout>

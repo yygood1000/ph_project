@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 城市选择 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_select_local"
+    style="@style/Layout_Match_Match"
+    android:background="@color/transparent_65"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="84dp">
+
+    <RadioGroup
+        style="@style/Layout_Match_Wrap"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_city_select_local_left_green"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_24"
+            android:paddingTop="@dimen/spacing_24"
+            android:singleLine="true"
+            android:text="省"
+            android:textColor="@drawable/city_selecter_rb_text_color_green"
+            android:textSize="20dp"/>
+
+        <!--        <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#CCCCCC" />-->
+
+        <RadioButton
+            android:id="@+id/rb_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_city_select_local_center_green"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_24"
+            android:paddingTop="@dimen/spacing_24"
+            android:singleLine="true"
+            android:text="市"
+            android:textColor="@drawable/city_selecter_rb_text_color_green"
+            android:textSize="20dp"/>
+
+        <!--        <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#CCCCCC" />-->
+
+        <RadioButton
+            android:id="@+id/rb_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_city_select_local_right_green"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_24"
+            android:paddingTop="@dimen/spacing_24"
+            android:singleLine="true"
+            android:text="区"
+            android:textColor="@drawable/city_selecter_rb_text_color_green"
+            android:textSize="20dp"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC" />
+
+    <FrameLayout
+        style="@style/Layout_Match_Wrap"
+        android:background="@drawable/shape_bg_city_select">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gv_area"
+            style="@style/Layout_Match_Match"
+            android:numColumns="4"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gv_city"
+            style="@style/Layout_Match_Match"
+            android:numColumns="4"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gv_province"
+            style="@style/Layout_Match_Match"
+            android:numColumns="4"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</LinearLayout>

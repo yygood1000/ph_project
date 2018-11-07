@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Layout_Match_Match"
+        android:layout_margin="@dimen/dp30"
+        android:background="@drawable/bg_btn_white"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/Layout_Match_Wrap">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="代充时间说明"
+                android:textColor="#212121"
+                android:textSize="@dimen/sp16" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp12"
+                android:src="@drawable/cha" />
+        </RelativeLayout>
+
+        <View style="@style/view_line" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dp5"
+            android:padding="@dimen/dp16"
+            android:text="客服工作时间：8:30-17:30，当前客服已下班，若继续操作，则需下一个工作日8:30以后才能为您代充，是否继续？"
+            android:textColor="@color/text_color0"
+            android:textSize="@dimen/sp13" />
+
+
+        <View style="@style/view_line" />
+
+        <TextView
+            android:id="@+id/btn_fuel_goon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="可以等，继续操作"
+            android:textColor="?attr/baseTextColor"
+            android:textSize="@dimen/sp16" />
+
+        <View style="@style/view_line" />
+
+        <TextView
+            android:id="@+id/btn_fuel_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="取消"
+            android:textColor="?attr/baseTextColor"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+</LinearLayout>

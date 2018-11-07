@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_background">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height2"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/view_statusbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_25"
+            android:background="@drawable/shape_bg_gradient_driver"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_12"
+                android:layout_marginRight="@dimen/spacing_10"
+                android:background="@drawable/iv_back"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_search"
+                android:layout_toRightOf="@+id/iv_back"
+                android:background="@drawable/shape_bg_et_search">
+
+                <ImageView
+                    android:id="@+id/iv_icon_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_8"
+                    android:layout_marginRight="@dimen/spacing_6"
+                    android:background="@drawable/iv_icon_search_address"/>
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/iv_clear"
+                    android:layout_toRightOf="@+id/iv_icon_search"
+                    android:background="@drawable/shape_bg_et_search"
+                    android:hint="@string/hint_search_address"
+                    android:textColor="@color/text_color_969696"
+                    android:textColorHint="@color/text_color_969696"
+                    android:textSize="@dimen/text_size13"/>
+
+                <ImageView
+                    android:id="@+id/iv_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_8"
+                    android:layout_marginRight="@dimen/spacing_6"
+                    android:background="@drawable/icon_delete_nor"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_28"
+                android:layout_marginRight="@dimen/spacing_12"
+                android:text="@string/search"
+                android:textColor="@color/text_color_222222"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parting_line_heigth"
+                android:layout_alignParentBottom="true"
+                android:background="@color/parding_line"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_search"
+        tools:listitem="@layout/listitem_seach"/>
+</RelativeLayout>

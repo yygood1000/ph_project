@@ -1,0 +1,130 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao' // apply plugin greendao
+
+def config = rootProject.ext.android // 配置
+def dep = rootProject.ext.dependencies // 依赖
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+//        multiDexEnabled config.multiDexEnabled
+
+        compileOptions {
+            sourceCompatibility config.JavaVersion
+            targetCompatibility config.JavaVersion
+        }
+
+        // 环境参数
+        buildConfigField 'String', 'ENVIRONMENT', "\""+ENVIRONMENT+"\""
+        // url环境
+        if(ENVIRONMENT.equals("dev")) {
+            buildConfigField 'String', 'BASE_URL', BASE_URL_DEV
+            buildConfigField 'String', 'CALL_PHONE_ADV', CALL_PHONE_ADV_DEV
+            buildConfigField 'String', 'PROTOCOL_URL', PROTOCOL_URL_DEV
+            buildConfigField 'String', 'REFUND_URL', REFUND_URL_DEV
+            buildConfigField 'String', 'COMMENT_URL', COMMENT_URL_DEV
+            buildConfigField 'String', 'CHECK_COMMENT_URL', CHECK_COMMENT_URL_DEV
+            buildConfigField 'String', 'COMMENT_LIST_URL', COMMENT_LIST_URL_DEV
+            buildConfigField 'String', 'HELP_CENTER_URL', HELP_CENTER_URL_DEV
+            buildConfigField 'String', 'COMPLAINT_URL', COMPLAINT_URL_DEV
+            buildConfigField 'String', 'ILLEGAL_INQUIRY_URL', ILLEGAL_INQUIRY_DEV
+        }else if(ENVIRONMENT.equals("test")){
+            buildConfigField 'String', 'BASE_URL', BASE_URL_TEST
+            buildConfigField 'String', 'CALL_PHONE_ADV', CALL_PHONE_ADV_TEST
+            buildConfigField 'String', 'PROTOCOL_URL', PROTOCOL_URL_TEST
+            buildConfigField 'String', 'REFUND_URL', REFUND_URL_TEST
+            buildConfigField 'String', 'COMMENT_URL', COMMENT_URL_TEST
+            buildConfigField 'String', 'CHECK_COMMENT_URL', CHECK_COMMENT_URL_TEST
+            buildConfigField 'String', 'COMMENT_LIST_URL', COMMENT_LIST_URL_TEST
+            buildConfigField 'String', 'HELP_CENTER_URL', HELP_CENTER_URL_TEST
+            buildConfigField 'String', 'COMPLAINT_URL', COMPLAINT_URL_TEST
+            buildConfigField 'String', 'ILLEGAL_INQUIRY_URL', ILLEGAL_INQUIRY_TEST
+        }else if(ENVIRONMENT.equals("baolei")){
+            buildConfigField 'String', 'BASE_URL', BASE_URL_BAOLEI
+            buildConfigField 'String', 'CALL_PHONE_ADV', CALL_PHONE_ADV_BAOLEI
+            buildConfigField 'String', 'PROTOCOL_URL', PROTOCOL_URL_BAOLEI
+            buildConfigField 'String', 'REFUND_URL', REFUND_URL_BAOLEI
+            buildConfigField 'String', 'COMMENT_URL', COMMENT_URL_BAOLEI
+            buildConfigField 'String', 'CHECK_COMMENT_URL', CHECK_COMMENT_URL_BAOLEI
+            buildConfigField 'String', 'COMMENT_LIST_URL', COMMENT_LIST_URL_BAOLEI
+            buildConfigField 'String', 'HELP_CENTER_URL', HELP_CENTER_URL_BAOLEI
+            buildConfigField 'String', 'COMPLAINT_URL', COMPLAINT_URL_BAOLEI
+            buildConfigField 'String', 'ILLEGAL_INQUIRY_URL', ILLEGAL_INQUIRY_BAOLEI
+        }else if(ENVIRONMENT.equals("closed_beta")){
+            buildConfigField 'String', 'BASE_URL', BASE_URL_CLOSED_BETA
+            buildConfigField 'String', 'CALL_PHONE_ADV', CALL_PHONE_ADV_CLOSED_BETA
+            buildConfigField 'String', 'PROTOCOL_URL', PROTOCOL_URL_CLOSED_BETA
+            buildConfigField 'String', 'REFUND_URL', REFUND_URL_CLOSED_BETA
+            buildConfigField 'String', 'COMMENT_URL', COMMENT_URL_CLOSED_BETA
+            buildConfigField 'String', 'CHECK_COMMENT_URL', CHECK_COMMENT_URL_CLOSED_BETA
+            buildConfigField 'String', 'COMMENT_LIST_URL', COMMENT_LIST_URL_CLOSED_BETA
+            buildConfigField 'String', 'HELP_CENTER_URL', HELP_CENTER_URL_CLOSED_BETA
+            buildConfigField 'String', 'COMPLAINT_URL', COMPLAINT_URL_CLOSED_BETA
+            buildConfigField 'String', 'ILLEGAL_INQUIRY_URL', ILLEGAL_INQUIRY_CLOSED_BETA
+        }else if(ENVIRONMENT.equals("product")){
+            buildConfigField 'String', 'BASE_URL', BASE_URL
+            buildConfigField 'String', 'CALL_PHONE_ADV', CALL_PHONE_ADV
+            buildConfigField 'String', 'PROTOCOL_URL', PROTOCOL_URL
+            buildConfigField 'String', 'REFUND_URL', REFUND_URL
+            buildConfigField 'String', 'COMMENT_URL', COMMENT_URL
+            buildConfigField 'String', 'CHECK_COMMENT_URL', CHECK_COMMENT_URL
+            buildConfigField 'String', 'COMMENT_LIST_URL', COMMENT_LIST_URL
+            buildConfigField 'String', 'HELP_CENTER_URL', HELP_CENTER_URL
+            buildConfigField 'String', 'COMPLAINT_URL', COMPLAINT_URL
+            buildConfigField 'String', 'ILLEGAL_INQUIRY_URL', ILLEGAL_INQUIRY_URL
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+
+        }
+    }
+}
+
+greendao {
+    schemaVersion 1
+    daoPackage 'com.topjet.common.db.greendao'
+    targetGenDir 'src/main/java'
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api dep.gson
+    api dep.gridlayout
+    api dep.design
+    // 切换钱包正式库，和测试库，之前需要清除缓存
+    // 缓存代码  gradlew clean --refresh-dependencies build
+    //    compile dep.wallet
+    api dep.pickerview
+    api dep.butterknife
+    api dep.rxjava
+    api dep.rxandroid
+    api dep.rxbinding
+    api dep.retrofit
+    api dep.converter_gson
+    api dep.adapter_rxjava2
+    api dep.logging_interceptor
+    api dep.barlibrary
+    //    compile dep.gif
+    api dep.brvah
+    api dep.rx_lifecycle
+    api dep.rx_lifecycle_components
+    api dep.rx_premission
+    api 'com.umeng.analytics:analytics:6.1.4'
+    api dep.rebound_anim
+    api dep.greendao
+    api dep.greendao_generator
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    //    compile dep.webview
+    annotationProcessor dep.butterknife_compiler
+    implementation project(':photopicker')
+}

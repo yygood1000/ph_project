@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp40"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingTop="@dimen/dp30">
+
+        <TextView
+            style="@style/Layout_Wrap_Wrap"
+            android:text="@string/wallet_bankcard_sms_content"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/sp20" />
+
+        <TextView
+            android:id="@+id/tv_band_content"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_marginTop="@dimen/dp7"
+            android:text="@string/wallet_bankcard_sms_content1"
+            android:textColor="@color/text_color1"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20">
+
+        <RelativeLayout
+            style="@style/Layout_Match_Wrap"
+            android:layout_gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/et_band_code"
+                style="@style/Layout_Match_Wrap"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:hint="@string/wallet_bankcard_sms_hint"
+                android:inputType="number"
+                android:lineSpacingExtra="@dimen/dp10"
+                android:maxLength="@integer/restrict_verify_code_length"
+                android:textColor="@color/text_color4"
+                android:textColorHint="@color/text_color2"
+                android:textSize="@dimen/sp16" />
+
+            <ImageView
+                android:id="@+id/iv_band_codeclear"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/credit_clear"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_band"
+            style="@style/view_line"
+            android:layout_height="@dimen/dp05"
+            android:layout_marginTop="@dimen/dp7"
+            android:background="@color/color_green_16CA4E" />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginRight="@dimen/dp20">
+
+        <!-- 获取验证码按钮 -->
+        <com.topjet.wallet.ui.widget.CountDownButton
+            android:id="@+id/btn_band_verifycode"
+            style="@style/GetVerifyCode_Btn_Common"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:textColor="@color/text_color2"
+            android:textSize="@dimen/sp12" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_band_moeny"
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginTop="50dp"
+        android:padding="@dimen/text_padding2"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_gravity="center_vertical"
+            android:text="@string/paymeny_money_with_colon"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/text_size4" />
+
+        <TextView
+            android:id="@+id/tv_band_money"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_gravity="center_vertical"
+            android:text="1元"
+            android:textColor="@color/color_red2"
+            android:textSize="@dimen/text_size4" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_band_confirm"
+        style="@style/btn_style"
+        android:text="@string/wallet_bankcard_sms_confirm" />
+
+    <RelativeLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginRight="@dimen/dp12">
+
+        <TextView
+            android:id="@+id/tv_band_no_sms"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:text="@string/wallet_bankcard_sms_no"
+            android:textColor="@color/color_orange4"
+            android:textSize="@dimen/sp12" />
+    </RelativeLayout>
+</LinearLayout>

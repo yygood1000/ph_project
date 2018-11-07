@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_background">
+
+    <com.topjet.common.widget.RecyclerViewWrapper.RecyclerViewWrapper
+        android:id="@+id/recyclerViewWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_submit"/>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/tv_size_17_color_white_style"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_btn_square_blue"
+        android:text="@string/submit"
+        android:gravity="center"
+        android:clickable="true"/>
+
+</RelativeLayout>

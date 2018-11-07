@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="107dp"
+        android:background="@drawable/bg_share_goods_item"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_40"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_depart_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="上海市 徐汇区"
+                android:textColor="@color/text_color_222222"
+                android:textSize="@dimen/text_size16"/>
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_6"
+                android:layout_marginRight="@dimen/spacing_6"
+                android:background="@drawable/order_list_icon_blueline"/>
+
+            <TextView
+                android:id="@+id/tv_destination_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="上海市 徐汇区"
+                android:textColor="@color/text_color_222222"
+                android:textSize="@dimen/text_size16"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_order_type"
+                style="@style/tv_size_13_color_96_style"
+                android:text="今定今装"/>
+
+            <TextView
+                android:id="@+id/tv_order_info"
+                style="@style/tv_size_13_color_96_style"
+                android:layout_marginTop="@dimen/spacing_10"
+                android:text="普货30吨  求18米  平板车  运费托管"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_16"/>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/Layout_Match_Wrap"
+              android:background="@color/white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_driver_info"
+        style="@style/Layout_Match_Wrap"
+        android:layout_margin="@dimen/spacing_12"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/Layout_Wrap_Wrap"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_user_avatar"
+                android:layout_width="@dimen/spacing_50"
+                android:layout_height="@dimen/spacing_50"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shape_avatar_loading"/>
+
+            <RatingBar
+                android:id="@+id/rb_score"
+                style="@style/CustomRatingbar"
+                android:layout_marginTop="@dimen/spacing_4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_8">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/tv_size_15_color_22_style"/>
+
+            <TextView
+                android:id="@+id/tv_order_num"
+                style="@style/tv_size_12_color_66_style"
+                android:paddingTop="@dimen/spacing_6"/>
+
+            <TextView
+                android:id="@+id/tv_truck_info"
+                style="@style/tv_size_12_color_66_style"
+                android:paddingTop="@dimen/spacing_6"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Layout_Wrap_Wrap"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/tv_size_11_color_96_style"
+                android:layout_marginBottom="@dimen/spacing_12"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                style="@style/Layout_Wrap_Wrap"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_message"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:scaleType="center"
+                    android:src="@drawable/iv_icon_message_shipper"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_call"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_marginLeft="@dimen/spacing_20"
+                    android:scaleType="center"
+                    android:src="@drawable/iv_icon_call_up"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

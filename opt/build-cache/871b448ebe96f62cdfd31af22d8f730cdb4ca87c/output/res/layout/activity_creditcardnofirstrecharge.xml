@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_root"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp7"
+        android:layout_marginTop="@dimen/dp7"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp20"
+        android:paddingLeft="@dimen/dp12"
+        android:paddingRight="@dimen/dp12"
+        android:paddingTop="@dimen/dp20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/creditcard_paymentmoney"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv_credutcard_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_red0"
+            android:textSize="@dimen/sp26" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/Layout_Match_Wrap"
+            android:padding="@dimen/dp12">
+
+            <TextView
+                android:id="@+id/tv_credutcard_cardholder"
+                style="@style/Layout_Wrap_Wrap"
+                android:minWidth="@dimen/text_width"
+                android:text="@string/creditcard_holder"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_cardholder_name"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_toLeftOf="@+id/iv_cardholder_hint"
+                android:layout_toRightOf="@+id/tv_credutcard_cardholder"
+                android:text=""
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/sp14" />
+
+            <ImageView
+                android:id="@+id/iv_cardholder_hint"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/doubt_gray"
+                android:paddingLeft="@dimen/dp10" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="@dimen/dp12" />
+
+        <LinearLayout
+            android:id="@+id/ll_bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_recharge_icon"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:layout_margin="@dimen/dp16"
+                android:src="@drawable/wallet_no_bankcard" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_recharge_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp5"
+                    android:text="--"
+                    android:textColor="#FF222222"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/tv_recharge_describe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:drawablePadding="@dimen/dp5"
+                    android:text="--"
+                    android:textColor="#FF666666"
+                    android:textSize="@dimen/sp10" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@drawable/wallet_right_arrow" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="@dimen/dp12" />
+
+        <RelativeLayout
+            style="@style/Layout_Match_Wrap"
+            android:padding="@dimen/dp12">
+
+            <TextView
+                android:id="@+id/tv_credutcard_phone"
+                style="@style/Layout_Wrap_Wrap"
+                android:minWidth="@dimen/text_width"
+                android:text="@string/creditcard_phone"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/sp14" />
+
+            <RelativeLayout
+                style="@style/Layout_Match_Wrap"
+                android:layout_toLeftOf="@+id/iv_phone_hint"
+                android:layout_toRightOf="@+id/tv_credutcard_phone">
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    style="@style/Layout_Match_Wrap"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="@string/creditcard_phone_hint"
+                    android:inputType="number"
+                    android:maxLength="@integer/restrict_wellet_money_length"
+                    android:textColor="@color/text_color4"
+                    android:textColorHint="@color/text_color2"
+                    android:textSize="@dimen/sp14" />
+
+                <ImageView
+                    android:id="@+id/iv_phone_clear"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/credit_clear"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_phone_hint"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/doubt_gray"
+                android:layout_marginLeft="@dimen/dp10" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/btn_style"
+        android:text="@string/wallet_btn_next" />
+</LinearLayout>

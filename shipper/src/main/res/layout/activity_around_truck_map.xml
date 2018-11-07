@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background">
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/shape_bg_white_r4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_edit"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginLeft="@dimen/spacing_12"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:background="@drawable/shape_bg_f3f5f9_r4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_12"
+            android:paddingRight="@dimen/spacing_12">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/nav_icon_search24"/>
+
+            <TextView
+                android:id="@+id/tv_depart"
+                style="@style/tv_size_13_color_22_style"
+                android:layout_marginLeft="@dimen/spacing_8"
+                android:ellipsize="end"
+                android:hint="@string/please_input_search_address"
+                android:singleLine="true"
+                android:textColorHint="@color/text_color_999999"
+                android:textSize="@dimen/text_size13"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--筛选条件布局-->
+    <RelativeLayout
+        android:id="@+id/rl_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_input">
+
+        <include
+            android:id="@+id/include_options"
+            layout="@layout/include_layout_filter_options"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_options">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv_local_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_6"
+                android:background="@drawable/iv_icon_location_point"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_location"
+        android:layout_marginLeft="@dimen/spacing_15"
+        android:background="@drawable/iv_around_goods_refresh"/>
+
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/spacing_20"
+        android:layout_marginLeft="@dimen/spacing_15"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:background="@drawable/iv_around_goods_location"/>
+
+</RelativeLayout>

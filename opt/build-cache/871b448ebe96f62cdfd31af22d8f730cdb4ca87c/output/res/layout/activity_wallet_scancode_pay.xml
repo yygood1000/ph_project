@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/ll_scan"
+        style="@style/Layout_Match_Wrap"
+        android:background="@color/bg_root"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_payee"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/pay2topjet" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_payee"
+            android:gravity="center"
+            android:paddingBottom="@dimen/text_padding2"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp24" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_code"
+        android:layout_width="157dp"
+        android:layout_height="177dp"
+        android:layout_below="@+id/ll_scan"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_termOfValidity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_code"
+        android:layout_marginBottom="@dimen/common_dialog_content_line_space"
+        android:gravity="center"
+        android:text="@string/term_of_validity"
+        android:textSize="@dimen/text_size2" />
+
+    <ImageView
+        android:id="@+id/fei"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_termOfValidity"
+        android:layout_marginBottom="@dimen/common_dialog_content_line_space"
+        android:layout_marginLeft="@dimen/common_dialog_content_line_space"
+        android:layout_marginRight="@dimen/common_dialog_content_line_space"
+        android:background="@drawable/bg_dotted_line"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/ll_fenxiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fei"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/password_widget_vertical_padding" >
+
+        <RelativeLayout
+            android:id="@+id/rl_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_dialog_root_horizontal_margin" >
+
+            <ImageView
+                android:id="@+id/iv_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_wechat" />
+
+            <TextView
+                android:id="@+id/tv_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_wechat"
+                android:layout_centerHorizontal="true"
+                android:text="@string/wechat" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_moments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_dialog_root_horizontal_margin" >
+
+            <ImageView
+                android:id="@+id/iv_moments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_moments" />
+
+            <TextView
+                android:id="@+id/tv_moments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_moments"
+                android:layout_centerHorizontal="true"
+                android:text="@string/moments" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_tishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_fenxiang"
+        android:layout_marginLeft="@dimen/text_padding1"
+        android:src="@drawable/icon_gantan" />
+
+    <TextView
+        android:id="@+id/tv_tishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_fenxiang"
+        android:layout_marginLeft="@dimen/title_bar_padding1"
+        android:layout_toRightOf="@+id/iv_tishi"
+        android:text="@string/tishi"
+        android:textColor="@color/color_38bdf8" />
+
+    <TextView
+        android:id="@+id/tv_tishi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tishi"
+        android:layout_marginLeft="@dimen/text_padding1"
+        android:layout_marginRight="@dimen/text_padding1"
+        android:text="@string/tishi1"
+        android:textColor="@color/color_38bdf8" />
+
+</RelativeLayout>

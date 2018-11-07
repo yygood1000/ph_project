@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <style name="MyOrder_TopRb_Style">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">29dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_text_color_mtorder_topbtn</item>
+        <item name="android:textSize">@dimen/text_size15</item>
+    </style>
+
+    <!--我的订单 小点 样式-->
+    <style name="Point_MyOrder_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/spacing_6</item>
+        <item name="android:background">@drawable/shape_point_my_order</item>
+    </style>
+    <!--我的订单LinearLayout样式-->
+    <style name="LinearLayout_MyOrder_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--我的订单LinearLayout样式-->
+    <style name="TabLayoutMyOrderStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@color/white</item>
+
+    </style>
+
+    <style name="ll_show_offer" parent="Layout_Wrap_Wrap">
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/spacing_9</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ll_h_margin_left_12" parent="Layout_Match_Wrap">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_12</item>
+    </style>
+
+
+</resources>

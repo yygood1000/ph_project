@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_root"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maxamt"
+            android:textColor="@color/text_color1"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_invest_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_red0"
+            android:textSize="@dimen/sp12" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp15"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:paddingTop="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wallet_money"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/sp14" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15">
+
+            <EditText
+                android:id="@+id/et_invest_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/investment_money_hint"
+                android:inputType="number"
+                android:textColorHint="@color/text_color2"
+                android:textSize="@dimen/sp14" />
+
+            <ImageView
+                android:id="@+id/iv_invest_moneyclear"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/credit_clear"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_invest_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp3"
+        android:text="@string/investment_money_hint"
+        android:textColor="@color/color_red0"
+        android:textSize="@dimen/sp12"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll_invest_Agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10">
+
+        <ImageView
+            android:id="@+id/iv_invest_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wallet_check_no" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp3"
+            android:text="@string/ryt_yes"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/sp10" />
+
+        <TextView
+            android:id="@+id/tv_invest_Agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ryt_Agreement"
+            android:textColor="@color/color_green"
+            android:textSize="@dimen/sp10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp3"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profit_data_start"
+            android:textColor="@color/text_color1"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_invest_startprofit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_red2"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp3"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/estimate_profit"
+            android:textColor="@color/text_color1"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_invest_estimateprofit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_red0"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp3"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/estimate_profit_data"
+            android:textColor="@color/text_color1"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_invest_estimateprofitdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_red0"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_invest_next"
+        style="@style/btn_style"
+        android:layout_marginTop="@dimen/dp48"
+        android:text="@string/wallet_goldrecharge_btn" />
+</LinearLayout>

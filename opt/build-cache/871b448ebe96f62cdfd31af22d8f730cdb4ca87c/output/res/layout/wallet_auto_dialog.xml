@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Wrap"
+    android:background="@drawable/bg_auto_dialog_root"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        style="@style/Layout_Match_Wrap"
+        android:orientation="vertical">
+
+        <FrameLayout
+            style="@style/Layout_Match_Wrap"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/text_padding1"
+            android:layout_marginRight="@dimen/text_padding1"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/ll_normal"
+                style="@style/Layout_Match_Wrap"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/Layout_Match_Wrap"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="提示信息"
+                    android:textColor="@color/text_color4"
+                    android:textSize="@dimen/text_size4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    style="@style/Layout_Match_Wrap"
+                    android:layout_marginTop="@dimen/text_padding1"
+                    android:gravity="center"
+                    android:lineSpacingExtra="9dp"
+                    android:text="这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是容内内容"
+                    android:textColor="@color/text_color4"
+                    android:textSize="@dimen/text_size3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_container"
+                style="@style/Layout_Match_Wrap"
+                android:gravity="center"
+                android:orientation="vertical" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_separator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_dialog_divider_height_or_width"
+            android:src="@color/auto_dialog_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_single_confirm"
+                style="@style/Layout_Match_Match"
+                android:background="@drawable/sl_bg_auto_dialog_driver_single"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/sl_auto_dialog_confirm_font"
+                android:textSize="@dimen/text_size3"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_both_confirm"
+                style="@style/Layout_Match_Match"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_left_confirm"
+                    style="@style/Weight_Horizontal_Match"
+                    android:background="@drawable/sl_bg_auto_dialog_driver_left"
+                    android:text="@string/submit"
+                    android:textColor="@color/sl_auto_dialog_confirm_font"
+                    android:textSize="@dimen/text_size3" />
+
+                <ImageView
+                    android:layout_width="@dimen/auto_dialog_divider_height_or_width"
+                    android:layout_height="match_parent"
+                    android:src="@color/auto_dialog_divider" />
+
+                <Button
+                    android:id="@+id/btn_right_confirm"
+                    style="@style/Weight_Horizontal_Match"
+                    android:background="@drawable/sl_bg_auto_dialog_driver_right"
+                    android:text="@string/submit"
+                    android:textColor="@color/sl_auto_dialog_confirm_font"
+                    android:textSize="@dimen/text_size3" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

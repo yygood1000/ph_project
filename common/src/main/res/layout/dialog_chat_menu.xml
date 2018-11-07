@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+    >
+
+    <!-- 清空历史消息 -->
+    <TextView
+        android:id="@+id/tv_clear_message"
+        android:layout_width="match_parent"
+        style="@style/tv_size_20_color_33_style"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/selector_btn_white_top_r12"
+        android:gravity="center"
+        android:padding="18dp"
+        android:text="@string/clear_message"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/parding_line"/>
+    <!-- 清空历史消息 -->
+    <LinearLayout
+        android:id="@+id/ll_add_black_list"
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/selector_btn_white_bottom_r12"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_black"
+            style="@style/tv_size_20_color_red_style"
+            android:text="@string/add_black_list"/>
+
+        <TextView
+            android:id="@+id/tv_black_msg"
+            style="@style/tv_size_11_color_red_style"
+            android:text="@string/black_list_detail"
+            android:textColor="@color/color_btn_red"
+            android:textSize="@dimen/text_size11"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <!-- 取消 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_cancel"
+        style="@style/tv_size_20_color_blue_style"
+        android:layout_margin="12dp"
+        android:background="@drawable/selector_btn_white_r12"
+        android:gravity="center"
+        android:padding="18dp"
+        android:text="@string/cancel"
+        />
+</LinearLayout>

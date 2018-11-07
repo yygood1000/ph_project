@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        style="@style/Layout_Match_Match"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/Layout_Match_Wrap"
+            android:padding="@dimen/text_padding2">
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:text="订单信息"
+                android:textColor="@color/text_color1"
+                android:textSize="@dimen/text_size3" />
+
+            <LinearLayout
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_subpay_detail_title"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:text="560话费充值"
+                    android:textColor="@color/text_color4"
+                    android:textSize="@dimen/text_size3" />
+
+                <ImageView
+                    android:id="@+id/iv_subpay"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/wallet_right_arrow"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="@dimen/text_padding2" />
+
+        <RelativeLayout
+            android:id="@+id/rl_subpay_detail_balance"
+            style="@style/Layout_Match_Wrap"
+            android:padding="@dimen/text_padding2">
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_centerVertical="true"
+                android:text="付款方式"
+                android:textColor="@color/text_color1"
+                android:textSize="@dimen/text_size3" />
+
+            <LinearLayout
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_subpay_detail_balance"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:text="余额支付"
+                    android:textColor="@color/text_color4"
+                    android:textSize="@dimen/text_size3" />
+
+                <ImageView
+                    android:id="@+id/iv_subpay1"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/wallet_right_arrow" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_subpay_detail_56loan"
+            style="@style/Layout_Match_Wrap"
+            android:background="@color/white"
+            android:padding="@dimen/text_padding2">
+
+            <LinearLayout
+                style="@style/Layout_Match_Wrap"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_subpay_detail_56loan"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:text="@string/wallet_56loan"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/text_size3" />
+
+                <TextView
+                    android:id="@+id/tv_subpay_detail_56recommend"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_width="32dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/bg_btn_gray"
+                    android:gravity="center"
+                    android:text="推荐"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size0" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_subpay_detail_100money"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/wallet_100money_recommend"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size2"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_subpay_detail_use"
+                android:layout_width="64dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/btn_click_blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="立即使用"
+                android:textColor="@color/color_blue"
+                android:textSize="@dimen/text_size1"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="@dimen/text_padding2" />
+
+        <RelativeLayout
+            style="@style/Layout_Match_Wrap"
+            android:padding="@dimen/text_padding2">
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_centerVertical="true"
+                android:text="需付款"
+                android:textColor="@color/text_color1"
+                android:textSize="@dimen/text_size3" />
+
+            <LinearLayout
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_subpay_detail_money"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:text="0,00元"
+                    android:textColor="@color/text_color4"
+                    android:textSize="@dimen/text_size5" />
+
+                <ImageView
+                    android:id="@+id/iv_subpay2"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/wallet_right_arrow"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_subpay_confirm"
+            style="@style/btn_style"
+            android:background="@drawable/gradient_blue"
+            android:layout_marginTop="0dp"
+            android:text="确认付款" />
+    </LinearLayout>
+
+</RelativeLayout>

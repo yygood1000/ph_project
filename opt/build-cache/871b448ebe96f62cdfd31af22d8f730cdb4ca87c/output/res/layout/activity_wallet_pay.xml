@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_root"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            style="@style/view_line"
+            android:layout_marginTop="@dimen/text_padding2" />
+
+        <LinearLayout
+            style="@style/Layout_Match_Wrap"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="#FF222222"
+                    android:textSize="@dimen/sp20" />
+
+                <EditText
+                    android:id="@+id/edt_recharge_money"
+                    style="@style/Layout_Match_Wrap"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:background="@null"
+                    android:hint="@string/wallet_payinfo_chongmoney"
+                    android:inputType="number"
+                    android:maxLength="@integer/restrict_wellet_money_length"
+                    android:textColor="@color/text_color4"
+                    android:textColorHint="@color/text_color2"
+                    android:textSize="@dimen/sp20" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_recharge_money_clear"
+                style="@style/Layout_Wrap_Wrap"
+                android:src="@drawable/credit_clear"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="选择支付方式："
+            android:textColor="#FF666666"
+            android:textSize="@dimen/sp10" />
+
+        <com.topjet.wallet.ui.widget.MyListView
+            android:id="@+id/lv_recharge_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="@dimen/dp02"
+            android:background="@android:color/white" />
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp14"
+                android:drawablePadding="@dimen/dp5"
+                android:drawableRight="@drawable/arrow_more"
+                android:text="查看更多支付方式"
+                android:textColor="#FF6E90FF"
+                android:textSize="@dimen/sp12" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_recharge_next"
+            style="@style/btn_style"
+            android:enabled="false"
+            android:text="@string/wallet_btn_next" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp16"
+            android:lineSpacingExtra="@dimen/dp5"
+            android:text="温馨提示：\n为防止恶意提现，充值金额中未使用的部分，在最近一笔充值后的数日内不能免费提现，到期后可免费提现，具体以提现页面显示的规则为准。"
+            android:textColor="@color/text_color_969696"
+            android:textSize="@dimen/sp11" />
+    </LinearLayout>
+</ScrollView>

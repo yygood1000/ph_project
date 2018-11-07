@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_background"
+              android:orientation="vertical">
+    <!-- 我的报价 -->
+    <com.topjet.common.widget.RecyclerViewWrapper.RecyclerViewWrapper
+        android:id="@+id/recyclerViewWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/common_background"/>
+
+    <include layout="@layout/include_line_shadow"/>
+
+    <LinearLayout
+        android:id="@+id/ll_check_all"
+        style="@style/Layout_Match_Wrap"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_all"
+            style="@style/cb_blue_style"
+            android:layout_marginBottom="@dimen/spacing_11"
+            android:layout_marginLeft="@dimen/spacing_15"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:layout_marginTop="@dimen/spacing_11"
+            android:checked="false"/>
+
+        <TextView
+            style="@style/tv_size_15_color_22_style"
+            android:layout_weight="1"
+            android:text="全选"/>
+
+        <TextView
+            android:id="@+id/tv_btn_cancel"
+            style="@style/tv_size_17_color_white_style"
+            android:background="@drawable/selector_btn_red"
+            android:paddingBottom="@dimen/spacing_14"
+            android:paddingLeft="@dimen/spacing_22"
+            android:paddingRight="@dimen/spacing_22"
+            android:paddingTop="@dimen/spacing_14"
+            android:enabled="false"
+            android:text="撤销报价"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

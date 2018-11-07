@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/Layout_Match_Wrap"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/listitem_contact_letters"/>
+    <LinearLayout
+        android:id="@+id/ll_content"
+        style="@style/Layout_Match_Wrap"
+        android:background="@drawable/selector_btn_white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/spacing_12"
+        android:paddingRight="@dimen/spacing_18"
+        android:paddingTop="@dimen/spacing_12"
+        android:paddingBottom="@dimen/spacing_12"
+        android:gravity="center_vertical"> 
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/tv_size_17_color_33_style"
+            android:text="高园园"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_btn"
+            style="@style/tv_size_15_color_green_style"
+            android:background="@drawable/selector_btn_green_border"
+            android:textColor="@color/selector_white_green_text_color"
+            android:paddingLeft="@dimen/spacing_10"
+            android:paddingRight="@dimen/spacing_10"
+            android:paddingTop="@dimen/spacing_5"
+            android:paddingBottom="@dimen/spacing_5"
+            android:clickable="true"
+            android:enabled="true"
+            android:text="@string/invitation"/>
+    </LinearLayout>
+
+    <include layout="@layout/include_line_dd"/>
+</LinearLayout>

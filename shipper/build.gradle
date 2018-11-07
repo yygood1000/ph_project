@@ -1,0 +1,126 @@
+apply plugin: 'com.android.application'
+
+def config = rootProject.ext.android // 配置
+def dep = rootProject.ext.dependencies // 依赖
+
+android {
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+    defaultConfig {
+        applicationId config.shipper
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+        multiDexEnabled true
+//        useLibrary 'org.apache.http.legacy'
+    }
+
+//    //配置keystore签名
+//    signingConfigs {
+//        release {
+//            keyAlias 'wanghm'
+//            keyPassword '123456'
+//            storeFile file('shipper.keystore')
+//            storePassword '123456'
+//        }
+//
+//        debug {
+//            keyAlias 'wanghm'
+//            keyPassword '123456'
+//            storeFile file('shipper.keystore')
+//            storePassword '123456'
+//        }
+//    }
+
+    compileOptions {
+        sourceCompatibility config.JavaVersion
+        targetCompatibility config.JavaVersion
+    }
+
+
+    buildTypes {
+        release {
+            // 是否运行混淆
+            minifyEnabled false
+
+            // 签名配置
+//            signingConfig signingConfigs.release
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            // 极光key
+            manifestPlaceholders = ["JPUSH_KEY_SHIPPER": "$JPUSH_KEY_SHIPPER"] //"\""+JPUSH_KEY_SHIPPER+"\""
+            // 友盟key
+            if (ENVIRONMENT.equals("dev")) {
+                buildConfigField 'String', 'UM_KEY', UM_KEY_SHIPPER_DEV
+            } else if (ENVIRONMENT.equals("test")) {
+                buildConfigField 'String', 'UM_KEY', UM_KEY_SHIPPER_TEST
+            } else if (ENVIRONMENT.equals("baolei")) {
+                buildConfigField 'String', 'UM_KEY', UM_KEY_SHIPPER_BAOLEI
+            } else if (ENVIRONMENT.equals("product")) {
+                buildConfigField 'String', 'UM_KEY', UM_KEY_SHIPPER_PRODUCT
+            } else if (ENVIRONMENT.equals("closed_beta")) {
+                buildConfigField 'String', 'UM_KEY', UM_KEY_SHIPPER_TEST
+            }
+        }
+        debug {
+            // 极光key
+            manifestPlaceholders = ["JPUSH_KEY_SHIPPER": "$JPUSH_KEY_SHIPPER"]
+            // 友盟key
+            if (ENVIRONMENT.equals("dev")) {
+                buildConfigField 'String', 'UM_KEY', UM_KEY_SHIPPER_DEV
+            } else if (ENVIRONMENT.equals("test")) {
+                buildConfigField 'String', 'UM_KEY', UM_KEY_SHIPPER_TEST
+            } else if (ENVIRONMENT.equals("baolei")) {
+                buildConfigField 'String', 'UM_KEY', UM_KEY_SHIPPER_BAOLEI
+            } else if (ENVIRONMENT.equals("product")) {
+                buildConfigField 'String', 'UM_KEY', UM_KEY_SHIPPER_PRODUCT
+            } else if (ENVIRONMENT.equals("closed_beta")) {
+                buildConfigField 'String', 'UM_KEY', UM_KEY_SHIPPER_TEST
+            }
+        }
+        /**
+         * 重命名打包文件名
+         *
+         * 560Shipper_v233_baolei.apk  堡垒
+         * 560Shipper_v233_test.apk    测试
+         * 560Shipper_v233.apk         生产
+         */
+//        applicationVariants.all { variant ->
+//            variant.outputs.each { output ->
+//                def outputFile = output.outputFile
+//                //版本号
+//                String versionName = config.versionName.replaceAll("\\.", "");
+//                //apk名字
+//                def fileName = "560Shipper_v${versionName}" + "_${ENVIRONMENT}.apk"
+//                rootProject.saveApkName("shiper_apk_name.txt", fileName)
+//                output.outputFile = new File(outputFile.parent, fileName)
+//            }
+//        }
+    }
+
+//    dexOptions {
+//        jumboMode = true
+//        incremental true
+//        javaMaxHeapSize "4g"
+//    }
+
+    lintOptions {
+//        disable "ResourceType"
+//        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+//        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'lib')
+    implementation 'com.android.support:multidex:1.0.3'
+    annotationProcessor dep.butterknife_compiler
+    implementation project(':easeim')
+}

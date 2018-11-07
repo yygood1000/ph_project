@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Layout_Match_Match"
+    android:orientation="vertical">
+
+    <!--Title -->
+    <TextView
+        style="@style/TitleBarDriverTvSide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@drawable/shape_bg_gradient_shipper"
+        android:text="@string/home"
+        android:textColor="@color/white"/>
+
+    <!-- 悬浮容器 -->
+    <LinearLayout
+        android:id="@+id/ll_float"
+        style="@style/Layout_Match_Wrap"
+        android:background="@color/white"
+        android:orientation="vertical"/>
+
+    <com.topjet.common.widget.MyScrollView
+        android:id="@+id/sv_content"
+        style="@style/Layout_Match_Match"
+        android:background="@color/common_background">
+
+        <LinearLayout
+            style="@style/Layout_Match_Wrap"
+            android:orientation="vertical">
+
+            <!--轮播广告布局-->
+            <com.topjet.common.widget.banner.BannerView
+                android:id="@+id/banner_view"
+                style="@style/Layout_Match_Wrap"
+                android:layout_marginBottom="@dimen/spacing_10"
+                android:layout_marginTop="@dimen/spacing_10"
+                app:layout_scrollFlags="scroll"/>
+
+            <!--向上滑动轮播广告-->
+            <LinearLayout
+                android:id="@+id/ll_headline"
+                style="@style/Layout_Match_Wrap"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_headline"
+                    style="@style/Layout_Match_Wrap">
+
+                    <ImageView
+                        android:id="@+id/iv_headline"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/spacing_10"
+                        android:layout_marginLeft="@dimen/spacing_12"
+                        android:layout_marginStart="@dimen/spacing_12"
+                        android:layout_marginTop="@dimen/spacing_10"
+                        android:src="@drawable/iv_homepage_560headline"/>
+
+                    <View
+                        android:id="@+id/v_line"
+                        style="@style/LineWidth1MatchHeigth"
+                        android:layout_height="26dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/spacing_6"
+                        android:layout_marginRight="@dimen/spacing_6"
+                        android:layout_toRightOf="@+id/iv_headline"/>
+
+                    <com.topjet.common.widget.RollView
+                        android:id="@+id/roll_view"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/spacing_12"
+                        android:layout_marginRight="@dimen/spacing_12"
+                        android:layout_toRightOf="@+id/v_line"
+                        android:gravity="center"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--按钮布局 按钮背景图片有投影，边距减小4dp-->
+            <LinearLayout
+                android:id="@+id/ll_btns"
+                style="@style/Layout_Match_Wrap"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_8"
+                android:paddingRight="@dimen/spacing_8">
+
+                <Button
+                    android:id="@+id/btn_use_truck"
+                    style="@style/HomeFragment_Primary_Btn_Style"
+                    android:background="@drawable/iv_homepage_btn_green"
+                    android:text="@string/use_truck"/>
+
+                <Button
+                    android:id="@+id/btn_familiar_truck"
+                    style="@style/HomeFragment_Primary_Btn_Style"
+                    android:layout_marginLeft="@dimen/spacing_2"
+                    android:layout_marginStart="@dimen/spacing_2"
+                    android:background="@drawable/iv_homepage_btn_blue"
+                    android:text="@string/my_familiar_truck"/>
+            </LinearLayout>
+
+
+            <!--滑动按钮组-->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="225dp"
+                android:layout_marginTop="@dimen/spacing_8"/>
+
+            <!--滑动按钮组 页码圆点-->
+            <LinearLayout
+                android:id="@+id/ll_point_group"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginBottom="@dimen/spacing_8"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"/>
+
+            <!--底部WebView-->
+            <com.topjet.common.widget.MyWebView
+                android:id="@+id/web_view"
+                style="@style/Layout_Match_Wrap"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </com.topjet.common.widget.MyScrollView>
+</LinearLayout>

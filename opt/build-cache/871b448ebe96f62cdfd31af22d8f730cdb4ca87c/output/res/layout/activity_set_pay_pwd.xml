@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_root"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/Layout_Match_Wrap" >
+
+        <TextView
+            android:id="@+id/tv_setpay_pwd"
+            style="@style/Layout_Match_Wrap"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="设置6位数字支付密码"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/text_size3" />
+
+        <LinearLayout
+            android:id="@+id/ll_setpay_pwd_display"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/password_display_height"
+            android:layout_below="@+id/tv_setpay_pwd"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_password_display"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Tv_password_display"
+                android:password="true" />
+
+            <ImageView style="@style/Iv_password_display_divider" />
+
+            <TextView
+                style="@style/Tv_password_display"
+                android:password="true" />
+
+            <ImageView style="@style/Iv_password_display_divider" />
+
+            <TextView
+                style="@style/Tv_password_display"
+                android:password="true" />
+
+            <ImageView style="@style/Iv_password_display_divider" />
+
+            <TextView
+                style="@style/Tv_password_display"
+                android:password="true" />
+
+            <ImageView style="@style/Iv_password_display_divider" />
+
+            <TextView
+                style="@style/Tv_password_display"
+                android:password="true" />
+
+            <ImageView style="@style/Iv_password_display_divider" />
+
+            <TextView
+                style="@style/Tv_password_display"
+                android:password="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_setpay_pwd_hint"
+            style="@style/Layout_Match_Wrap"
+            android:layout_below="@+id/ll_setpay_pwd_display"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:text="初次使用，必须先设置支付密码（6位数字密码）。为了您的资金安全，请尽量不要与登录密码相同"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/text_size2" />
+
+        <GridView
+            android:id="@+id/gv_setpay_pwd"
+            style="@style/AbsListView_Common"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/password_display_border"
+            android:descendantFocusability="afterDescendants"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:visibility="visible" >
+        </GridView>
+    </RelativeLayout>
+
+</LinearLayout>

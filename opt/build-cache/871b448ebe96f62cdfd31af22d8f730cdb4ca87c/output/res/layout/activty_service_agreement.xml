@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@id/wv_common"
+        style="@style/Layout_Match_Match"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/text_padding2"
+        android:layout_weight="1"
+        android:background="@color/bg_root"
+        android:scrollbars="none" />
+
+    <Button
+        android:id="@+id/btn_agree"
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="44dp"
+        android:background="@color/color_blue"
+        android:gravity="center"
+        android:text="@string/wallet_agree"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size4" />
+
+</LinearLayout>

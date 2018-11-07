@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Wrap"
+    android:id="@+id/ll_top"
+    android:orientation="vertical">
+
+    <!-- 系统消息\ 钱包消息 \ 订单消息 -->
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/tv_size_12_color_white_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:background="@drawable/shape_bg_tv_r4_dddddd"
+        android:gravity="center"
+        android:paddingBottom="@dimen/spacing_2"
+        android:paddingLeft="@dimen/spacing_10"
+        android:paddingRight="@dimen/spacing_10"
+        android:paddingTop="@dimen/spacing_2"
+        android:text="2017/12/17 12:30" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_12"
+        android:layout_marginRight="@dimen/spacing_12"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:background="@drawable/shape_bg_white_r4"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/spacing_10">
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_6"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_tag"
+                android:layout_width="@dimen/spacing_8"
+                android:layout_height="@dimen/spacing_8"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_8"
+                android:background="@drawable/shape_circle_red" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/tv_size_15_color_66_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_4"
+                android:layout_marginRight="@dimen/spacing_20"
+                android:text="sdfsdfsdfsdfsdf" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/tv_size_15_color_22_style"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/spacing_10"
+            android:layout_marginLeft="@dimen/spacing_20"
+            android:layout_marginRight="@dimen/spacing_20"
+            android:text="aksdhjfashdjklfh;sajkldhflkjashdflkhalskjdhfkjashkfjhksajdhflkjahsdlfjkhaskdjhflaksjhdflkjahdf" />
+    </LinearLayout>
+</LinearLayout>

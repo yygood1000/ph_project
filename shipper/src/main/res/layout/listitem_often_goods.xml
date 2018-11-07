@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/common_background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_4"
+        android:paddingLeft="@dimen/spacing_12"
+        android:paddingRight="@dimen/spacing_12"
+        android:paddingTop="@dimen/spacing_13">
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="订单号："
+            android:textColor="@color/text_color_969696"/>
+
+        <TextView
+            android:id="@+id/tv_orderno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_no"
+            android:textColor="@color/text_color_969696"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="上午 12:23"
+            android:textColor="@color/text_color_969696"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_goodsinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/iv_listitem_select"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingTop="@dimen/spacing_14">
+
+            <LinearLayout
+                style="@style/Layout_Match_Wrap"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_depart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="15dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/jiantou"/>
+
+                <TextView
+                    android:id="@+id/tv_destination"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_size15"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_4"
+                android:layout_marginTop="@dimen/spacing_10"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/Layout_Wrap_Wrap"
+                    android:background="@drawable/shape_point_my_order"/>
+
+                <TextView
+                    android:id="@+id/tv_goods_info"
+                    style="@style/tv_size_13_color_66_style"
+                    android:layout_marginLeft="@dimen/spacing_6"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_13"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/Layout_Wrap_Wrap"
+                    android:background="@drawable/shape_point_my_order"/>
+
+                <TextView
+                    android:id="@+id/tv_truck_info"
+                    style="@style/tv_size_13_color_66_style"
+                    android:layout_marginLeft="@dimen/spacing_6"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_listitem_select"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/approve_icon_uncheck_nor"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</LinearLayout>

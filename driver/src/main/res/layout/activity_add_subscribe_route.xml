@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_depart_root"
+        style="@style/Add_Subcribe_Route_Rl_Style">
+
+        <TextView
+            android:id="@+id/tv_depart_title"
+            style="@style/Add_Subcribe_Route_Title_Style"
+            android:text="@string/depart_address"/>
+
+        <TextView
+            android:id="@+id/tv_depart"
+            style="@style/Add_Subcribe_Route_Tv_Style"
+            android:layout_toLeftOf="@+id/icon_depart_right_arrow"
+            android:layout_toRightOf="@+id/tv_depart_title"/>
+
+        <ImageView
+            android:id="@+id/icon_depart_right_arrow"
+            style="@style/Add_Subcribe_Route_Icon_Style"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/parting_line_heigth"
+            android:layout_alignParentBottom="true"
+            android:background="@color/parding_line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_destination"
+        style="@style/Add_Subcribe_Route_Rl_Style">
+
+        <TextView
+            android:id="@+id/tv_destination_title"
+            style="@style/Add_Subcribe_Route_Title_Style"
+            android:text="@string/destination_address"/>
+
+        <TextView
+            android:id="@+id/tv_destination"
+            style="@style/Add_Subcribe_Route_Tv_Style"
+            android:layout_toLeftOf="@+id/icon_destination_right_arrow"
+            android:layout_toRightOf="@+id/tv_destination_title"/>
+
+        <ImageView
+            android:id="@+id/icon_destination_right_arrow"
+            style="@style/Add_Subcribe_Route_Icon_Style"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/parting_line_heigth"
+            android:layout_alignParentBottom="true"
+            android:background="@color/parding_line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_truck_type"
+        style="@style/Add_Subcribe_Route_Rl_Style">
+
+        <TextView
+            android:id="@+id/tv_truck_type_title"
+            style="@style/Add_Subcribe_Route_Title_Style"
+            android:layout_marginRight="@dimen/spacing_20"
+            android:text="@string/truck_type_and_length"/>
+
+        <TextView
+            android:id="@+id/tv_truck_type"
+            style="@style/Add_Subcribe_Route_Tv_Style"
+            android:layout_toLeftOf="@+id/icon_truck_type_right_arrow"
+            android:layout_toRightOf="@+id/tv_truck_type_title"
+            android:hint="不限"/>
+
+        <ImageView
+            android:id="@+id/icon_truck_type_right_arrow"
+            style="@style/Add_Subcribe_Route_Icon_Style"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_confirm_to_add"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="@dimen/spacing_12"
+        android:layout_marginRight="@dimen/spacing_12"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:background="@drawable/selector_btn_corner_blue"
+        android:text="@string/confirm_to_add"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size17"/>
+
+
+</LinearLayout>

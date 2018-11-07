@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/rl_root"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/spacing_12">
+
+    <TextView
+        android:id="@+id/tv_usual_city"
+        style="@style/tv_size_15_color_22_style"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id="@+id/iv_icon_arrows"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/spacing_12"
+        android:src="@drawable/iv_icon_enter"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_icon_delete"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/spacing_12"
+        android:src="@drawable/iv_icon_delete"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/parding_line"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/parting_line_heigth"
+        android:layout_alignParentBottom="true"
+        android:background="@color/parding_line"/>
+
+</RelativeLayout>

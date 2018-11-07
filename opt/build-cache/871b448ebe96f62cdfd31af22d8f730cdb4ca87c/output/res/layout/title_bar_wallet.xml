@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    style="@style/Layout_Match_Wrap"
+    android:layout_height="@dimen/dp40"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_title_bar_back"
+        android:layout_width="@dimen/dp32"
+        android:layout_height="@dimen/dp32"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp7"
+        android:scaleType="centerInside"
+        android:src="@drawable/title_bar_wallet_back" />
+
+    <FrameLayout
+        style="@style/Layout_Wrap_Match"
+        android:layout_toRightOf="@id/iv_title_bar_back"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tv_title_bar_home"
+            style="@style/TitleBar_Wallet_Tv_Title"
+            android:text="首页"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/sp15"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_title_bar_home"
+            style="@style/TitleBar_Wallet_Iv_Side"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_title_bar_title"
+        style="@style/TitleBar_Wallet_Tv_Title"
+        android:text="我是标题"
+        android:textColor="@color/text_color4"
+        android:textSize="@dimen/sp16" />
+
+    <FrameLayout
+        android:id="@+id/fl_title_bar_right"
+        style="@style/Layout_Wrap_Match"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tv_title_bar_right"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:paddingBottom="@dimen/dp3"
+            android:paddingLeft="@dimen/dp5"
+            android:paddingTop="@dimen/dp3"
+            android:text="完成"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:id="@+id/iv_title_bar_right"
+            style="@style/TitleBar_Wallet_Iv_Side"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_gravity="right|center_vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_title_bar_text_and_img"
+            style="@style/Layout_Wrap_Match"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_title_bar_right_inside"
+                style="@style/Layout_Wrap_Wrap"
+                android:text="全部账单"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/sp14" />
+
+            <ImageView
+                android:id="@+id/iv_title_bar_right_inside"
+                style="@style/Layout_Wrap_Wrap"
+                android:background="@drawable/wallet_up" />
+        </LinearLayout>
+
+        <com.topjet.wallet.ui.widget.RoundImageView
+            android:id="@+id/iv_title_bar_right_avatar"
+            style="@style/TitleBar_Wallet_Avatar_Right"
+            android:layout_width="@dimen/dp32"
+            android:layout_height="@dimen/dp32"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+    <View
+        style="@style/view_line"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

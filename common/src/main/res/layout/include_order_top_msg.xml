@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    style="@style/Layout_Match_Wrap"
+    android:padding="@dimen/spacing_12"
+    android:background="@color/color_FFF2D8">
+    <!-- 订单状态提示 -->
+    <TextView
+        android:id="@+id/tv_order_msg"
+        style="@style/tv_size_14_color_22_style"
+        android:text="已推送999人。"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_order_quote_num"
+        style="@style/tv_size_14_color_22_style"
+        android:text="已有9人报价"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_refresh_order"
+        style="@style/tv_size_14_color_white_style"
+        android:text="刷新订单"
+        android:background="@drawable/selector_btn_yellow_r4"
+        android:paddingLeft="@dimen/spacing_10"
+        android:paddingRight="@dimen/spacing_10"
+        android:paddingTop="@dimen/spacing_4"
+        android:paddingBottom="@dimen/spacing_4"/>
+
+
+</LinearLayout>

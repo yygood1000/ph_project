@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_black_r8"
+    android:paddingLeft="@dimen/spacing_16"
+    android:paddingRight="@dimen/spacing_16"
+    android:paddingTop="@dimen/spacing_12"
+    android:paddingBottom="@dimen/spacing_12">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="签到成功，"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size16"/>
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_FFB000"
+        android:textSize="@dimen/text_size16"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="积分"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size16"/>
+</LinearLayout>

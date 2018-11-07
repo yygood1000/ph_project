@@ -1,0 +1,134 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:paddingLeft="@dimen/spacing_15"
+    android:paddingRight="@dimen/spacing_15"
+    android:scrollbars="none"
+    tools:context="com.topjet.common.user.view.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TvPageTitle"
+            android:layout_marginTop="39dp"
+            android:text="@string/register"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tv_size_12_color_96_style"
+                android:text="@string/register_allow"
+                />
+
+            <TextView
+                android:id="@+id/tv_service_contract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/service_contract"
+                android:textColor="@color/text_color_16CA4E"
+                android:textSize="@dimen/text_size12"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_24">
+
+            <EditText
+                android:id="@+id/et_phone_num"
+                style="@style/EditTextRegister"
+                android:hint="@string/please_input_phone_number"
+                android:inputType="number"
+                android:maxLength="11"
+                />
+
+            <Button
+                android:id="@+id/btn_verifi_code"
+                style="@style/BtnCheckCode"
+                android:text="@string/get_verification_code"
+                />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_verification_code"
+            style="@style/EditTextRegister"
+            android:hint="@string/please_input_verification_code"
+            android:inputType="number"
+            android:maxLength="6"/>
+
+        <EditText
+            android:id="@+id/et_login_password"
+            style="@style/EditTextRegister"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/please_set_login_password"
+            android:inputType="textPassword"
+            android:maxLength="16"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            style="@style/BtnLargeWithCorner"
+            android:layout_marginTop="@dimen/spacing_24"
+            android:enabled="false"
+            android:text="@string/next_step"
+            />
+
+        <RelativeLayout
+            style="@style/Layout_Match_Wrap"
+            android:layout_marginTop="@dimen/spacing_16">
+
+            <LinearLayout
+                android:id="@+id/ll_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/tv_size_14_color_96_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/obtain"
+                    android:textColor="@color/text_color_969696"
+                    android:textSize="@dimen/text_size14"/>
+
+                <TextView
+                    android:id="@+id/tv_voice_verify_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:enabled="false"
+                    android:text="@string/voice_verification_code"
+                    android:textColor="@color/selector_text_color_register_shipper"
+                    android:textSize="@dimen/text_size14"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/spacing_80"
+                android:gravity="center"
+                android:paddingBottom="@dimen/spacing_12"
+                android:text="@string/company_name"
+                android:textColor="@color/text_color_969696"
+                android:textSize="@dimen/text_size14"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

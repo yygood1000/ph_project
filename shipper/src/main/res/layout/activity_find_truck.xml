@@ -1,0 +1,123 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Layout_Match_Match"
+    android:background="@color/common_background"
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+
+            <!--筛选条件布局-->
+            <RelativeLayout
+                android:id="@+id/rl_options"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <LinearLayout
+                    style="@style/Layout_Match_Match"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_depart"
+                        style="@style/TopOptionsLLStyle">
+
+                        <TextView
+                            android:id="@+id/tv_depart"
+                            style="@style/TopOptionsTvStyle"
+                            android:hint="@string/depart_address"/>
+
+                        <ImageView
+                            android:id="@+id/iv_depart_arrows_down"
+                            style="@style/TopOptionsArrowStyle"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/PardinglineStyle"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_destination"
+                        style="@style/TopOptionsLLStyle">
+
+                        <TextView
+                            android:id="@+id/tv_destation"
+                            style="@style/TopOptionsTvStyle"
+                            android:hint="@string/destination_address"
+                            />
+
+                        <ImageView
+                            android:id="@+id/iv_destination_arrows_down"
+                            style="@style/TopOptionsArrowStyle"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/PardinglineStyle"/>
+
+                    <RelativeLayout
+                        android:id="@+id/ll_truck_type_and_length"
+                        style="@style/TopOptionsTruckStyle"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_truck_type_and_length"
+                            style="@style/TopOptionsTvStyle"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/iv_truck_arrows_down"
+                            android:gravity="right|center"
+                            android:hint="@string/truck_type_and_length"
+                            android:paddingLeft="@dimen/spacing_10"
+                            android:singleLine="true"/>
+
+                        <ImageView
+                            android:id="@+id/iv_truck_arrows_down"
+                            style="@style/TopOptionsArrowStyle"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/spacing_16"/>
+                    </RelativeLayout>
+
+                    <ImageView
+                        style="@style/PardinglineStyle"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/parting_line_heigth"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/parding_line"/>
+            </RelativeLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <com.topjet.common.widget.RecyclerViewWrapper.RecyclerViewWrapper
+            android:id="@+id/recyclerViewWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_permission_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/include_location_permissions_fail"
+                />
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

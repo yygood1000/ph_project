@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_root"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Layout_Match_Match"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <View
+            style="@style/view_line"
+            android:layout_marginTop="@dimen/dp12" />
+
+        <LinearLayout
+            android:id="@+id/ll_add"
+            style="@style/Layout_Match_Wrap"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp12">
+
+                <LinearLayout
+                    style="@style/Layout_Match_Wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_add_username"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Layout_Wrap_Wrap"
+                        android:minWidth="@dimen/text_width"
+                        android:text="@string/wallet_bankcard_username"
+                        android:textColor="@color/text_color4"
+                        android:textSize="@dimen/text_size3"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_add_username"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:text=""
+                        android:textColor="@color/text_color4"
+                        android:textSize="@dimen/text_size3" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_add_username"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="4dp"
+                    android:src="@drawable/doubt_gray" />
+            </RelativeLayout>
+
+            <View
+                style="@style/view_line"
+                android:layout_marginLeft="@dimen/dp12"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/Layout_Match_Wrap"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp12"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/Layout_Wrap_Wrap"
+                    android:minWidth="@dimen/text_width"
+                    android:text="@string/wallet_bankcard_idcardno"
+                    android:textColor="@color/text_color4"
+                    android:textSize="@dimen/text_size3"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_add_idcardno"
+                    style="@style/Layout_Match_Wrap"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="@string/hint_input_bankcard_idcardno"
+                    android:maxLength="@integer/password_number_font_size"
+                    android:textColor="@color/text_color4"
+                    android:textSize="@dimen/text_size3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <View
+            style="@style/view_line"
+            android:layout_marginTop="@dimen/dp10" />
+
+        <LinearLayout
+            style="@style/Layout_Match_Wrap"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_add_send"
+                style="@style/Layout_Match_Wrap"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp12">
+
+                <TextView
+                    android:id="@+id/tv_send"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_centerVertical="true"
+                    android:minWidth="@dimen/text_width"
+                    android:text="@string/wallet_bankcard_send"
+                    android:textColor="@color/text_color4"
+                    android:textSize="@dimen/text_size3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_add_send"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_send"
+                    android:hint="@string/wallet_bankcard_send_select"
+                    android:textColor="@color/text_color4"
+                    android:textColorHint="@color/text_color2"
+                    android:textSize="@dimen/text_size3" />
+
+                <ImageView
+                    android:id="@+id/iv_add_send"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_add_send"
+                    android:background="@drawable/wallet_up" />
+            </RelativeLayout>
+
+            <View
+                style="@style/view_line"
+                android:layout_marginLeft="@dimen/dp12" />
+
+            <RelativeLayout
+                style="@style/Layout_Match_Wrap"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp12">
+
+                <TextView
+                    android:id="@+id/tv_bankno"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:minWidth="@dimen/text_width"
+                    android:text="@string/wallet_bankcard_cardno"
+                    android:textColor="@color/text_color4"
+                    android:textSize="@dimen/text_size3"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_add_bankno"
+                    style="@style/Layout_Match_Wrap"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/tv_bankno"
+                    android:background="@null"
+                    android:hint="@string/hint_input_bankcard_cardno"
+                    android:inputType="number"
+                    android:maxLength="@integer/restrict_wellet_text_length"
+                    android:textColor="@color/text_color4"
+                    android:textColorHint="@color/text_color2"
+                    android:textSize="@dimen/text_size3" />
+
+                <ImageView
+                    android:id="@+id/iv_add_banknoclear"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/credit_clear"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                style="@style/view_line"
+                android:layout_marginLeft="@dimen/dp12" />
+
+            <RelativeLayout
+                style="@style/Layout_Match_Wrap"
+                android:padding="@dimen/dp12">
+
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:minWidth="@dimen/text_width"
+                    android:text="@string/wallet_bankcard_mobile"
+                    android:textColor="@color/text_color4"
+                    android:textSize="@dimen/text_size3"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    style="@style/Layout_Match_Wrap"
+                    android:layout_toLeftOf="@+id/iv_add_explain"
+                    android:layout_toRightOf="@+id/tv_mobile">
+
+                    <EditText
+                        android:id="@+id/et_add_mobile"
+                        style="@style/Layout_Match_Wrap"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:hint="@string/hint_input_bankcard_mobile2"
+                        android:inputType="number"
+                        android:maxLength="@integer/restrict_wellet_money_length"
+                        android:textColor="@color/text_color4"
+                        android:textColorHint="@color/text_color2"
+                        android:textSize="@dimen/text_size3" />
+
+                    <ImageView
+                        android:id="@+id/iv_add_mobileclear"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/credit_clear"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_add_explain"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:src="@drawable/doubt_gray" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add_next"
+            style="@style/btn_style"
+            android:text="@string/wallet_bankcard_bangdingcard" />
+
+        <TextView
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="@dimen/dp12"
+            android:paddingRight="@dimen/dp12"
+            android:text="@string/wallet_bankcard_cozy_explain"
+            android:textColor="@color/text_color_969696"
+            android:textSize="@dimen/sp11" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        style="@style/Layout_Match_Wrap"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dp12"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/Layout_Wrap_Wrap"
+            android:paddingBottom="4dp"
+            android:text="@string/wallet_payinfo_addbankcardmsg"
+            android:textColor="@color/text_color_969696"
+            android:textSize="@dimen/sp10" />
+    </LinearLayout>
+
+</RelativeLayout>

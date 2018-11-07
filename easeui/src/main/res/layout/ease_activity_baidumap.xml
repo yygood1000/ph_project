@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 拖选和输入 选择详细地址页 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_above="@+id/rv_poi_near">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_12"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:layout_marginTop="@dimen/spacing_8"
+            android:background="@drawable/shape_bg_white_r4"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/spacing_6"
+            android:paddingLeft="@dimen/spacing_6"
+            android:paddingRight="@dimen/spacing_6"
+            android:paddingTop="@dimen/spacing_6">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/nav_icon_search24" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="@dimen/spacing_8"
+                android:singleLine="true"
+                android:text="@string/please_input_detailed_address"
+                android:textColor="@color/text_color_999999"
+                android:textSize="@dimen/text_size13" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/iv_icon_location_point" />
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/map"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/spacing_23"
+            android:layout_marginRight="@dimen/spacing_17"
+            android:src="@drawable/iv_around_goods_location" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/status_bar_height">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/spacing_13"
+            android:text="@string/cancel"
+            android:textColor="@color/black_222222"
+            android:textSize="@dimen/text_size14" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_13"
+            android:layout_toLeftOf="@+id/tv_cancel"
+            android:background="@drawable/shape_bg_gray_r4">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_10"
+                android:layout_marginRight="@dimen/spacing_10"
+                android:src="@drawable/nav_icon_search24" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_search"
+                android:background="@null"
+                android:ellipsize="end"
+                android:padding="@dimen/spacing_10"
+                android:singleLine="true"
+                android:textColor="@color/text_color_222222"
+                android:textSize="@dimen/text_size13" />
+
+            <ImageView
+                android:id="@+id/iv_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/spacing_7"
+                android:paddingRight="@dimen/spacing_7"
+                android:src="@drawable/icon_clear" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_color_030303"
+            android:textSize="@dimen/text_size17" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_E4E4E4" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_poi_search"
+        android:layout_below="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_poi_near"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="-100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

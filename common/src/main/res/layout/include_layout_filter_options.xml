@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_options"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/rl_title">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/ll_destination"
+            style="@style/TopOptionsLLStyle">
+
+            <TextView
+                android:id="@+id/tv_destination"
+                style="@style/TopOptionsTvStyle"
+                android:text="@string/destination_address"
+                />
+
+            <ImageView
+                android:id="@+id/iv_destination_arrows_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_7"
+                android:background="@drawable/arrows_down_gray"/>
+        </LinearLayout>
+
+        <ImageView
+            style="@style/PardinglineStyle"/>
+
+        <LinearLayout
+            android:id="@+id/ll_truck_type"
+            style="@style/TopOptionsLLStyle">
+
+            <TextView
+                android:id="@+id/tv_truck_typelength"
+                style="@style/TopOptionsTvStyle"
+                android:text="@string/truck_type_and_length"
+                />
+
+            <ImageView
+                android:id="@+id/iv_truck_type_arrows_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_7"
+                android:background="@drawable/arrows_down_gray"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/parting_line_heigth"
+        android:layout_alignParentBottom="true"
+        android:background="@color/parding_line"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/parting_line_heigth"
+        android:layout_alignParentTop="true"
+        android:background="@color/parding_line"/>
+</RelativeLayout>

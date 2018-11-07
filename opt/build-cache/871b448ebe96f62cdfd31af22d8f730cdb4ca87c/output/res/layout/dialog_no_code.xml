@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Layout_Match_Match"
+        android:layout_margin="@dimen/dp30"
+        android:background="@drawable/bg_btn_white"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/Layout_Match_Wrap">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/wallet_bankcard_sms_no_title"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/sp16" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp12"
+                android:src="@drawable/cha" />
+        </RelativeLayout>
+
+        <View style="@style/view_line" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingTop="@dimen/dp10"
+            android:text="@string/wallet_bankcard_sms_no_content"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingRight="@dimen/dp16"
+            android:lineSpacingExtra="@dimen/dp5"
+            android:text="@string/wallet_bankcard_sms_no_content1"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp30"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingRight="@dimen/dp16"
+            android:lineSpacingExtra="@dimen/dp5"
+            android:text=""
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/sp14"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>

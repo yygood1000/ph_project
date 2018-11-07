@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:state_pressed="true" android:drawable="@drawable/ease_chatfrom_bg_focused" />-->
+    <!--<item android:drawable="@drawable/ease_chatfrom_bg_normal" />-->
+
+    <item android:state_pressed="true"  >
+        <shape android:shape="rectangle">
+            <gradient
+                android:endColor="#AA00C649"
+                android:startColor="#AA71DC62"
+                android:angle="180"/>
+
+
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+
+
+    <item  >
+        <shape android:shape="rectangle">
+            <gradient
+                android:endColor="#00C649"
+                android:startColor="#71DC62"
+                android:angle="180"/>
+
+            <corners android:radius="4dp" />
+        </shape>
+
+    </item>
+
+</selector>

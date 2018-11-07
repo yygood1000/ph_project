@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_root"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sl_wallet_main"
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                style="@style/Layout_Match_Wrap"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_wallet_bg"
+                    style="@style/Layout_Match_Wrap"
+                    android:background="@drawable/wallet_bg_driver"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        style="@style/Layout_Match_Wrap"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/iv_wallet_back"
+                            style="@style/Layout_Wrap_Wrap"
+                            android:padding="@dimen/text_padding2"
+                            android:src="@drawable/wallet_back_white" />
+
+                        <TextView
+                            style="@style/Layout_Wrap_Wrap"
+                            android:layout_centerInParent="true"
+                            android:text="我的钱包"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size4" />
+
+                        <ImageView
+                            android:id="@+id/iv_wallet_set"
+                            style="@style/Layout_Wrap_Wrap"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            android:padding="@dimen/text_padding2"
+                            android:src="@drawable/icon_add" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal" >
+
+                        <com.topjet.wallet.ui.widget.RoundImageView
+                            android:id="@+id/iv_wallet_avatar"
+                            style="@style/Layout_Match_Match"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/v3_default_avatar" />
+
+                        <TextView
+                            android:id="@+id/tv_wallet_name"
+                            style="@style/Layout_Wrap_Wrap"
+                            android:layout_below="@+id/iv_wallet_avatar"
+                            android:layout_centerHorizontal="true"
+                            android:text="name"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size4" />
+
+                        <TextView
+                            android:id="@+id/tv_wallet_phone"
+                            style="@style/Layout_Wrap_Wrap"
+                            android:layout_below="@+id/tv_wallet_name"
+                            android:layout_centerHorizontal="true"
+                            android:text="phone"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="5dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingRight="10dp" >
+
+                        <TextView
+                            android:id="@+id/tv_usermoney"
+                            style="@style/Layout_Wrap_Wrap"
+                            android:text="— —.— —"
+                            android:textColor="@color/color_42"
+                            android:textSize="26sp" />
+
+                        <TextView
+                            android:id="@+id/tv_usermoneyTitle"
+                            style="@style/Layout_Wrap_Wrap"
+                            android:text="@string/user_money"
+                            android:textColor="@color/color_42"
+                            android:textSize="@dimen/text_size1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ll_money"
+                        android:layout_alignTop="@+id/ll_money"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/ll_money"
+                        android:background="@color/bg_line_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_canouot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/ll_money"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp" >
+
+                        <TextView
+                            android:id="@+id/tv_usermoney_canout"
+                            style="@style/Layout_Wrap_Wrap"
+                            android:text="— —.— —"
+                            android:textColor="@color/color_42"
+                            android:textSize="26sp" />
+                        <!-- 可提现 -->
+
+                        <TextView
+                            android:id="@+id/tv_usermoney_canoutTitle"
+                            style="@style/Layout_Wrap_Wrap"
+                            android:text="@string/user_money_canout"
+                            android:textColor="@color/color_42"
+                            android:textSize="@dimen/text_size1" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_withdrawals_qa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/ll_canouot"
+                        android:clickable="true"
+                        android:src="@drawable/icon_withdrawals_qa" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/Layout_Match_Wrap"
+                    android:layout_marginTop="@dimen/text_padding2"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <com.topjet.wallet.ui.widget.MyGridView
+                        android:id="@+id/gv_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:listSelector="@null"
+                        android:numColumns="3" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

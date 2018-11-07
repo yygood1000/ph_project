@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            style="@style/Layout_Match_Match"
+                                            android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Layout_Match_Match"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_30"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

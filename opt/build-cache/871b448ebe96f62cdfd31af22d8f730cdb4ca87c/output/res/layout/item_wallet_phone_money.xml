@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/btn_money"
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_border_backgroud_white"
+        android:gravity="center"
+        android:text="@string/wallet_payinfo_phonechongmoney30"
+        android:textColor="@color/text_color_969696"
+        android:textSize="@dimen/text_size4" />
+
+</LinearLayout>

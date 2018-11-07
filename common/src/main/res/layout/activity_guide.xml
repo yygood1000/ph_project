@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/index_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_guide"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingBottom="43dp" >-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/img_guide_pic1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--android:background="@drawable/driver_spots_none" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/img_guide_pic2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--android:background="@drawable/driver_spots_none" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/img_guide_pic3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--android:background="@drawable/driver_spots_none" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/driver_spots_none" />-->
+        <!--</LinearLayout>-->
+    </FrameLayout>
+
+</LinearLayout>

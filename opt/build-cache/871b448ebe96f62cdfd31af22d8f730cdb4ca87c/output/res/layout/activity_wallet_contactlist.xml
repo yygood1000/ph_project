@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Match"
+    android:background="@color/bg_root"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_contact_title"
+            style="@style/TitleBar_Wallet_Tv_Title"
+            android:text="所有联系人"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/text_size4" />
+
+        <TextView
+            android:id="@+id/tv_contact_right"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/text_padding2"
+            android:text="取消"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/text_size3" />
+
+        <View
+            style="@style/view_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_contact_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        android:layout_margin="@dimen/text_padding2"
+        android:background="@drawable/bg_btn_white"
+        android:paddingLeft="@dimen/text_padding2"
+        android:paddingRight="@dimen/text_padding2">
+
+        <TextView
+            android:id="@+id/tv_contact_search"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/wallet_search"
+            android:gravity="center_vertical"
+            android:text="搜索"
+            android:textColor="@color/text_color1"
+            android:textSize="@dimen/text_size2" />
+
+        <EditText
+            android:id="@+id/et_contact_search"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint=""
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="@color/text_color1"
+            android:textSize="@dimen/text_size2" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/iv"
+        style="@style/view_line"
+        android:layout_below="@+id/rl_contact_search" />
+
+    <com.topjet.wallet.ui.activity.contact.MySideBar
+        android:id="@+id/contact_sidebar"
+        android:layout_width="30dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/iv"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/iv"
+        android:layout_toLeftOf="@id/contact_sidebar"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/head_hint_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_contact_search"
+        android:layout_toLeftOf="@id/contact_sidebar"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_contact_head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_padding1"
+            android:gravity="center_vertical"
+            android:text="A"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/text_size4"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLetter"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_contact_shape_cennter"
+        android:gravity="center"
+        android:text="111111"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:visibility="gone"></TextView>
+
+    <LinearLayout
+        android:id="@+id/ll_contact_access"
+        style="@style/Layout_Match_Match"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/bg_root"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/tv_contact_setting"
+            style="@style/Layout_Match_Wrap"
+            android:layout_marginTop="150dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="您的通讯录访问受限，请在\n设置中允许访问权限后刷新此页面"
+            android:textColor="@color/text_color1"
+            android:textSize="@dimen/text_size3" />
+
+        <Button
+            android:id="@+id/btn_contact_setting"
+            style="@style/btn_style"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_btn_blue"
+            android:paddingBottom="@dimen/text_padding1"
+            android:paddingTop="@dimen/text_padding1"
+            android:text="马上设置" />
+    </LinearLayout>
+
+</RelativeLayout>

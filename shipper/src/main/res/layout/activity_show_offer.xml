@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_background"
+              android:orientation="vertical">
+    <!-- 顶部排序操作 -->
+
+    <include layout="@layout/include_line_dd_full"/>
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_filter_time"
+            style="@style/ll_show_offer">
+
+            <TextView
+                android:id="@+id/tv_filter_time"
+                style="@style/tv_size_14_color_66_style"
+                android:text="时间"
+                android:textColor="@color/v3_common_green"
+                />
+
+            <ImageView
+                android:id="@+id/iv_filter_time"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_marginLeft="@dimen/spacing_4"
+                android:src="@drawable/iv_icon_arrow_down_green"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_filter_offer"
+            style="@style/ll_show_offer">
+
+            <TextView
+                android:id="@+id/tv_filter_offer"
+                style="@style/tv_size_14_color_66_style"
+                android:text="报价"
+                />
+
+            <ImageView
+                android:id="@+id/iv_filter_offer"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_marginLeft="@dimen/spacing_4"
+                android:src="@drawable/iv_icon_arrow_black_down"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_filter_evaluate"
+            style="@style/ll_show_offer">
+
+            <TextView
+                android:id="@+id/tv_filter_evaluate"
+                style="@style/tv_size_14_color_66_style"
+                android:text="好评度"
+                />
+
+            <ImageView
+                android:id="@+id/iv_filter_evaluate"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_marginLeft="@dimen/spacing_4"
+                android:src="@drawable/iv_icon_arrow_black_down"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_line_dd_full"/>
+
+    <com.topjet.common.widget.RecyclerViewWrapper.RecyclerViewWrapper
+        android:id="@+id/recyclerViewWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_background"/>
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="@dimen/text_padding1" >
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:background="@drawable/bg_dialog_white"
+        android:orientation="vertical"
+        android:padding="1px" >
+
+        <TextView
+            android:id="@+id/tv_dlg_name"
+            style="@style/Layout_Match_Wrap"
+            android:gravity="center"
+            android:padding="@dimen/text_padding2"
+            android:text="11111"
+            android:textColor="@color/text_color1"
+            android:textSize="@dimen/text_size3" />
+
+        <View style="@style/view_line" />
+
+        <ListView
+            android:id="@+id/lv_dlg"
+            style="@style/Layout_Match_Wrap"
+            android:divider="@color/bg_line_gray"
+            android:dividerHeight="1px"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_dlg_next"
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginTop="@dimen/text_padding2"
+        android:background="@drawable/bg_dialog_white"
+        android:gravity="center"
+        android:padding="@dimen/text_padding2"
+        android:text="取消"
+        android:textColor="@color/color_blue"
+        android:textSize="@dimen/text_size3" />
+
+</LinearLayout>

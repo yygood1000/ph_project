@@ -1,0 +1,60 @@
+<!-- 关于我们-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Match"
+    android:background="@color/common_background">
+
+    <ImageView
+        android:id="@+id/iv_show_logo"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_72"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/tv_show_version"
+        style="@style/tv_size_13_color_96_style"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/iv_show_logo"
+        android:gravity="center"
+        android:paddingBottom="@dimen/spacing_18"
+        android:paddingTop="@dimen/spacing_12"
+        android:text="版本号：V " />
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_below="@+id/tv_show_version"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/spacing_20"
+        android:paddingLeft="@dimen/spacing_12"
+        android:paddingRight="@dimen/spacing_12"
+        android:paddingTop="@dimen/spacing_16">
+
+        <TextView
+            style="@style/Layout_Match_Wrap"
+            android:layout_below="@+id/rl_avatar"
+            android:gravity="left"
+            android:text="560是上海拓景信息科技有限公司发布的一款物流交易APP，我们致力于打造中国最大的物流交易平台，具有安全，价优，配货快的核心优势，成为行业标准的制定者和资源整合的领导者，我们的使命是让物流改变世界。"
+            android:textColor="@color/text_color_222222"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_below="@+id/rl_avatar"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:gravity="center"
+            android:text="感谢您的使用"
+            android:textColor="@color/text_color_333333"
+            android:textSize="@dimen/text_size14" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/tv_size_13_color_96_style"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:paddingBottom="@dimen/spacing_18"
+        android:text="上海拓景信息科技有限公司\n全国统一客服电话：4000566560" />
+</RelativeLayout>

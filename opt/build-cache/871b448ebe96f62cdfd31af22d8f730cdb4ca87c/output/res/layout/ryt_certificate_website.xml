@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp7"
+    android:weightSum="10">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:text="项目网址:  "
+        android:textColor="#FF888888"
+        android:textSize="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/tv_projectwebsite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:autoLink="web"
+        android:textColorLink="?attr/rytTitleTxtBg"
+        android:textSize="@dimen/sp10" />
+</LinearLayout>

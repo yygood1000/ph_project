@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 蓝框选择 -->
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false"
+          android:drawable="@drawable/bg_truck_len_type_item_no_select"/>
+
+    <item android:state_pressed="true"
+        android:drawable="@drawable/bg_truck_len_type_item_is_select_blue">
+
+    </item>
+
+    <item android:state_pressed="false"
+          android:drawable="@drawable/shape_border_blue">
+    </item>
+</selector>

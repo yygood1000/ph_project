@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+              android:paddingTop="@dimen/message_row_padding"
+              android:paddingBottom="@dimen/message_row_padding">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_chat_activity"
+        android:layout_marginTop="@dimen/margin_chat_activity">
+
+        <com.hyphenate.easeui.widget.EaseImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_chat_activity"
+            android:src="@drawable/icon_default_avatar"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_chat_activity"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:layout_below="@+id/tv_userid"
+            android:layout_marginRight="@dimen/size_avatar"
+            android:background="@drawable/ease_chatto_bg" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/bt_logo"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/im_icon_locationsent_white" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/bt_logo"
+                    android:layout_marginRight="@dimen/spacing_8"
+                    android:layout_toLeftOf="@+id/bt_logo"
+                    android:textColor="@color/chat_text_color_normal"
+                    android:text=""
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/spacing_8"
+                    android:layout_below="@id/tv_name"
+                    android:layout_toLeftOf="@+id/bt_logo"
+                    android:layout_marginTop="@dimen/spacing_6"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/gray_normal"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_bubble_triangle"
+            android:visibility="visible"
+            android:src="@drawable/ic_message_v_left_white"
+            style="@style/image_message_bubble_triangle_left"/>
+         <TextView
+            android:id="@+id/tv_userid"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/chat_nick_margin_left"
+            android:textSize="@dimen/chat_nick_text_size"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

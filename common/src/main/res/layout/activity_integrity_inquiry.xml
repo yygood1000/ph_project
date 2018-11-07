@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_background"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_mobile"
+        style="@style/Layout_Match_Wrap"
+        android:layout_marginTop="@dimen/spacing_12"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_12">
+
+        <TextView
+            style="@style/tv_size_15_color_22_style"
+            android:paddingBottom="@dimen/spacing_2"
+            android:paddingTop="@dimen/spacing_2"
+            android:text="联系号码"/>
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="请输入被查询者的联系号码"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/spacing_22"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="@color/text_color_222222"
+            android:textColorHint="@color/color_CCCCCC"
+            android:textSize="@dimen/text_size15"
+            />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/spacing_7"
+            android:paddingRight="@dimen/spacing_7"
+            android:src="@drawable/icon_clear"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_contact"
+        style="@style/Layout_Match_Wrap"
+        android:layout_below="@+id/ll_mobile"
+        android:background="@drawable/selector_btn_white"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_12">
+
+
+        <TextView
+            style="@style/tv_size_15_color_22_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/spacing_2"
+            android:paddingTop="@dimen/spacing_2"
+            android:text="打开通讯录"/>
+
+        <ImageView
+            style="@style/Layout_Wrap_Wrap"
+            android:padding="@dimen/spacing_6"
+            android:src="@drawable/iv_arrow_right_gray"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_btn_search"
+        style="@style/tv_size_17_color_white_style"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ll_contact"
+        android:layout_marginLeft="@dimen/spacing_12"
+        android:layout_marginRight="@dimen/spacing_12"
+        android:layout_marginTop="@dimen/spacing_20"
+        android:background="@drawable/selector_btn_corner_green"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/spacing_10"
+        android:text="立即查询"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_mobile"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/ll_mobile"
+        android:layout_marginLeft="@dimen/spacing_12"
+        android:background="@color/color_dddddd"/>
+</RelativeLayout>

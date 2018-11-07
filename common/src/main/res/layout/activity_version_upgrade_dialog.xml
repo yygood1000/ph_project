@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/Layout_Match_Wrap"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/version_upgrade_dialog_bg"
+        style="@style/Layout_Match_Wrap"
+        android:orientation="vertical">
+
+        <FrameLayout
+            style="@style/Layout_Match_Wrap"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="189dp">
+
+            <LinearLayout
+                android:id="@+id/ll_normal"
+                style="@style/Layout_Match_Wrap"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/Layout_Match_Wrap"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="发现新版本"
+                    android:textColor="#222"
+                    android:textSize="@dimen/auto_dialog_normal_title_font_size" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    style="@style/Layout_Match_Wrap"
+                    android:layout_height="208dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="9dp"
+                    android:scrollbars="vertical"
+                    android:text="这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是容内内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是测试内容这是容内内容"
+                    android:textColor="@color/auto_dialog_content_font_color"
+                    android:textSize="@dimen/auto_dialog_normal_content_font_size" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_single_confirm"
+                style="@style/Layout_Match_Match"
+                android:gravity="center"
+                android:text="立即更新"
+                android:textColor="@color/sl_dialog_confirm_font"
+                android:textSize="@dimen/auto_dialog_confirm_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_close"/>
+
+
+</RelativeLayout>

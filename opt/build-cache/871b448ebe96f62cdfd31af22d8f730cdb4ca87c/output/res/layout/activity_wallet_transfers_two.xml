@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_root"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.topjet.wallet.ui.widget.RoundImageView
+        android:id="@+id/iv_transfers_avatar"
+        style="@style/Layout_Match_Match"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/v3_default_avatar" />
+
+    <TextView
+        android:id="@+id/tv_transfers_name"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="@dimen/text_padding2"
+        android:text=""
+        android:textColor="@color/text_color4"
+        android:textSize="@dimen/text_size4" />
+
+    <TextView
+        android:id="@+id/tv_transfers_phone"
+        style="@style/Layout_Wrap_Wrap"
+        android:text=""
+        android:textColor="@color/text_color1"
+        android:textSize="@dimen/text_size3" />
+
+    <View
+        style="@style/view_line"
+        android:layout_marginTop="20dp" />
+
+    <RelativeLayout
+        style="@style/Layout_Match_Wrap"
+        android:background="@color/white"
+        android:padding="@dimen/text_padding2">
+
+        <TextView
+            style="@style/Layout_Wrap_Wrap"
+            android:text="@string/wallet_transfers_money"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/text_size3"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_marginRight="@dimen/text_padding2"
+                android:text="@string/wallet_transfers_balance"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/tv_transfers_unit"
+                style="@style/Layout_Wrap_Wrap"
+                android:text="0.00"
+                android:textColor="@color/color_red2"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:text="@string/wallet_money_unit"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/text_size2" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Layout_Match_Wrap"
+        android:background="@color/white"
+        android:padding="@dimen/text_padding2">
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/wallet_money_sign"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/text_size3"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_transfers_money"
+            style="@style/Layout_Match_Wrap"
+            android:layout_toRightOf="@+id/tv"
+            android:background="@null"
+            android:hint="@string/wallet_payinfo_chongmoney"
+            android:inputType="numberDecimal"
+            android:paddingLeft="4dp"
+            android:textColor="@color/text_color4"
+            android:textColorHint="@color/text_color2"
+            android:textSize="@dimen/text_size5" />
+
+        <ImageView
+            android:id="@+id/iv_transfers_moneyclear"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/credit_clear"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View style="@style/view_line" />
+
+    <RelativeLayout
+        style="@style/Layout_Match_Wrap"
+        android:background="@color/white"
+        android:padding="@dimen/text_padding2">
+
+        <EditText
+            android:id="@+id/et_transfers_remark"
+            style="@style/Layout_Match_Wrap"
+            android:background="@null"
+            android:hint="@string/wallet_money_remark"
+            android:maxLength="10"
+            android:textColor="@color/text_color4"
+            android:textColorHint="@color/text_color2"
+            android:textSize="@dimen/text_size3" />
+
+        <ImageView
+            android:id="@+id/iv_transfers_remarkclear"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/credit_clear"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View style="@style/view_line" />
+
+    <Button
+        android:id="@+id/btn_transfers_next"
+        style="@style/btn_style"
+        android:layout_marginTop="40dp"
+        android:text="@string/wallet_transfers_confirm" />
+
+    <TextView
+        android:id="@+id/tv_transfers_quota"
+        style="@style/Layout_Wrap_Wrap"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="@dimen/text_padding2"
+        android:paddingRight="@dimen/text_padding2"
+        android:text="@string/wallet_transfers_quota"
+        android:textColor="@color/color_blue2"
+        android:textSize="@dimen/text_size2" />
+
+</LinearLayout>

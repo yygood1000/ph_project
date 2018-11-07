@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_content"
+              style="@style/Layout_Match_Match"
+              android:orientation="vertical"
+              android:visibility="gone">
+    <!-- 货源详情 -->
+
+
+    <!-- 顶部状态说明 -->
+    <include layout="@layout/include_order_top_msg"/>
+
+    <LinearLayout
+        android:id="@+id/ll_float"
+        style="@style/Layout_Match_Wrap"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    <com.topjet.common.widget.SwipeRefreshLayout.SwipeRefreshLayout
+        android:id="@+id/srf_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+
+        <com.topjet.common.widget.MyScrollView
+            android:id="@+id/sv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                style="@style/Layout_Match_Wrap"
+                android:orientation="vertical">
+
+                <!-- 订单号 -->
+                <include layout="@layout/include_order_id"/>
+                <!-- 发货地，目的地 -->
+                <include layout="@layout/include_order_address"/>
+                <!-- 距离 -->
+                <include layout="@layout/include_order_map_distance"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_8"/>
+
+                <!-- 货源信息 -->
+                <include layout="@layout/include_order_goods_info"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_8"/>
+
+                <!-- 备注信息 -->
+                <include layout="@layout/include_order_remark"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_8"/>
+
+                <!-- 司机信息 -->
+                <include layout="@layout/include_order_user_info"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_8"/>
+
+                <!-- 查看过的司机列表 -->
+                <include layout="@layout/include_order_view_already"/>
+
+
+            </LinearLayout>
+
+        </com.topjet.common.widget.MyScrollView>
+
+
+    </com.topjet.common.widget.SwipeRefreshLayout.SwipeRefreshLayout>
+    <!-- 底部按钮 -->
+    <include layout="@layout/include_order_bottom_btn"/>
+
+    <!-- 黑暗代码>> 不起作用，只为站位 -->
+    <LinearLayout
+        android:id="@+id/ll_unfold_content"
+        style="@style/Layout_Wrap_Wrap"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <!-- 展开 收起 -->
+        <include layout="@layout/include_order_unfold"/>
+        <!-- 运费 -->
+        <include layout="@layout/include_order_money_info"/>
+        <!-- 订单状态进度 -->
+        <include layout="@layout/include_order_statebar"/>
+    </LinearLayout>
+
+</LinearLayout>

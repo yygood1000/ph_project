@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- 白色按钮 背景 -->
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_EEEEEE"/>
+            <corners
+                android:topLeftRadius="@dimen/spacing_4"
+                android:topRightRadius="@dimen/spacing_4"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+            <corners
+                android:topLeftRadius="@dimen/spacing_4"
+                android:topRightRadius="@dimen/spacing_4"/>
+        </shape>
+    </item>
+</selector>

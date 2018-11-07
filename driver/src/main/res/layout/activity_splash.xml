@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <!--<com.topjet.common.widget.MyWebView-->
+    <!--android:id="@+id/webView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:background="@color/white"-->
+    <!--android:visibility="gone">-->
+    <!--</com.topjet.common.widget.MyWebView>-->
+
+    <ImageView
+        android:id="@+id/iv_adv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/iv_splash_logo"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/shape_bg_tran50_r4"
+        android:gravity="center"
+        android:text="@string/skip"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_splash_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/iv_splash_logo"/>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_fuel_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/btnDenomination"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tv_fuel_card_denomination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100元"
+            android:textColor="@color/fuel_card_text_sel"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv_fuel_card_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="售价：100.0元"
+            android:textColor="@color/fuel_card_text_sel"
+            android:textSize="@dimen/sp10" />
+    </LinearLayout>
+</FrameLayout>

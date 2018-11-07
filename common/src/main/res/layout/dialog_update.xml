@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_20"
+        android:layout_marginLeft="@dimen/spacing_20"
+        android:layout_marginRight="@dimen/spacing_20"
+        android:gravity="center"
+        >
+
+        <!-- 显示视图 -->
+        <LinearLayout
+            android:id="@+id/ll_update"
+            android:layout_width="330dp"
+            android:layout_height="450dp"
+            android:layout_below="@+id/iv_close"
+            android:layout_centerInParent="true"
+            android:background="@drawable/version_upgrade_dialog_bg"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/Layout_Match_Wrap"
+                android:layout_marginTop="180dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="发现新版本"
+                android:textColor="#222"
+                android:textSize="@dimen/auto_dialog_normal_title_font_size"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/Layout_Match_Wrap"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="9dp"
+                android:padding="@dimen/spacing_10"
+                android:scrollbars="vertical"
+                android:text=""
+                android:textColor="@color/auto_dialog_content_font_color"
+                android:textSize="@dimen/auto_dialog_normal_content_font_size"/>
+
+
+            <TextView
+                android:id="@+id/tv_btn_single_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/selector_btn_red_bottom_r4"
+                android:gravity="center"
+                android:padding="@dimen/spacing_12"
+                android:text="立即更新"
+                android:textColor="@color/white"
+                android:textSize="@dimen/auto_dialog_confirm_font_size"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_close"/>
+
+
+        <!-- 更新视图 -->
+        <LinearLayout
+            android:id="@+id/ll_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_bg_dialog_root"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_32"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:text="正在更新"
+                android:textColor="@color/text_color_222222"
+                android:textSize="17dp"/>
+
+            <ImageView
+                android:id="@+id/iv_loading_img"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_marginTop="@dimen/spacing_45"
+                android:src="@drawable/huoche"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_6"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing_6"
+                android:progressDrawable="@drawable/progressbar"/>
+
+            <TextView
+                android:id="@+id/tv_progress"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:text="已完成：0%"
+                android:textColor="@color/text_color_666666"
+                android:textSize="@dimen/text_size15"/>
+
+            <TextView
+                android:id="@+id/tv_btn_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/spacing_10"
+                android:paddingBottom="@dimen/spacing_10"
+                android:paddingRight="@dimen/spacing_50"
+                android:paddingLeft="@dimen/spacing_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing_45"
+                android:background="@drawable/shape_bg_btn_border_green"
+                android:gravity="center"
+                android:text="后台更新"
+                android:textSize="@dimen/text_size18"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Match"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_menu_content"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_below="@+id/iv_v"
+        android:background="@drawable/shape_bg_white_r4"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_menu_one"
+            style="@style/tv_order_menu_style"
+            android:background="@drawable/selector_btn_white_top_r"
+            android:text="撤销订单"
+            android:clickable="true"/>
+
+        <include layout="@layout/include_line_dd_full" />
+        <!-- 只显示两个时，隐藏中间这个 -->
+        <LinearLayout
+            android:id="@+id/ll_menu_two"
+            style="@style/Layout_Wrap_Wrap"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_menu_two"
+                style="@style/tv_order_menu_style"
+                android:text="分享货源"
+                android:clickable="true"/>
+
+            <include layout="@layout/include_line_dd_full" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_menu_three"
+            style="@style/tv_order_menu_style"
+            android:background="@drawable/selector_btn_white_bottom_r"
+            android:text="撤销订单"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ll_menu_content"
+        android:layout_marginRight="@dimen/spacing_6"
+        android:src="@drawable/ic_icon_order_menu_v" />
+
+</RelativeLayout>

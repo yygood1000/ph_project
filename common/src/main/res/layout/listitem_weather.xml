@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/spacing_12"
+              android:paddingRight="@dimen/spacing_12">
+
+
+    <RelativeLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="@dimen/height_60"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/tv_size_14_color_22_style"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_temp"
+            style="@style/tv_size_14_color_22_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp"
+            android:layout_toRightOf="@+id/tv_time"/>
+
+        <TextView
+            android:id="@+id/tv_wind"
+            style="@style/tv_size_14_color_22_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"/>
+
+        <View
+            style="@style/LineMatchWidthHeigth1"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

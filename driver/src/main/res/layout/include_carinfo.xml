@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!-- 车牌号 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing_12">
+
+        <EditText
+            android:id="@+id/et_car_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:digits="@string/platNoDigits"
+            android:hint="@string/please_input_car_number"
+            android:inputType="textCapCharacters"
+            android:maxLength="6"
+            android:padding="@dimen/spacing_12"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_CCCCCC"
+            android:textSize="@dimen/text_size15"/>
+
+        <View
+            android:id="@+id/v_0000"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_car_number"
+            android:layout_alignTop="@+id/tv_car_number"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/et_car_number"
+            android:background="@color/color_dddddd"/>
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_car_number"
+            android:layout_alignTop="@+id/et_car_number"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/v_0000"
+            android:paddingRight="@dimen/spacing_15"
+            android:src="@drawable/approve_icon_down_def"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_car_number"
+            android:layout_alignTop="@+id/et_car_number"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_location"
+            android:gravity="center"
+            android:paddingRight="@dimen/spacing_5"
+            android:text="@string/default_car_location"
+            android:textColor="@color/text_color_222222"
+            android:textSize="@dimen/text_size15"/>
+
+        <TextView
+            android:id="@+id/tv_car_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/car_number"
+            android:textColor="@color/text_color_222222"
+            android:textSize="@dimen/text_size15"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/parting_line_heigth"
+            android:layout_alignBottom="@+id/et_car_number"
+            android:background="@color/color_dddddd"/>
+    </RelativeLayout>
+
+    <!-- 车牌色 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing_12">
+
+        <RadioGroup
+            android:id="@+id/rg_car_number_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:hint="@string/please_input_car_number"
+            android:orientation="horizontal"
+            android:textColorHint="@color/color_CCCCCC"
+            android:textSize="@dimen/text_size15">
+
+            <RadioButton
+                android:id="@+id/rb_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_radio_driver"
+                android:checked="true"
+                android:paddingLeft="@dimen/spacing_5"
+                android:paddingRight="@dimen/spacing_12"
+                android:text="@string/car_number_is_yellow"
+                android:textColor="#FFBE5E"
+                android:textSize="@dimen/text_size15"/>
+
+            <RadioButton
+                android:id="@+id/rb_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_radio_driver"
+                android:paddingLeft="@dimen/spacing_5"
+                android:paddingRight="@dimen/spacing_12"
+                android:text="@string/car_number_is_blue"
+                android:textColor="@color/text_color_6E90FF"
+                android:textSize="@dimen/text_size15"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_car_number_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/spacing_12"
+            android:paddingTop="@dimen/spacing_12"
+            android:text="@string/car_number_color"
+            android:textColor="@color/text_color_222222"
+            android:textSize="@dimen/text_size15"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/parting_line_heigth"
+            android:layout_alignBottom="@+id/tv_car_number_color"
+            android:background="@color/color_dddddd"/>
+    </RelativeLayout>
+
+    <!-- 车型车长 -->
+    <RelativeLayout
+        android:id="@+id/rl_type_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing_12">
+
+        <ImageView
+            android:id="@+id/iv_type_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/spacing_12"
+            android:src="@drawable/icons_common_enter"/>
+
+        <TextView
+            android:id="@+id/tv_type_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_type_length"
+            android:hint="@string/please_select_type_length"
+            android:paddingRight="@dimen/spacing_3"
+            android:textColor="@color/text_color_222222"
+            android:textColorHint="@color/color_CCCCCC"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/spacing_12"
+            android:paddingTop="@dimen/spacing_12"
+            android:text="@string/type_length"
+            android:textColor="@color/text_color_222222"
+            android:textSize="@dimen/text_size15"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_10"
+        android:background="@color/common_background"/>
+</LinearLayout>

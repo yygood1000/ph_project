@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Match"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl_ppw"
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/text_padding2"
+        android:paddingRight="@dimen/text_padding2" >
+
+        <ImageView
+            android:id="@+id/item_image"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/wallet_bill_all" />
+
+        <TextView
+            android:id="@+id/item_title"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/selected"
+            android:layout_toRightOf="@id/item_image"
+            android:text="12121"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/text_size3" />
+
+        <ImageView
+            android:id="@+id/selected"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/wallet_checkbox_true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_item"
+        style="@style/view_line"
+        android:layout_below="@+id/rl_ppw" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+[
+  {
+    "content": "安全交易到账快",
+    "icon_url": "",
+    "url": "WalletMainActivity",
+    "icon_key": "",
+    "title": "我的钱包"
+  },
+  {
+    "content": "发货找车在这里",
+    "icon_url": "",
+    "url": "ShipperSplashActivity",
+    "icon_key": "",
+    "title": "货主发货"
+  },
+  {
+    "content": "查诚信 交易更放心",
+    "icon_url": "",
+    "url": "IntegrityInquiryActivity",
+    "icon_key": "",
+    "title": "诚信查询"
+  },
+  {
+    "content": "给你最满意的解答",
+    "icon_url": "",
+    "url": "HelpCenterActivity",
+    "icon_key": "",
+    "title": "帮助中心"
+  },
+  {
+    "content": "我们是免费的",
+    "icon_url": "",
+    "url": "IllegalQueryActivity",
+    "icon_key": "",
+    "title": "违章查询"
+  },
+  {
+    "content": "你那里的天气好吗",
+    "icon_url": "",
+    "url": "WeatherActivity",
+    "icon_key": "",
+    "title": "本地天气"
+  }
+]

@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+    <string name="app_name">交运配货</string>
+    <string name="use_truck">我要用车</string>
+    <string name="integral_mall">积分商城</string>
+    <string name="my_order">我的订单</string>
+    <string name="history_order">历史订单</string>
+    <string name="share_goods">分享货源</string>
+    <string name="pick_up_good">提货</string>
+    <string name="list_is_empty">暂无订单</string>
+    <string name="check_bidding_is_empty">(0)</string>
+    <string name="contact_empty">暂无常用联系人，去添加吧</string>
+    <string name="add_contact">添加联系人</string>
+
+    <string name="view_list_num">以下司机查看过货源(%1$s)</string>
+    <string name="call_list_num">以下司机联系过我(%1$s)</string>
+    <string name="delete_familiar_truck">删除熟车</string>
+    <string name="place_order_to_he">给他下单</string>
+    <string name="self_contact">不能添加自己为联系人</string>
+    <string name="around_truck">附近车源</string>
+    <string name="anonymous_warning">开启匿名设置，司机在找货时将无法查看到您的\n头像和姓名。</string>
+    <string name="setting_anonymous">匿名设置</string>
+    <string name="update_time">更新时间 %1$s</string>
+    <string name="add_familiar_truck">添加熟车</string>
+    <string name="my_familiar_truck">我的熟车</string>
+    <string name="delete_familiar_car">删除熟车</string>
+    <string name="truck_info">车辆详情</string>
+    <string name="my_location">我当前的位置</string>
+
+    <string name="order_success">下单成功</string>
+
+
+</resources>

@@ -1,0 +1,112 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+
+    <integer name="environment">@integer/test</integer>
+    <integer name="dev">0</integer>
+    <integer name="test">1</integer>
+    <integer name="pre_product">2</integer>
+    <integer name="product">3</integer>
+    <integer name="closed_beta">4</integer>
+
+    <!-- 环信IM 打不同环境的包，需要修改环信的key -->
+    <!-- 开发 -->
+    <string name="easemob_appkey">1105170717115612#560dev30</string>
+    <!-- 测试 -->
+    <!--<string name="easemob_appkey">1105170717115612#560test</string>-->
+    <!-- 堡垒 -->
+    <!--<string name="easemob_appkey">1105170717115612#560baolei</string>-->
+    <!-- 生产 -->
+    <!--<string name="easemob_appkey">1105170717115612#560product</string>-->
+
+    <string-array name="dev">
+        <item name="base_url">http://192.168.8.153:5100/560/</item>
+        <!-- 拨打电话显示广告页 -->
+        <item name="call_phone_adv">https://devh5.566560.com/h5/view/goods-layer/goods-layer.html</item>
+        <!--交易协议-->
+        <item name="protocol_url">http://192.168.20.122:4000/contract/index.html</item>
+        <!--<item name="protocol_url">https://devh5.566560.com/h5/view/560_3.0/contract/index.html</item>-->
+        <!--退款-->
+        <item name="refund_url">http://192.168.20.122:8080/</item>
+        <!--我要评价-->
+        <item name="comment_url">http://192.168.20.122:8868/#/comment</item>
+        <!--查看评价-->
+        <item name="check_comment_url">http://192.168.20.122:8868/#/seecomment</item>
+        <!--评价列表-->
+        <item name="comment_list_url">http://192.168.20.122:8868/#/commentlist</item>
+        <!--帮助中心-->
+        <item name="help_center_url">http://192.168.20.122:8081/</item>
+        <!--投诉-->
+        <item name="complaint_url">http://192.168.20.122:8868/#/complaint</item>
+    </string-array>
+
+
+    <string-array name="test">
+        <item name="base_url">http://192.168.8.151:5200/560/</item>
+        <!-- 拨打电话显示广告页 -->
+        <item name="call_phone_adv">https://test2h5.566560.com/h5/view/560_3.0/goods-layer/goods-layer.html</item>
+        <!--交易协议-->
+        <item name="protocol_url">https://test2h5.566560.com/h5/view/560_3.0/contract/index.html</item>
+        <!--退款-->
+        <item name="refund_url">https://test2h5.566560.com/h5/view/560_3.0/refund/</item>
+        <!--我要评价-->
+        <item name="comment_url">https://test2h5.566560.com/h5/view/560_3.0/appraise/#/comment</item>
+        <!--查看评价-->
+        <item name="check_comment_url">https://test2h5.566560.com/h5/view/560_3.0/appraise/#/seeComment</item>
+        <!--评价列表-->
+        <item name="comment_list_url">https://test2h5.566560.com/h5/view/560_3.0/appraise/#/commentList</item>
+        <!--帮助中心-->
+        <item name="help_center_url">https://test2h5.566560.com/h5/view/560_3.0/center/</item>
+        <!--投诉-->
+        <item name="complaint_url">https://test2h5.566560.com/h5/view/560_3.0/appraise/#/complaint</item>
+    </string-array>
+
+
+    <string-array name="pre_product">
+        <item name="base_url">https://jyphc.566560.com/560v2/call200</item>
+        <!-- 拨打电话显示广告页 -->
+        <item name="call_phone_adv">https://h5c.566560.com/h5/view/goods-layer/goods-layer.html</item>
+    </string-array>
+
+
+    <string-array name="product">
+        <item name="base_url">https://jyph.566560.com/560v2/call200</item>
+        <!-- 拨打电话显示广告页 -->
+        <item name="call_phone_adv">https://h5.566560.com/h5/view/goods-layer/goods-layer.html</item>
+    </string-array>
+
+    <!-- 内测环境 -->
+    <string-array name="closed_beta">
+        <item name="base_url">http://zullc.566560.com/560/</item>
+        <!-- 拨打电话显示广告页 -->
+        <item name="call_phone_adv">https://h53c.566560.com/h5/view/560_3.0/goods-layer/goods-layer.html</item>
+        <!--交易协议-->
+        <item name="protocol_url">https://h53c.566560.com/h5/view/560_3.0/contract/index.html</item>
+        <!--退款-->
+        <item name="refund_url">https://h53c.566560.com/h5/view/560_3.0/refund/</item>
+        <!--我要评价-->
+        <item name="comment_url">https://h53c.566560.com/h5/view/560_3.0/appraise/#/comment</item>
+        <!--查看评价-->
+        <item name="check_comment_url">https://h53c.566560.com/h5/view/560_3.0/appraise/#/seeComment</item>
+        <!--评价列表-->
+        <item name="comment_list_url">https://h53c.566560.com/h5/view/560_3.0/appraise/#/commentList</item>
+        <!--帮助中心-->
+        <item name="help_center_url">https://h53c.566560.com/h5/view/560_3.0/center/</item>
+        <!--投诉-->
+        <item name="complaint_url">https://h53c.566560.com/h5/view/560_3.0/appraise/#/complaint</item>
+    </string-array>
+
+
+    <!-- 讯飞appid -->
+    <string name="XunFei_Shipper_AppId">57988063</string>
+    <string name="XunFei_Driver_AppId">57987a78</string>
+
+    <!-- 极光key -->
+    <!-- 正式-->
+    <string name="shipper_jush">c3d42c909d29132ee6307dca</string>
+    <!--测试2.4推送BUG-->
+    <string name="driver_jush">cc062f94f5dc6b3ce4137f32</string>
+    <!--正式-->
+    <!--<string name="driver_jush">28ec2a46f6a20a10f4c95115</string>-->
+
+
+</resources>

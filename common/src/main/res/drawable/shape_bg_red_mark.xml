@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="0"
+        android:endColor="@color/red_button_end_color_clicked"
+        android:startColor="@color/red_button_start_color_clicked"/>
+    <corners
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="@dimen/spacing_8"
+        android:topLeftRadius="@dimen/spacing_8"
+        android:topRightRadius="@dimen/spacing_8"/>
+</shape>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Wrap"
+    android:padding="@dimen/spacing_12"
+    android:id="@+id/rl_map_distance"
+    android:background="@color/white"
+    android:visibility="visible">
+
+    <ImageView
+       style="@style/Layout_Wrap_Wrap"
+        android:src="@drawable/iv_bg_map"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/iv_local_point"
+        style="@style/Layout_Wrap_Wrap"
+        android:src="@drawable/iv_order_local_point"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        style="@style/Layout_Wrap_Wrap"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="@dimen/spacing_13"
+        android:paddingRight="@dimen/spacing_13"
+        android:paddingBottom="@dimen/spacing_2"
+        android:background="@drawable/iv_bg_local_text">
+
+        <TextView
+            android:id="@+id/tv_distance"
+            style="@style/tv_size_12_color_22_style"
+            android:gravity="top|center"
+            android:padding="@dimen/spacing_4"
+            android:text="全程999公里 / 距提货地9公里"
+            android:drawableRight="@drawable/iv_arrow_right_gray"
+            android:drawablePadding="@dimen/spacing_4"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

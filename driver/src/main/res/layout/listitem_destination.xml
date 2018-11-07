@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/Layout_Match_Wrap"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_destination"
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp">
+
+        <CheckBox
+            android:id="@+id/cb_destination"
+            style="@style/Layout_Wrap_Wrap"
+            android:background="@drawable/selector_cb_bg_blue"
+            android:button="@null"
+            android:clickable="true"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/tv_destination"
+            style="@style/tv_size_15_color_22_style"
+            android:layout_marginLeft="@dimen/spacing_12"
+            android:layout_toRightOf="@+id/cb_destination"
+            android:text="上海"
+            android:textSize="17dp"/>
+
+        <ImageView
+            android:id="@+id/iv_arrow_right"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:background="@drawable/icon_right_arrow"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="@dimen/parting_line_heigth"
+        android:layout_marginLeft="@dimen/spacing_12"
+        android:background="@color/parding_line"/>
+
+</LinearLayout>

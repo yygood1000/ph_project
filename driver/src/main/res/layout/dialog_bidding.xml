@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent_100">
+
+    <LinearLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_44">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_12"
+                android:src="@drawable/iv_icon_close"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_centerInParent="true"
+                android:text="@string/bidding"
+                android:textColor="@color/text_color_222222"
+                android:textSize="@dimen/text_size17"/>
+
+            <TextView
+                android:id="@+id/tv_number_of_person"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/spacing_12"
+                android:text="已有100人报价"
+                android:textColor="@color/text_color_222222"
+                android:textSize="@dimen/text_size13"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parting_line_heigth"
+                android:layout_alignParentBottom="true"
+                android:background="@color/parding_line"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_freight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/rl_title"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_margin="@dimen/spacing_12"
+                android:text="@string/bidding"
+                android:textColor="@color/text_color_666666"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_6"
+                android:layout_marginLeft="@dimen/spacing_12"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Layout_Wrap_Wrap"
+                    android:text="￥"
+                    android:textColor="@color/text_color_222222"
+                    android:textSize="@dimen/text_size26"/>
+
+                <EditText
+                    android:id="@+id/et_freight"
+                    style="@style/et_bidding_style"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parting_line_heigth"
+                android:background="@color/parding_line"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_deposit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_freight"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_margin="@dimen/spacing_12"
+                android:text="@string/deposit"
+                android:textColor="@color/text_color_666666"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_6"
+                android:layout_marginLeft="@dimen/spacing_12"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Layout_Wrap_Wrap"
+                    android:text="￥"
+                    android:textColor="@color/text_color_222222"
+                    android:textSize="@dimen/text_size26"/>
+
+                <EditText
+                    android:id="@+id/et_deposit"
+                    style="@style/et_bidding_style"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parting_line_heigth"
+                android:background="@color/parding_line"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/BtnNotProjectionStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_44"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/spacing_30"
+            android:layout_marginLeft="@dimen/spacing_12"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:layout_marginTop="@dimen/spacing_25"
+            android:background="@drawable/selector_btn_corner_blue"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size17"/>
+
+    </LinearLayout>
+</RelativeLayout>

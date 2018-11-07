@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_root"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_sms_orderid"
+            style="@style/Layout_Wrap_Wrap"
+            android:text="请输入银行预留手机"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/text_size3" />
+
+        <TextView
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_marginTop="4dp"
+            android:text="上收到的6位数字验证码"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/text_size3" />
+    </LinearLayout>
+
+    <View style="@style/view_line" />
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/text_padding2"
+        android:paddingRight="@dimen/text_padding2">
+
+        <LinearLayout
+            style="@style/Layout_Match_Match"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_gravity="center_vertical"
+                android:text="验证码"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/text_size3" />
+
+            <EditText
+                android:id="@+id/et_sms_code"
+                style="@style/Layout_Match_Wrap"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:hint="@string/hint_input_wallet_payinfo_vicode"
+                android:inputType="number"
+                android:maxLength="@integer/restrict_verify_code_length"
+                android:textColor="@color/text_color4"
+                android:textColorHint="@color/text_color2"
+                android:textSize="@dimen/text_size3" />
+        </LinearLayout>
+        <!-- 获取验证码按钮 -->
+
+        <com.topjet.wallet.ui.widget.CountDownButton
+            android:id="@+id/btn_add_get_verifycode"
+            style="@style/GetVerifyCode_Btn_Common"
+            android:layout_width="90dp"
+            android:layout_height="28dp"
+            android:background="@drawable/bg_btn_gray"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size2" />
+    </LinearLayout>
+
+    <View style="@style/view_line" />
+
+    <Button
+        android:id="@+id/btn_add_next"
+        style="@style/btn_style"
+        android:text="完成支付" />
+
+</LinearLayout>

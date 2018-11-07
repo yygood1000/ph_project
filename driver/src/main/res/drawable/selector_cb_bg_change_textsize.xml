@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 底部 全屏宽 方形 长条按钮背景色 -->
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/iv_icon_textsize_large" android:state_checked="true"/>
+    <item android:drawable="@drawable/iv_icon_textsize_default" android:state_checked="false"/>
+</selector>

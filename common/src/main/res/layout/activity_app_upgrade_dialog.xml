@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="280dp"
+    android:layout_height="300dp"
+    android:background="@drawable/shape_bg_dialog_root">
+
+    <TextView
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:textColor="#222"
+        android:textSize="17dp"
+        android:text="正在更新" />
+
+    <ImageView
+        android:id="@+id/iv_loadingimg"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/huoche" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="216dp"
+        android:layout_height="6dp"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <TextView
+        android:id="@+id/tv_progress"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#666"
+        android:textSize="15dp"
+        android:text="已完成：0%" />
+
+    <Button
+        android:id="@+id/btn_houtai"
+        android:layout_width="232dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="46dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_bg_btn_border_green"
+        android:textColor="@color/v3_common_green"
+        android:textSize="18dp"
+        android:text="后台更新" />
+
+
+</LinearLayout>

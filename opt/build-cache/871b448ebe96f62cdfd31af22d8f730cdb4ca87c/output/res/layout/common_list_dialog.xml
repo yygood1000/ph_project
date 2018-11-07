@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Match"
+    android:background="@color/bg_root"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="440dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ll"
+            style="@style/Layout_Match_Wrap"
+            android:padding="12dp" >
+
+            <ImageView
+                android:id="@+id/ivLeftClose"
+                style="@style/Layout_Wrap_Wrap"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cha" />
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_centerInParent="true"
+                android:text="选择银行卡"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/text_size4" />
+
+            <TextView
+                android:id="@+id/tv_addcard"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_alignParentRight="true"
+                android:text="@string/wallet_payinfo_addbankcard"
+                android:textColor="#00a3de"
+                android:textSize="15dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/view_line" />
+
+        <ListView
+            android:id="@+id/list"
+            style="@style/Layout_Match_Wrap"
+            android:divider="@null"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

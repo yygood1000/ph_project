@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_order"
+              style="@style/Layout_Match_Wrap"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:padding="6dp"
+              android:gravity="center_vertical">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <!-- 出发地 目的地 -->
+        <LinearLayout
+            style="@style/Layout_Match_Wrap"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_depart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textColor="#333333"
+                android:textSize="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:id="@+id/tv_destination"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:textColor="#333333"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+
+        <!-- 货型、重量、车型、是否可拼车 -->
+        <TextView
+            android:id="@+id/tv_truck_info"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="13sp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/tv_send"
+        style="@style/Layout_Wrap_Wrap"
+        android:text="@string/send_order"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="13sp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/ease_send_order_driver_bg"/>
+
+</LinearLayout>

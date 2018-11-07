@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 所有渐变蓝色按钮都在这儿 -->
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_dddddd"/>
+            <corners android:radius="@dimen/radius_100"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:endColor="@color/red_button_end_color_clicked"
+                android:startColor="@color/red_button_start_color_clicked"/>
+            <corners android:radius="@dimen/radius_100"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:endColor="@color/red_button_end_color_unclick"
+                android:startColor="@color/red_button_start_color_unclick"/>
+            <corners android:radius="@dimen/radius_100"/>
+        </shape>
+    </item>
+</selector>

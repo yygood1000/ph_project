@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/Layout_Match_Wrap"
+        android:background="@color/white"
+        android:padding="@dimen/text_padding2" >
+
+        <ImageView
+            android:id="@+id/iv_close"
+            style="@style/Layout_Wrap_Wrap"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cha" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_centerInParent="true"
+            android:text="付款详情"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/text_size4" />
+    </RelativeLayout>
+
+    <View style="@style/view_line" />
+
+    <com.topjet.wallet.ui.widget.CustomViewPager
+        android:id="@+id/custom_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+</LinearLayout>

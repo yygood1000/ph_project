@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/tv_size_13_color_96_style"
+        android:padding="@dimen/spacing_12"
+        android:text="@string/my_referrer"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/spacing_12">
+
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_default_avatar"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_12"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/tv_size_16_color_22_style"
+                android:text="我是帅哥"
+                />
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                style="@style/tv_size_14_color_22_style"
+                android:layout_marginTop="@dimen/spacing_4"
+                android:text="19245654564"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

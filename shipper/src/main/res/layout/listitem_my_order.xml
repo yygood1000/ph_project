@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    style="@style/Layout_Wrap_Wrap"
+    android:layout_marginBottom="1px"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_8"
+        android:background="@color/common_background"/>
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_order"
+            style="@style/cb_green_style"
+            android:layout_marginLeft="@dimen/spacing_15"
+            android:layout_marginRight="@dimen/spacing_12"
+            android:checked="false"
+            android:visibility="gone"
+            android:enabled="false"/>
+
+        <LinearLayout
+            style="@style/Layout_Match_Wrap"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/Layout_Match_Wrap"
+                android:paddingBottom="@dimen/spacing_10"
+                android:paddingLeft="@dimen/spacing_12"
+                android:paddingRight="@dimen/spacing_12">
+
+                <TextView
+                    android:id="@+id/tv_order_status"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/iv_icon_order_status_red"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/spacing_2"
+                    android:text="报价中"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size12"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_address"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/spacing_14"
+                    android:layout_toLeftOf="@+id/tv_order_status"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_depart_address"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="上海市 徐汇区"
+                        android:textColor="@color/text_color_222222"
+                        android:textSize="@dimen/text_size16"/>
+
+                    <ImageView
+                        style="@style/Layout_Wrap_Wrap"
+                        android:layout_marginLeft="@dimen/spacing_6"
+                        android:layout_marginRight="@dimen/spacing_6"
+                        android:layout_marginTop="@dimen/spacing_5"
+                        android:background="@drawable/order_list_icon_greenline"/>
+
+                    <TextView
+                        android:id="@+id/tv_destination_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.44"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="上海市 徐汇区"
+                        android:textColor="@color/text_color_222222"
+                        android:textSize="@dimen/text_size16"/>
+                </LinearLayout>
+
+                <!--提货信息模块-->
+                <LinearLayout
+                    android:id="@+id/ll_pick_up_info"
+                    style="@style/LinearLayout_MyOrder_Style"
+                    android:layout_below="@+id/ll_address"
+                    android:layout_marginTop="@dimen/spacing_10">
+
+                    <ImageView
+                        style="@style/Point_MyOrder_Style"/>
+
+                    <TextView
+                        android:id="@+id/tv_pick_up_time"
+                        style="@style/MyOrderTextViewStyle"
+                        android:text="12-12 12 点"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_about_fees"
+                    style="@style/LinearLayout_MyOrder_Style"
+                    android:layout_below="@+id/ll_pick_up_info"
+                    android:visibility="visible">
+
+                    <ImageView
+                        style="@style/Layout_Wrap_Wrap"
+                        android:layout_marginRight="@dimen/spacing_6"
+                        android:background="@drawable/shape_point_my_order"/>
+
+                    <TextView
+                        android:id="@+id/tv_about_fees"
+                        style="@style/MyOrderTextViewStyle"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line"
+                style="@style/LineMatchWidthHeigth1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/spacing_12"
+        android:paddingRight="@dimen/spacing_12"
+        android:paddingTop="@dimen/spacing_10">
+
+
+        <Button
+            android:id="@+id/btn_left"
+            style="@style/MyOrderBtnStyle"
+            android:layout_toLeftOf="@+id/btn_right"
+            android:text="左边的按钮"/>
+
+        <Button
+            android:id="@+id/btn_right"
+            style="@style/MyOrderBtnStyle"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/spacing_16"
+            android:text="右边的按钮"/>
+
+    </RelativeLayout>
+</LinearLayout>

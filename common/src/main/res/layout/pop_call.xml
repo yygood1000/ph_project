@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 拨打电话 有广告popupwindow -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/spacing_24"
+    android:paddingRight="@dimen/spacing_24"
+    xmlns:cornersWebView="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent_100">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_circle_white"
+            android:src="@drawable/icon_call_pop_cancel"
+            android:padding="@dimen/spacing_10"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/spacing_20"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <com.topjet.common.widget.CornersWebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        cornersWebView:top_left="10dp"
+        cornersWebView:top_right="10dp"
+        android:background="@drawable/shape_top_corners_bg_white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/spacing_12"
+        android:paddingTop="@dimen/spacing_20"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="sssssssss"
+            android:textColor="@color/text_color_222222"
+            android:textSize="@dimen/text_size24"
+            android:maxLength="4"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginRight="@dimen/spacing_9"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="123456"
+            android:textColor="@color/text_color_222222"
+            android:textSize="@dimen/text_size20" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/spacing_16"
+        android:paddingLeft="@dimen/spacing_20"
+        android:paddingRight="@dimen/spacing_20"
+        android:text="联系时，请告诉对方信息来自560交运配货选择560托管运费，交易更安全！"
+        android:textColor="@color/text_color_222222"
+        android:textSize="@dimen/text_size13"
+        android:background="@color/white"/>
+
+    <!--  拨打 -->
+    <TextView
+        android:id="@+id/tv_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bottom_corners_bg_green"
+        android:gravity="center"
+        android:padding="@dimen/spacing_13"
+        android:text="@string/call_driver"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size17" />
+</LinearLayout>

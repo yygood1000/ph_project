@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_background"
+                android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/view_statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_height"
+        android:background="@drawable/shape_bg_gradient_driver"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_heigth"
+        android:layout_below="@+id/view_statusbar"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_title_bar_back"
+            style="@style/TitleBarDriverIvBack"
+            android:layout_gravity="center_vertical|left"/>
+
+        <RelativeLayout
+            style="@style/Layout_Match_Match"
+            android:paddingLeft="@dimen/spacing_28"
+            android:paddingRight="@dimen/spacing_12">
+
+            <TextView
+                android:id="@+id/tv_start_address"
+                style="@style/tv_size_17_color_22_style"
+                android:layout_alignBottom="@+id/tv_end_address"
+                android:layout_toLeftOf="@+id/iv_center"
+                android:gravity="right"
+                android:maxLines="1"/>
+
+            <ImageView
+                android:id="@+id/iv_center"
+                style="@style/Layout_Wrap_Wrap"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_6"
+                android:layout_marginRight="@dimen/spacing_6"
+                android:background="@drawable/order_list_icon_blueline"/>
+
+            <TextView
+                android:id="@+id/tv_end_address"
+                style="@style/tv_size_17_color_22_style"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_center"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/tv_title_all_route"
+                style="@style/tv_size_17_color_22_style"
+                android:layout_centerInParent="true"
+                android:text="@string/all_route"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <View
+            style="@style/LineMatchWidthHeigth1"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <com.topjet.common.widget.RecyclerViewWrapper.RecyclerViewWrapper
+        android:id="@+id/recyclerViewWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</RelativeLayout>

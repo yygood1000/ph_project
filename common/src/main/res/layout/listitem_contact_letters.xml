@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_letter"
+    style="@style/tv_size_17_color_33_style"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/spacing_12"
+    android:paddingTop="@dimen/spacing_8"
+    android:paddingBottom="@dimen/spacing_8"
+    android:background="@color/common_background"
+    android:text="A"
+    />
+

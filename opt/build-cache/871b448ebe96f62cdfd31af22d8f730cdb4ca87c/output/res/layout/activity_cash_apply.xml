@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_root"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/Layout_Match_Wrap"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/Layout_Match_Match"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dp7"
+                android:padding="@dimen/dp12">
+
+                <TextView
+                    android:id="@+id/tv_cash_min"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:text="@string/wallet_payinfo_cashmin"
+                    android:textColor="@color/text_color3"
+                    android:textSize="@dimen/sp12"/>
+
+                <RelativeLayout
+                    style="@style/Layout_Match_Match"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/dp16"
+                    android:paddingTop="@dimen/dp25">
+
+                    <TextView
+                        android:id="@+id/tv"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:layout_centerVertical="true"
+                        android:text="￥"
+                        android:paddingTop="@dimen/dp5"
+                        android:textColor="@color/text_color4"
+                        android:textSize="@dimen/sp14"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_cash_money"
+                        style="@style/Layout_Match_Wrap"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/text_padding2"
+                        android:layout_toLeftOf="@+id/tv_cash_free"
+                        android:layout_toRightOf="@+id/tv"
+                        android:background="@null"
+                        android:hint="@string/wallet_payinfo_cashmoney_hint"
+                        android:inputType="numberDecimal"
+                        android:maxLength="@integer/restrict_wellet_money_length"
+                        android:textColor="@color/text_color4"
+                        android:textColorHint="@color/text_color2"
+                        android:textSize="@dimen/sp20" />
+
+                    <ImageView
+                        android:id="@+id/iv_cash_moneyclear"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_cash_free"
+                        android:src="@drawable/credit_clear"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_cash_free"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/dp10"
+                        android:text="@string/wallet_payinfo_cashfree"
+                        android:textColor="@color/color_blue_6E90FF"
+                        android:textSize="@dimen/sp12"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <View style="@style/view_line" />
+
+                <LinearLayout
+                    style="@style/Layout_Match_Wrap"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp12"
+                    android:paddingTop="@dimen/dp12">
+
+                    <TextView
+                        android:id="@+id/tv_cash_total"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:text="@string/wallet_payinfo_cashtotal"
+                        android:textColor="@color/text_color3"
+                        android:textSize="@dimen/sp12" />
+
+                    <TextView
+                        android:id="@+id/tv_cash_totals"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="@string/wallet_payinfo_cashtotals"
+                        android:textColor="@color/color_blue_6E90FF"
+                        android:textSize="@dimen/sp12" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_numerical"
+                    style="@style/Layout_Match_Wrap">
+
+                    <LinearLayout
+                        android:id="@+id/ll_poundage"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Layout_Wrap_Wrap"
+                            android:minWidth="@dimen/dp65"
+                            android:text="@string/wallet_payinfo_cashpoundage"
+                            android:textColor="@color/text_color1"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tv_cash_poundage"
+                            style="@style/Layout_Wrap_Wrap"
+                            android:paddingLeft="@dimen/dp10"
+                            android:text="100"
+                            android:textColor="@color/color_red0"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tv_cash_poundagequota"
+                            style="@style/Layout_Wrap_Wrap"
+                            android:paddingLeft="@dimen/dp5"
+                            android:text="(收费额度¥10.00*费率0.1%)"
+                            android:textColor="@color/text_color1"
+                            android:textSize="@dimen/sp10" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_arrival"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:layout_below="@+id/ll_poundage"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp5">
+
+                        <TextView
+                            style="@style/Layout_Wrap_Wrap"
+                            android:minWidth="@dimen/dp65"
+                            android:text="@string/wallet_payinfo_casharrival"
+                            android:textColor="@color/text_color1"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tv_cash_arrival"
+                            style="@style/Layout_Wrap_Wrap"
+                            android:paddingLeft="@dimen/dp10"
+                            android:text="100"
+                            android:textColor="@color/color_red0"
+                            android:textSize="@dimen/sp12" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_cash_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/wallet_question_mark" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Layout_Match_Wrap"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp12"
+                android:paddingTop="@dimen/dp12"
+                android:paddingBottom="@dimen/dp5">
+
+                <TextView
+                    style="@style/Layout_Wrap_Wrap"
+                    android:text="@string/wallet_payinfo_cashbankarrival"
+                    android:textColor="@color/text_color3"
+                    android:textSize="@dimen/sp11" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_cash_bank"
+                style="@style/Layout_Match_Wrap"
+                android:layout_marginBottom="@dimen/dp12"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp12">
+
+                <ImageView
+                    android:id="@+id/iv_cash_bankimg"
+                    android:layout_width="@dimen/img_widthandheight1"
+                    android:layout_height="@dimen/img_widthandheight1"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/wallet_no_bankcard" />
+
+                <LinearLayout
+                    style="@style/Layout_Match_Wrap"
+                    android:layout_toLeftOf="@+id/iv_bank"
+                    android:layout_toRightOf="@+id/iv_cash_bankimg"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="0dp">
+
+                    <TextView
+                        android:id="@+id/tv_cash_bankname"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:text=""
+                        android:textColor="@color/text_color0"
+                        android:textSize="@dimen/text_size3" />
+
+                    <TextView
+                        android:id="@+id/tv_cash_bankno"
+                        style="@style/Layout_Wrap_Wrap"
+                        android:text=""
+                        android:textColor="@color/text_color_666666"
+                        android:textSize="@dimen/text_size2" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_bank"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/wallet_right_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_cash_select"
+                style="@style/Layout_Match_Wrap"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_padding2">
+
+                <TextView
+                    android:id="@+id/tv_select"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_width="@dimen/text_width"
+                    android:layout_centerVertical="true"
+                    android:text="@string/wallet_payinfo_cashzhihang2"
+                    android:textColor="@color/text_color0"
+                    android:textSize="@dimen/text_size3" />
+
+                <TextView
+                    android:id="@+id/tv_cash_select_address"
+                    style="@style/Layout_Match_Wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_select"
+                    android:layout_toRightOf="@+id/tv_select"
+                    android:hint="@string/wallet_payinfo_cashaddress"
+                    android:textColor="@color/text_color4"
+                    android:textColorHint="@color/text_color2"
+                    android:textSize="@dimen/text_size3" />
+
+                <ImageView
+                    android:id="@+id/iv_select"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/wallet_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+
+            <RelativeLayout
+                style="@style/Layout_Match_Wrap"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_padding2">
+
+                <TextView
+                    android:id="@+id/tv_bname"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_width="@dimen/text_width"
+                    android:layout_centerVertical="true"
+                    android:text="@string/wallet_payinfo_cashzhihang"
+                    android:textColor="@color/text_color0"
+                    android:textSize="@dimen/text_size3" />
+
+                <EditText
+                    android:id="@+id/et_cash_bankname"
+                    style="@style/Layout_Match_Wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_bname"
+                    android:background="@null"
+                    android:hint="@string/wallet_payinfo_cashzhihang3"
+                    android:inputType="text"
+                    android:maxLength="@integer/restrict_wellet_text_length"
+                    android:textColor="@color/text_color4"
+                    android:textColorHint="@color/text_color2"
+                    android:textSize="@dimen/text_size3" />
+
+                <ImageView
+                    android:id="@+id/iv_cash_banknameclear"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/credit_clear"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_cash_next"
+                style="@style/btn_style"
+                android:text="@string/wallet_payinfo_cashconfirm" />
+
+            <TextView
+                style="@style/Layout_Wrap_Wrap"
+                android:lineSpacingExtra="5dp"
+                android:padding="@dimen/dp12"
+                android:text="@string/wallet_payinfo_cashbanktishi"
+                android:textColor="@color/text_color_969696"
+                android:textSize="@dimen/sp11" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

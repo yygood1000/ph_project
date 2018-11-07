@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_content"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_background"
+              android:orientation="vertical"
+              android:visibility="gone">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible">
+
+        <LinearLayout
+            style="@style/Layout_Match_Match"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_truck"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_280"
+                android:background="@drawable/icon_car_head_default"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/tv_truck_text"
+                style="@style/tv_size_15_color_22_style"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/spacing_15"
+                android:paddingLeft="@dimen/spacing_12"
+                android:paddingTop="@dimen/spacing_15"
+                android:text="沪A 32L98  危险品车  18米"
+                android:textStyle="bold"/>
+
+            <include layout="@layout/include_line_dd"/>
+
+            <!-- 地址 -->
+
+            <LinearLayout
+                android:id="@+id/ll_address"
+                style="@style/Layout_Match_Wrap"
+                android:background="@drawable/selector_btn_white"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/spacing_12">
+
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/tv_size_14_color_66_style"
+                    android:layout_marginBottom="@dimen/spacing_15"
+                    android:layout_marginTop="@dimen/spacing_15"
+                    android:drawableLeft="@drawable/icon_location_green"
+                    android:drawablePadding="@dimen/spacing_6"
+                    android:text="上海市徐汇区宜山路1009号"
+                    />
+
+                <include layout="@layout/include_line_dd_full"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                style="@style/Layout_Match_Wrap"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/spacing_15"
+                android:paddingLeft="@dimen/spacing_12"
+                android:paddingTop="@dimen/spacing_15">
+
+                <TextView
+                    style="@style/tv_size_14_color_66_style"
+                    android:text="更新时间"/>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/tv_size_14_color_22_style"
+                    android:layout_marginLeft="@dimen/spacing_10"
+                    android:text="08-13 09:23"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/include_line_dd"/>
+
+            <LinearLayout
+                style="@style/Layout_Match_Wrap"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/spacing_15"
+                android:paddingLeft="@dimen/spacing_12"
+                android:paddingRight="@dimen/spacing_12"
+                android:paddingTop="@dimen/spacing_15"
+                >
+
+                <TextView
+                    style="@style/tv_size_14_color_66_style"
+                    android:text="期望流向"/>
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    style="@style/tv_size_14_color_22_style"
+                    android:layout_marginLeft="@dimen/spacing_10"
+                    android:text="上海／拉萨／苏州／嘉兴／杭州／西安／临汾／太原／合肥"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/include_line_dd"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_8"/>
+
+            <include layout="@layout/include_order_driver_info"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_8"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/include_order_bottom_btn"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 只有一个editText的popup -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_select_local"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent_50">
+
+    <EditText xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/white"
+        android:hint="最多可输入4个字..."
+        android:imeOptions="actionDone"
+        android:maxLength="4"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/spacing_10"
+        android:textColor="@color/text_color_222222"
+        android:textColorHint="@color/text_color_CCCCCC"
+        android:singleLine="true"/>
+</RelativeLayout>

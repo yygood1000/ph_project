@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Wrap"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!-- 订单发货地，订单目的地 -->
+
+    <!-- 发货地 -->
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_12">
+
+        <TextView
+            style="@style/tv_size_16_color_white_style"
+            android:background="@drawable/shape_bg_green_r4"
+            android:padding="@dimen/spacing_7"
+            android:text="发" />
+
+        <RelativeLayout
+            style="@style/Layout_Match_Wrap"
+            android:paddingLeft="@dimen/spacing_12">
+
+            <TextView
+                android:id="@+id/tv_start_city_name"
+                style="@style/tv_size_18_color_22_style"
+                android:text="上海 徐汇区" />
+
+            <TextView
+                android:id="@+id/tv_start_city_address"
+                style="@style/tv_size_14_color_22_style"
+                android:layout_alignBottom="@+id/tv_start_city_name"
+                android:layout_toRightOf="@+id/tv_start_city_name"
+                android:paddingBottom="@dimen/spacing_2"
+                android:paddingLeft="@dimen/spacing_4"
+                android:singleLine="true"
+                android:text="宜山路1009号创新大厦" />
+
+            <TextView
+                android:id="@+id/tv_name_phone"
+                style="@style/tv_size_14_color_66_style"
+                android:layout_below="@+id/tv_start_city_address"
+                android:paddingTop="@dimen/spacing_13"
+                android:text="周轩轩  181********" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_line_dd"/>
+
+    <!-- 目的地 -->
+
+    <LinearLayout
+        style="@style/Layout_Match_Wrap"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_12">
+
+        <TextView
+            style="@style/tv_size_16_color_white_style"
+            android:background="@drawable/shape_bg_yellow_r_4"
+            android:padding="@dimen/spacing_7"
+            android:text="收" />
+
+        <RelativeLayout
+            style="@style/Layout_Match_Wrap"
+            android:paddingLeft="@dimen/spacing_12">
+
+            <TextView
+                android:id="@+id/tv_end_city_name"
+                style="@style/tv_size_18_color_22_style"
+                android:text="上海 徐汇区" />
+
+            <TextView
+                android:id="@+id/tv_end_city_address"
+                style="@style/tv_size_14_color_22_style"
+                android:layout_alignBottom="@+id/tv_end_city_name"
+                android:layout_toRightOf="@+id/tv_end_city_name"
+                android:paddingBottom="@dimen/spacing_2"
+                android:paddingLeft="@dimen/spacing_4"
+                android:singleLine="true"
+                android:text="宜山路1009号创新大厦" />
+
+            <TextView
+                android:id="@+id/tv_name_phone_end"
+                style="@style/tv_size_14_color_66_style"
+                android:layout_below="@+id/tv_end_city_address"
+                android:paddingTop="@dimen/spacing_13"
+                android:text="" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

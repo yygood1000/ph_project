@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 个人中心功能入口item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/Layout_Match_Wrap">
+
+    <LinearLayout
+        android:id="@+id/ll_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_8"
+                android:layout_marginTop="@dimen/spacing_5"
+                android:layout_toRightOf="@+id/tv_status_invisible"
+                android:background="@drawable/bg_entrance_status"
+                android:paddingBottom="@dimen/spacing_2"
+                android:paddingLeft="@dimen/spacing_8"
+                android:paddingRight="@dimen/spacing_8"
+                android:paddingTop="@dimen/spacing_2"
+                android:singleLine="true"
+                android:text="审核失败"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size8"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_below="@+id/ll_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/spacing_13"
+        android:src="@drawable/icon_real_name_authentication"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/Layout_Wrap_Wrap"
+        android:layout_below="@+id/iv_icon"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/spacing_23"
+        android:text="实名认证"
+        android:textColor="@color/text_color_222222"
+        android:textSize="@dimen/spacing_12"/>
+</RelativeLayout>
